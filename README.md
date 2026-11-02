@@ -1,9 +1,8 @@
-# Baya — Compile-Then-Execute Agents
+# Baya — Compile-Then-Execute Agent
 
 Baya separates task compilation from execution against WebArena benchmark websites: GitLab, Reddit (Postmill), Shopping, and Shopping Admin. It includes two agent implementations, API schemas and browser helpers, evaluation code, and deterministic matching tools.
 
 ## Agents
-
 - **Baya Code Agent** executes generated Python scripts and extracts their final answers. Its codegen drivers support Claude Code, Codex, and Antigravity; all three evaluation runners use `BayaCodeExecutionAgent`. Generation and live script execution are separate stages.
 
 - **Baya JSON Agent** compiles a natural language task into a validated JSON execution plan, then executes its steps as HTTP requests through `curl`. The planner selects schemas from the target sites, resolves dependencies, and checks and repairs the plan before execution.
