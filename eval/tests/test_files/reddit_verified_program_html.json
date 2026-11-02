@@ -1,0 +1,4011 @@
+[
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 399,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Change my bio to \"{{content}}\" in the discussion forum",
+    "instantiation_dict": {
+      "content": "I am a robot"
+    },
+    "intent": "Change my bio to \"I am a robot\" in the discussion forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/user/MarvelsGrantMan136",
+          "locator": "document.querySelector(\".user-bio__biography\").outerText",
+          "required_contents": {
+            "exact_match": "I am a robot"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 6
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 400,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Change my bio to \"{{content}}\" in the discussion forum",
+    "instantiation_dict": {
+      "content": "Pro Python Developer with 20 years of Experience"
+    },
+    "intent": "Change my bio to \"Pro Python Developer with 20 years of Experience\" in the discussion forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/user/MarvelsGrantMan136",
+          "locator": "document.querySelector(\".user-bio__biography\").outerText",
+          "required_contents": {
+            "exact_match": "Pro Python Developer with 20 years of Experience"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 6
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 401,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Change my bio to \"{{content}}\" in the discussion forum",
+    "instantiation_dict": {
+      "content": "Seeking SDE positions"
+    },
+    "intent": "Change my bio to \"Seeking SDE positions\" in the discussion forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/user/MarvelsGrantMan136",
+          "locator": "document.querySelector(\".user-bio__biography\").outerText",
+          "required_contents": {
+            "exact_match": "Seeking SDE positions"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 6
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 402,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Change my bio to \"{{content}}\" in the discussion forum",
+    "instantiation_dict": {
+      "content": "Freelance Web Developer"
+    },
+    "intent": "Change my bio to \"Freelance Web Developer\" in the discussion forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/user/MarvelsGrantMan136",
+          "locator": "document.querySelector(\".user-bio__biography\").outerText",
+          "required_contents": {
+            "exact_match": "Freelance Web Developer"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 6
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 403,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Change my bio to \"{{content}}\" in the discussion forum",
+    "instantiation_dict": {
+      "content": "Awesome Prompt Artist"
+    },
+    "intent": "Change my bio to \"Awesome Prompt Artist\" in the discussion forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/user/MarvelsGrantMan136",
+          "locator": "document.querySelector(\".user-bio__biography\").outerText",
+          "required_contents": {
+            "exact_match": "Awesome Prompt Artist"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 6
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 404,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "subreddit": "books"
+    },
+    "intent": "Upvote the newest post in books forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/books/124260/adults-reading-to-each-other-out-loud",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 22
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 405,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "subreddit": "DIY"
+    },
+    "intent": "Upvote the newest post in DIY forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/DIY/119019/how-can-i-bring-an-hdmi-cable-from-my-pc-downstairs-to-my-tv",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 22
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 406,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "subreddit": "future technology"
+    },
+    "intent": "Upvote the newest post in future technology forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/Futurology/119517/openai-ceo-it-s-not-funny-that-i-m-afraid-of-the-ai-we-re",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 22
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 407,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "subreddit": "deeplearning"
+    },
+    "intent": "Upvote the newest post in the deep learning forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/deeplearning/125036/should-i-continue-with-this",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 22
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 408,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Upvote the newest post in {{forum}} forum",
+    "instantiation_dict": {
+      "subreddit": "explain like im 5"
+    },
+    "intent": "Upvote the newest post in explain like im 5 forum",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/explainlikeimfive/125342/eli5-why-does-pressing-my-palms-against-my-eyes-create-a",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 22
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 409,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the manager of the website",
+      "content_description": "thanks! I am a big fan of your website."
+    },
+    "intent": "Reply to the manager of the website in this post with \"thanks! I am a big fan of your website.\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/books/59421/-/comment/1235250",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "thanks! I am a big fan of your website."
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 410,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/singularity/69404/this-is-how-chatgpt-sees-itself",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the first reply",
+      "content_description": "don't panic"
+    },
+    "intent": "Reply to the first reply in this post with \"don't panic\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/singularity/69404/-/comment/1042264",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "don't panic"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 580,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a new forum with name and title \"{{name}}\", description \"{{description}}\", and sidebar \"{{sidebar_list}}\"",
+    "instantiation_dict": {
+      "name": "sci_fi",
+      "description": "A wild place for sci-fi enthusiasts",
+      "sidebar_list": [
+        "New",
+        "Classic",
+        "Movies",
+        "Post my novel",
+        "Random"
+      ]
+    },
+    "intent": "Create a new forum with name and title \"sci_fi\", description \"A wild place for sci-fi enthusiasts\", and sidebar \"**New**, Classic, *Movies*, Post my novel, Random\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/sci_fi/edit",
+          "locator": "document.querySelector(\"#forum_description\").value",
+          "required_contents": {
+            "must_include": [
+              "A wild place for sci-fi enthusiasts"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/sci_fi/edit",
+          "locator": "document.querySelector(\"#forum_sidebar\").value",
+          "required_contents": {
+            "must_include": [
+              "New",
+              "Classic",
+              "Movies",
+              "Post my novel",
+              "Random"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 7
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 581,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a new forum with name and title \"{{name}}\", description \"{{description}}\", and sidebar \"{{sidebar_list}}\"",
+    "instantiation_dict": {
+      "name": "cmu_lti",
+      "description": "Language Technologies Institute at Carnegie Mellon University",
+      "sidebar_list": [
+        "announcement",
+        "paper",
+        "alumni"
+      ]
+    },
+    "intent": "Create a new forum with name and title \"cmu_lti\", description \"Language Technologies Institute at Carnegie Mellon University\", and sidebar \"**announcement**, paper, **alumni**\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/cmu_lti/edit",
+          "locator": "document.querySelector(\"#forum_description\").value",
+          "required_contents": {
+            "must_include": [
+              "Language Technologies Institute at Carnegie Mellon University"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/cmu_lti/edit",
+          "locator": "document.querySelector(\"#forum_sidebar\").value",
+          "required_contents": {
+            "must_include": [
+              "announcement",
+              "paper",
+              "alumni"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 7
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 582,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a new forum with name and title \"{{name}}\", description \"{{description}}\", and sidebar \"{{sidebar_list}}\"",
+    "instantiation_dict": {
+      "name": "Cyberpunk",
+      "description": "Welcome to the future",
+      "sidebar_list": [
+        "Games",
+        "Books",
+        "Movies",
+        "Future"
+      ]
+    },
+    "intent": "Create a new forum with name and title \"Cyberpunk\", description \"Welcome to the future\", and sidebar \"Games, *Books*, Movies, *Future*\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/Cyberpunk/edit",
+          "locator": "document.querySelector(\"#forum_description\").value",
+          "required_contents": {
+            "must_include": [
+              "Welcome to the future"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/Cyberpunk/edit",
+          "locator": "document.querySelector(\"#forum_sidebar\").value",
+          "required_contents": {
+            "must_include": [
+              "Games",
+              "Books",
+              "Movies",
+              "Future"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 7
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 583,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a new forum with name and title \"{{name}}\", description \"{{description}}\", and sidebar \"{{sidebar_list}}\"",
+    "instantiation_dict": {
+      "name": "PlantsForCatParents",
+      "description": "Cat parents & plan lovers",
+      "sidebar_list": [
+        "Cat friendly",
+        "Local vendors",
+        "Promotion",
+        "Toxic plants!"
+      ]
+    },
+    "intent": "Create a new forum with name and title \"PlantsForCatParents\", description \"Cat parents & plan lovers\", and sidebar \"**Cat friendly**, Local vendors, Promotion, *Toxic plants!*\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/PlantsForCatParents/edit",
+          "locator": "document.querySelector(\"#forum_description\").value",
+          "required_contents": {
+            "must_include": [
+              "Cat parents & plan lovers"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/PlantsForCatParents/edit",
+          "locator": "document.querySelector(\"#forum_sidebar\").value",
+          "required_contents": {
+            "must_include": [
+              "Cat friendly",
+              "Local vendors",
+              "Promotion",
+              "Toxic plants!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 7
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 584,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a new forum with name and title \"{{name}}\", description \"{{description}}\", and sidebar \"{{sidebar_list}}\"",
+    "instantiation_dict": {
+      "name": "Karaoke",
+      "description": "Place for Karaoke lovers",
+      "sidebar_list": [
+        "devices",
+        "setup"
+      ]
+    },
+    "intent": "Create a new forum with name and title \"Karaoke\", description \"Place for Karaoke lovers\", and sidebar \"*devices*, setup\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/Karaoke/edit",
+          "locator": "document.querySelector(\"#forum_description\").value",
+          "required_contents": {
+            "must_include": [
+              "Place for Karaoke lovers"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/Karaoke/edit",
+          "locator": "document.querySelector(\"#forum_sidebar\").value",
+          "required_contents": {
+            "must_include": [
+              "devices",
+              "setup"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 7
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 595,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "space"
+    },
+    "intent": "Subscribe to the \"space\" forum from the page of the hottest post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/space",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/space",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 596,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "books"
+    },
+    "intent": "Subscribe to the \"books\" forum from the page of the all time top post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/books",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 597,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "consoles"
+    },
+    "intent": "Subscribe to the \"consoles\" forum from the page of the most controversial post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/consoles",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 598,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "pittsburgh"
+    },
+    "intent": "Subscribe to the \"pittsburgh\" forum from the page of the all time most commented post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/pittsburgh",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 599,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "machine learning"
+    },
+    "intent": "Subscribe to the \"machine learning\" forum from the page of the newest post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/MachineLearning",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/MachineLearning",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 600,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "what is the recommended console to buy these days"
+    },
+    "intent": "Post my question with the title \"what is the recommended console to buy these days?\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the recommended console to buy these days"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 601,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "is car necessary in NYC"
+    },
+    "intent": "Post my question with the title \"is car necessary in NYC\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "is car necessary in NYC"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 602,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "places for new drivers to learn driving in pittsburgh"
+    },
+    "intent": "Post my question with the title \"places for new drivers to learn driving in pittsburgh\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "places for new drivers to learn driving in pittsburgh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 603,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "safe and budge apartment to live in nyc"
+    },
+    "intent": "Post my question with the title \"safe and budget apartment to live in nyc\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "safe and budget apartment to live in nyc"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 604,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "intent": "Post my question with the title \"what is the SOTA web navigation agent repo\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/deeplearning |OR| __REDDIT__/f/MachineLearning |OR| __REDDIT__/f/singularity",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 605,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "gaming consoles",
+      "question": "what is the recommended console to buy these days"
+    },
+    "intent": "Find a forum focused on topics related to gaming consoles, and post my question, \"what is the recommended console to buy these days\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the recommended console to buy these days"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 606,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "NYC",
+      "question": "is car necessary"
+    },
+    "intent": "Find a forum focused on topics related to NYC, and post my question, \"is car necessary\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "is car necessary"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 607,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "city Pittsburgh",
+      "question": "places for new drivers to learn driving"
+    },
+    "intent": "Find a forum focused on topics related to city Pittsburgh, and post my question, \"places for new drivers to learn driving\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "places for new drivers to learn driving"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 608,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "city lives in DMV area",
+      "question": "safe and budge apartment to live"
+    },
+    "intent": "Find a forum focused on topics related to city lives in DMV area, and post my question, \"safe and budget apartment to live\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/washington |OR| __REDDIT__/f/washingtondc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "safe and budget apartment to live"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 609,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "ML, DL, NLP",
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "intent": "Find a forum focused on topics related to ML, DL, NLP, and post my question, \"what is the SOTA web navigation agent repo\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/deeplearning |OR| __REDDIT__/f/MachineLearning |OR| __REDDIT__/f/singularity",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 610,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "To Kill a Mockingbird by Harper Lee",
+      "content": "good book!"
+    },
+    "intent": "Post a review of my recent reading, titled \"To Kill a Mockingbird by Harper Lee\" in f/books and then comment \"good book!\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "To Kill a Mockingbird by Harper Lee",
+              "good book!"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 611,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Harry Potter",
+      "content": "Wonderful journey"
+    },
+    "intent": "Post a review of my recent reading, titled \"Harry Potter\" in f/books and then comment \"Wonderful journey\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Harry Potter",
+              "Wonderful journey"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 612,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "big little lies",
+      "content": "can't stop it"
+    },
+    "intent": "Post a review of my recent reading, titled \"big little lies\" in f/books and then comment \"can't stop it\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "big little lies",
+              "can't stop it"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 613,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Love story",
+      "content": "I cried"
+    },
+    "intent": "Post a review of my recent reading, titled \"Love story\" in f/books and then comment \"I cried\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Love story",
+              "I cried"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 614,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Gone with the wind",
+      "content": "It's a book with history"
+    },
+    "intent": "Post a review of my recent reading, titled \"Gone with the wind\" in f/books and then comment \"It's a book with history\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Gone with the wind",
+              "It's a book with history"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 615,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Bald Eagle",
+      "subreddit": "earthporn"
+    },
+    "intent": "Re-post the image of Bald Eagle from this forum to connecticut forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/connecticut",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "b02113033af32feae9ff147dbbe3764039368d67d193885bd04e65c2e6beea9c.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 616,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Thanksgiving turkey",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of Thanksgiving turkey from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "2e4fa0a328e653a97a7d07046291c298ef5b4e0d0c73a287f317ca86a8e8685f.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 617,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Firework",
+      "subreddit": "earthporn"
+    },
+    "intent": "Re-post the image of Firework from this forum to news forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/earthporn",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "92411be6af4e9ad5ccd3ccbaa01c10457bb00e704e99c58dd430de1a958307fd.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 618,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Wife's costume",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of Wife's costume from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "6bfbf1280d28d84a9261695f0cac5a90addaaff1174807a2b381fdc159f3ed00.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 619,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "costume contest",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of costume contest from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "bd8bc5f4c846aac4df08626faa3a34a7d47c8f3bdd92bf615a54afd939f063a7.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 620,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "deal with long-distance relationships"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"deal with long-distance relationships\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "long",
+              "distance",
+              "relation"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 621,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "cheat"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"cheat\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "cheat"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 622,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "sexual harassment"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"sexual harassment\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "sexual",
+              "harassment"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 623,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "gift for birthday"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"gift for birthday\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "gift",
+              "birthday"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 624,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "break-up remedy"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"break-up remedy\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "break",
+              "remedy"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 625,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "the effectiveness of online learning"
+    },
+    "intent": "Create a discussion post titled \"the effectiveness of deep learning\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/machinelearning |OR| __REDDIT__/f/deeplearning",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "the effectiveness of deep learning"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 626,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Iphone 14"
+    },
+    "intent": "Create a discussion post titled \"Iphone 14\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Iphone 14"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 627,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Harry Potter movie series"
+    },
+    "intent": "Create a discussion post titled \"Harry Potter movie series\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/movies",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Harry Potter movie series"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 628,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "long distance relationship"
+    },
+    "intent": "Create a discussion post titled \"long distance relationship\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "long distance relationship"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 629,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Fun thing to do in Pittsburgh"
+    },
+    "intent": "Create a discussion post titled \"Fun thing to do in Pittsburgh\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Fun thing to do in Pittsburgh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 630,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "noise-cancelling headphones",
+      "price": "$200",
+      "subreddit": "r/headphones"
+    },
+    "intent": "Create a post in f/headphones. Title it \"noise-cancelling headphones recommendations?\" and in post details ask \"Hey, looking for good noise-cancelling headphones under $200, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "200",
+              "noise-cancelling",
+              "headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 631,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running shoes",
+      "price": "$100",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running shoes recommendations?\" and in post details ask \"Hey, looking for good running shoes under $100, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "100",
+              "running",
+              "shoes"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 632,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running shoes",
+      "price": "$500",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running shoes recommendations?\" and in post details ask \"Hey, looking for good running shoes under $500, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "running",
+              "shoes"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 633,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running pants",
+      "price": "$500",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running pants recommendations?\" and in post details ask \"Hey, looking for good running pants under $500, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "running",
+              "pants"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 634,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "used iphone",
+      "price": "$1000",
+      "subreddit": "r/iphone"
+    },
+    "intent": "Create a post in f/iphone. Title it \"used iphone recommendations?\" and in post details ask \"Hey, looking for good used iphone under $1000, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "1000",
+              "used iphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 635,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "noise-cancelling headphones",
+      "price": "$200"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"noise-cancelling headphones recommendations\" and in post details ask \"I need recommendations for noise-cancelling headphones within a budget of $200 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "200",
+              "noise-cancelling",
+              "headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 636,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "DIY toolkit",
+      "price": "$100"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"DIY toolkit recommendations\" and in post details ask \"I need recommendations for DIY toolkit within a budget of $100 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/DIY",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "100",
+              "DIY",
+              "toolkit"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 637,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "sony headphones",
+      "price": "$500"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"sony headphones recommendations\" and in post details ask \"I need recommendations for sony headphones within a budget of $500 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "sony headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 638,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "must-have product in my life",
+      "price": "$30"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"Must have product at last for ever recommendations\" and in post details ask \"I need recommendations for Must have product at last for ever within a budget of $30 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/BuyItForLife",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "30",
+              "Must have",
+              "product",
+              "life"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 639,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "used iphone",
+      "price": "$1000"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"used iphone recommendations\" and in post details ask \"I need recommendations for used iphone within a budget of $1000 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "1000",
+              "used iphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 640,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "book reading",
+      "date": "March 15th",
+      "subreddit": "r/books"
+    },
+    "intent": "Post a notice in f/books titled \"book reading Meet up!\". Set post details to \"virtual meetup for book reading on March 15th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "book reading",
+              "March 15th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 641,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Harry Potter",
+      "date": "July 8th",
+      "subreddit": "books"
+    },
+    "intent": "Post a notice in books forum titled \"Harry Potter Meet up!\". Set post details to \"virtual meetup for Harry Potter on July 8th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Harry Potter",
+              "July 8th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 642,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Big little lies",
+      "date": "Sep 10th",
+      "subreddit": "books"
+    },
+    "intent": "Post a notice in books forum titled \"Big little lies Meet up!\". Set post details to \"virtual meetup for Big little lies on Sep 10th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Big little lies",
+              "Sep 10th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 643,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "racing cars",
+      "date": "Oct 21st",
+      "subreddit": "nyc"
+    },
+    "intent": "Post a notice in nyc forum titled \"racing cars Meet up!\". Set post details to \"virtual meetup for racing cars on Oct 21st\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "racing cars",
+              "Oct 21st",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 644,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Tears of Kingdom",
+      "date": "Dec 15th",
+      "subreddit": "games"
+    },
+    "intent": "Post a notice in games forum titled \"Tears of Kingdom Meet up!\". Set post details to \"virtual meetup for Tears of Kingdom on Dec 15th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/gaming",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Tears of Kingdom",
+              "Dec 15th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 645,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "books"
+    },
+    "intent": "Post in books forum with title \"What could machine learning help the books field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "machine learning",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 646,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "DIY"
+    },
+    "intent": "Post in DIY forum with title \"What could midjourney help the DIY field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/diy",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "midjourney",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 647,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "technology"
+    },
+    "intent": "Post in technology forum with title \"What could open-source LLMs help the technology field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/technology",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "open-source LLMs",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 648,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "dataisbeautiful"
+    },
+    "intent": "Post in dataisbeautiful forum with title \"What could large language models help the dataisbeautiful field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/dataisbeautiful",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "large language models",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 649,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "history"
+    },
+    "intent": "Post in dataisbeautiful forum with title \"What could diffusion model help the dataisbeautiful field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/history",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "diffusion model",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 650,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "I am a big fan of the bookorg"
+    },
+    "intent": "Reply to the post on this page with my comment \"I am a big fan of the bookorg\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "I am a big fan of the bookorg"
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 651,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "Yeah, pittsburgh traffic, you know..."
+    },
+    "intent": "Reply to the post on this page with my comment \"Yeah, pittsburgh traffic, you know...\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "Yeah, pittsburgh traffic, you know..."
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 652,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "???"
+    },
+    "intent": "Reply to the post on this page with my comment \"???\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "???"
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 714,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "subreddit": "gadgets",
+      "k": "1"
+    },
+    "intent": "Thumbs down the top 1 post ever in gadgets.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/gadgets/19459/a-custom-gaming-pc-built-inside-a-vintage-1940s-motorola",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 24
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 715,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "subreddit": "history",
+      "k": "2"
+    },
+    "intent": "Thumbs down the top 2 post ever in history.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/history/105990/4-500-year-old-sumerian-temple-dedicated-to-mighty-thunder",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/history/105990/4-500-year-old-sumerian-temple-dedicated-to-mighty-thunder",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 24
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 716,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "k": "3",
+      "subreddit": "books"
+    },
+    "intent": "Thumbs down the top 3 post ever in books.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/books/59447/appalachian-prison-book-project-seeks-notebook-donations-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/books/59447/appalachian-prison-book-project-seeks-notebook-donations-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 24
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 717,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "k": "4",
+      "subreddit": "movies"
+    },
+    "intent": "Thumbs down the top 4 post ever in movies.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/movies/86029/who-will-win-the-oscar-for-film-editing",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 24
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 718,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Thumbs down the top {{k}} post ever in {{forum}}.",
+    "instantiation_dict": {
+      "k": "5",
+      "subreddit": "technology"
+    },
+    "intent": "Thumbs down the top 5 post ever in technology.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/technology/70233/social-media-influencers-are-charged-with-feeding-followers",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/technology/134696/india-cuts-internet-for-27-million-people-amid-search-for",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/technology/48785/us-judge-orders-amazon-to-cease-and-desist-anti-union",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/technology/70354/activision-s-boston-studio-workers-announce-unionization",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/technology/70233/social-media-influencers-are-charged-with-feeding-followers",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 24
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 719,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "subreddit": "wallstreetbets",
+      "user": "ThetaGang_wsb"
+    },
+    "intent": "Like all submissions created by ThetaGang_wsb in forum wallstreetbets",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/wallstreetbets/29478/how-will-airbnb-close-following-their-earnings-report-on",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/wallstreetbets/29458/how-much-will-the-federal-reserve-raise-interest-rates-in",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 25
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 720,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "subreddit": "earthporn",
+      "user": "CameronKelsey"
+    },
+    "intent": "Like all submissions created by CameronKelsey in forum earthporn",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/EarthPorn/98332/my-favorite-place-on-the-planet-henry-s-fork-of-the-snake",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/EarthPorn/98297/2-years-later-this-is-still-one-of-the-most-incredible",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/EarthPorn/98256/i-can-t-wait-for-all-this-green-to-start-coming-back-little",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 25
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 721,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "UniversityofBath",
+      "subreddit": "IAmA"
+    },
+    "intent": "Like all submissions created by UniversityofBath in forum IAmA",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/IAmA/119742/hi-i-m-vienne-a-doctoral-student-at-the-university-of-bath-i",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/119719/hello-reddit-i-m-nazia-mehrban-a-lecturer-in-biotechnology",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/119714/i-m-ellie-jarvis-she-her-a-2nd-year-phd-student-in-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/55155/hi-i-m-dr-lucy-maddox-from-bath-university-uk-i-m-a-clinical",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/55142/we-re-sadeka-nujhat-hannah-leese-and-sandhya-moise-from-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/34032/we-re-sandhya-moise-david-phillips-and-chan-lee-from-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/13175/hi-i-m-kit-yates-i-m-a-mathematical-biologist-at-the",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/IAmA/13170/hello-i-m-dr-sara-fontani-from-the-university-of",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 25
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 722,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "Don_Gato1",
+      "subreddit": "new york"
+    },
+    "intent": "Like all submissions created by Don_Gato1 in forum nyc",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/nyc/44650/fox-news-hosts-cast-new-york-as-crime-ridden-and-chaotic",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 25
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 724,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "Hrekires",
+      "subreddit": "news"
+    },
+    "intent": "Like all submissions created by Hrekires in forum news",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/news/129816/gov-whitmer-signs-bills-to-repeal-right-to-work-restore",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129808/disney-world-deal-with-union-will-raise-minimum-wage-to-18",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129794/judge-halts-wyoming-abortion-ban-days-after-it-took-effect",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129783/don-t-say-gay-lawmaker-pleads-guilty-to-covid-relief-fraud",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129594/arizona-gov-katie-hobbs-refuses-to-proceed-with-execution",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129508/tennessee-governor-oks-bill-to-cut-nashville-council-in-half",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43839/philadelphia-da-larry-krasner-impeached-by-pa-house",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43781/crypto-giant-ftx-to-file-for-bankruptcy-ceo-sam-bankman",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43572/sec-doj-investigating-crypto-platform-ftx",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43558/kansas-gov-laura-kelly-wins-re-election-defeating-gop",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 25
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 725,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "subreddit": "massachusetts",
+      "user": "RickyDontLoseThat"
+    },
+    "intent": "DisLike all submissions created by RickyDontLoseThat in forum massachusetts",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/massachusetts/84954/the-last-of-lincoln",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 1510
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 727,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "PatientBuilder499",
+      "subreddit": "videos"
+    },
+    "intent": "DisLike all submissions created by PatientBuilder499 in forum videos",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/videos/115139/hundreds-of-civilian-turkish-volunteers-waiting-to-be-sent",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 1510
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 728,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "sirbarani",
+      "subreddit": "sports"
+    },
+    "intent": "DisLike all submissions created by sirbarani in forum sports",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/sports/48303/iran-football-legend-daei-will-not-attend-world-cup-amid",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 1510
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 729,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "AdamCannon",
+      "subreddit": "UpliftingNews"
+    },
+    "intent": "DisLike all submissions created by AdamCannon in forum UpliftingNews",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/UpliftingNews/16087/same-sex-marriage-is-now-legal-in-all-of-mexico-s-states",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 1510
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 730,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "Hrekires",
+      "subreddit": "news"
+    },
+    "intent": "DisLike all submissions created by Hrekires in forum news",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/news/129816/gov-whitmer-signs-bills-to-repeal-right-to-work-restore",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129808/disney-world-deal-with-union-will-raise-minimum-wage-to-18",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129794/judge-halts-wyoming-abortion-ban-days-after-it-took-effect",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129783/don-t-say-gay-lawmaker-pleads-guilty-to-covid-relief-fraud",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129594/arizona-gov-katie-hobbs-refuses-to-proceed-with-execution",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/129508/tennessee-governor-oks-bill-to-cut-nashville-council-in-half",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43839/philadelphia-da-larry-krasner-impeached-by-pa-house",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43781/crypto-giant-ftx-to-file-for-bankruptcy-ceo-sam-bankman",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43572/sec-doj-investigating-crypto-platform-ftx",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "__REDDIT__/f/news/43558/kansas-gov-laura-kelly-wins-re-election-defeating-gop",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 1510
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 731,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Edit my post on {{post}} by adding a line to the body that says \"{{content}}\"",
+    "instantiation_dict": {
+      "post": "Nvidia RTX 4090",
+      "content": "EDIT: This news aged well"
+    },
+    "intent": "Edit my post on Nvidia RTX 4090 by adding a line to the body that says \"EDIT: This news aged well\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/MachineLearning/1/nvidia-rtx-4090",
+          "locator": "document.querySelector('.submission__body').outerText",
+          "required_contents": {
+            "must_include": [
+              "EDIT: This news aged well",
+              "Crazy device for ML!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 27
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 732,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Edit my post on {{post}} by adding a line to the body that says \"{{content}}\"",
+    "instantiation_dict": {
+      "post": "The Night Agent",
+      "content": "Done watching, pretty cool!"
+    },
+    "intent": "Edit my post on The Night Agent by adding a line to the body that says \"Done watching, pretty cool!\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/television/134868/the-night-agent-renewed-for-season-2-at-netflix",
+          "locator": "document.querySelector('.submission__body').outerText",
+          "required_contents": {
+            "exact_match": "Done watching, pretty cool!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 27
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 733,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Edit my post on {{post}} by adding a line to the body that says \"{{content}}\"",
+    "instantiation_dict": {
+      "post": "Star Trek Starfleet Academy series",
+      "content": "Every watch makes me feel like a kid again"
+    },
+    "intent": "Edit my post on Star Trek Starfleet Academy series by adding a line to the body that says \"Every watch makes me feel like a kid again\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/television/135201/star-trek-starfleet-academy-series-from-alex-kurtzman-and",
+          "locator": "document.querySelector('.submission__body').outerText",
+          "required_contents": {
+            "exact_match": "Every watch makes me feel like a kid again"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 27
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 734,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Edit my post on {{post}} by adding a line to the body that says \"{{content}}\"",
+    "instantiation_dict": {
+      "post": "Ted Lasso",
+      "content": "Done watching. I love the renew!"
+    },
+    "intent": "Edit my post on Ted Lasso season 3 premiere by adding a line to the body that says \"Done watching. I love the renew!\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/television/135156/ted-lasso-season-3-premiere-scores-870k-u-s-households-up-59",
+          "locator": "document.querySelector('.submission__body').outerText",
+          "required_contents": {
+            "exact_match": "Done watching. I love the renew!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 27
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 735,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Edit my post on {{post}} by adding a line to the body that says \"{{content}}\"",
+    "instantiation_dict": {
+      "post": "Lord of the Rings",
+      "content": "The cast is amazing!"
+    },
+    "intent": "Edit my post on Lord of the Rings season 2 cast announcement with the lowest vote count by adding a line to the body that says \"The cast is amazing!\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/television/70886/the-lord-of-the-rings-the-rings-of-power-adds-8-to-season-2",
+          "locator": "document.querySelector('.submission__body').outerText",
+          "required_contents": {
+            "exact_match": "The cast is amazing!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 27
+  }
+]

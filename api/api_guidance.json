@@ -1,0 +1,6 @@
+{
+  "gitlab_api_schema.json": "GITLAB_HINTS",
+  "shopping_api_schema.json": "SHOPPING_HINTS",
+  "shopping_admin_api_schema.json": "SHOPPING_ADMIN_HINTS",
+  "reddit_api_schema.json": "REDDIT_HINTS"
+}

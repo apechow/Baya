@@ -1,0 +1,70 @@
+# assume all env config files under project_root/config directory
+client_env_path: config/.env
+mcp_env_path: config/.mcpenv
+shared_env_path: config/.sharedenv
+server_env_path: config/.server_env
+
+# agent_llm_provider: google
+# agent_llm_model: gemini-3.5-flash
+agent_llm_provider: anthropic
+agent_llm_model: claude-sonnet-4-6
+# agent_llm_model: claude-opus-4-6
+# agent_llm_provider: openrouter
+# agent_llm_model: deepseek/deepseek-v4-flash-0731
+# agent_llm_provider: openai
+# agent_llm_model: gpt-5.6-luna
+
+
+llm_access_retry: 3
+
+#higher temp more randomness (normal is ~0.2) lower more deterministics higher is more creative
+
+llm_providers:
+ openai:
+  - model: gpt-5.6-luna
+    temp: 0.0
+
+  - model: gpt-5.4-mini
+    temp: 0.0
+
+  - model: gpt-5-mini
+    temp: 0.0
+
+  - model: gpt-5.4
+    temp: 0.0
+
+  - model: gpt-5.3-codex
+    temp: 0.0
+
+ anthropic:
+  - model: claude-sonnet-4-6
+    temp: 0.0
+
+  - model: claude-opus-4-6
+    temp: 0.0
+
+ google:
+  - model: gemini-3.5-flash
+    temp: 1.0
+
+ deepseek:
+  - model: deepseek-chat
+    temp: 0.0
+
+  - model: deepseek-reasoner
+    temp: 0.0
+
+ # OpenRouter: `model` is the full OpenRouter model id (provider/model).
+ # pydantic-ai consumes these as `openrouter:<model>` and reads OPENROUTER_API_KEY.
+ openrouter:
+  - model: deepseek/deepseek-chat
+    temp: 0.0
+
+  - model: deepseek/deepseek-r1
+    temp: 0.0
+
+  - model: deepseek/deepseek-v4-flash-0731
+    temp: 0.0
+
+
+

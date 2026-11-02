@@ -1,0 +1,520 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Shopping Admin Extra API",
+        "description": "Custom endpoints for the WebArena Shopping Admin (Luma Admin) website.",
+        "version": "1.0.0"
+    },
+    "host": "127.0.0.1:7793",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/bestsellers_report": {
+            "get": {
+                "summary": "Get the bestsellers report",
+                "description": "Log in to the Luma admin panel and fetch the Reports > Products > Bestsellers grid for a date range and aggregation interval. Returns one row per product with its interval, name, price, and ordered quantity, plus the grid totals.",
+                "operationId": "bestsellers_report",
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Admin backend to log into and read. Pass the value of the SHOPPING_ADMIN_DOMAIN environment variable. Defaults to this server's own backend, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7780'"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'From' date in M/D/YYYY format (e.g. '1/1/2022')"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'To' date in M/D/YYYY format (e.g. '12/31/2023')"
+                    },
+                    {
+                        "name": "aggregation",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "enum": ["Day", "Month", "Year"],
+                        "default": "Month",
+                        "description": "Reporting interval used to group the report rows"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "The parsed bestsellers report",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "aggregation", "start_date", "end_date", "records_found", "items"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "description": "Whether the report was retrieved and parsed"
+                                },
+                                "aggregation": {
+                                    "type": "string",
+                                    "description": "The applied reporting interval (day, month, or year)"
+                                },
+                                "start_date": {
+                                    "type": "string",
+                                    "description": "The applied 'From' date"
+                                },
+                                "end_date": {
+                                    "type": "string",
+                                    "description": "The applied 'To' date"
+                                },
+                                "records_found": {
+                                    "type": "integer",
+                                    "description": "The grid's 'N records found' counter (counts intervals, not product rows)"
+                                },
+                                "total_qty_ordered": {
+                                    "type": "integer",
+                                    "description": "The grid's Total footer for ordered quantity across all rows"
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "description": "One entry per product row in the report",
+                                    "items": {
+                                        "type": "object",
+                                        "required": ["product"],
+                                        "properties": {
+                                            "period": {
+                                                "type": "string",
+                                                "description": "The interval this row belongs to (e.g. '2022', '3/2023')"
+                                            },
+                                            "product": {
+                                                "type": "string",
+                                                "description": "Product name"
+                                            },
+                                            "price": {
+                                                "type": "number",
+                                                "description": "Product price in dollars"
+                                            },
+                                            "qty_ordered": {
+                                                "type": "integer",
+                                                "description": "Quantity ordered in the interval"
+                                            }
+                                        }
+                                    }
+                                },
+                                "error_message": {
+                                    "type": "string",
+                                    "description": "Set when success is false"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/orders_report": {
+            "get": {
+                "summary": "Get the orders report (number of orders per interval)",
+                "description": "Log in to the Luma admin panel and fetch the Reports > Sales > Orders grid for a date range, aggregation interval, and optional order status. Returns one row per interval with the number of orders, sales items, and sales/invoiced/refunded/tax/shipping/discount/canceled totals, plus a grand-total footer. Useful for counting orders in a period. Note: the default 'Any' status excludes canceled orders; pass order_status=canceled to count those.",
+                "operationId": "orders_report",
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Admin backend to log into and read. Pass the value of the SHOPPING_ADMIN_DOMAIN environment variable. Defaults to this server's own backend, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7780'"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'From' date in M/D/YYYY format (e.g. '1/1/2022')"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'To' date in M/D/YYYY format (e.g. '12/31/2023')"
+                    },
+                    {
+                        "name": "aggregation",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "enum": ["Day", "Month", "Year"],
+                        "default": "Month",
+                        "description": "Reporting interval used to group the report rows"
+                    },
+                    {
+                        "name": "order_status",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "enum": ["Any", "canceled", "closed", "complete", "fraud", "holded", "payment_review", "paypal_canceled_reversal", "paypal_reversed", "processing"],
+                        "default": "Any",
+                        "description": "Restrict the report to one order status; display labels ('Complete', 'On Hold', 'Suspected Fraud', ...) are also accepted"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "The parsed orders report",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "aggregation", "start_date", "end_date", "records_found", "items"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "description": "Whether the report was retrieved and parsed"
+                                },
+                                "aggregation": {
+                                    "type": "string",
+                                    "description": "The applied reporting interval (day, month, or year)"
+                                },
+                                "start_date": {
+                                    "type": "string",
+                                    "description": "The applied 'From' date"
+                                },
+                                "end_date": {
+                                    "type": "string",
+                                    "description": "The applied 'To' date"
+                                },
+                                "order_status": {
+                                    "type": "string",
+                                    "description": "The applied order status filter (absent when unrestricted)"
+                                },
+                                "records_found": {
+                                    "type": "integer",
+                                    "description": "The grid's 'N records found' counter (one record per interval)"
+                                },
+                                "totals": {
+                                    "type": "object",
+                                    "description": "The grid's Total footer across all intervals (absent when the report is empty)",
+                                    "properties": {
+                                        "orders": {
+                                            "type": "integer",
+                                            "description": "Total number of orders in the date range"
+                                        },
+                                        "sales_items": {
+                                            "type": "integer",
+                                            "description": "Total number of items sold"
+                                        },
+                                        "sales_total": {"type": "number"},
+                                        "invoiced": {"type": "number"},
+                                        "refunded": {"type": "number"},
+                                        "sales_tax": {"type": "number"},
+                                        "sales_shipping": {"type": "number"},
+                                        "sales_discount": {"type": "number"},
+                                        "canceled": {"type": "number"}
+                                    }
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "description": "One entry per interval row in the report",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "period": {
+                                                "type": "string",
+                                                "description": "The interval (e.g. '2022', '3/2023', '3/15/2023')"
+                                            },
+                                            "orders": {
+                                                "type": "integer",
+                                                "description": "Number of orders in the interval"
+                                            },
+                                            "sales_items": {
+                                                "type": "integer",
+                                                "description": "Number of items sold in the interval"
+                                            },
+                                            "sales_total": {
+                                                "type": "number",
+                                                "description": "Sales total in dollars"
+                                            },
+                                            "invoiced": {"type": "number"},
+                                            "refunded": {"type": "number"},
+                                            "sales_tax": {"type": "number"},
+                                            "sales_shipping": {"type": "number"},
+                                            "sales_discount": {"type": "number"},
+                                            "canceled": {"type": "number"}
+                                        }
+                                    }
+                                },
+                                "error_message": {
+                                    "type": "string",
+                                    "description": "Set when success is false"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/customer_totals_report": {
+            "get": {
+                "summary": "Get the customers order total report (orders and totals per customer)",
+                "description": "Log in to the Luma admin panel and fetch the Reports > Customers > Order Total grid for a date range and aggregation interval. Returns one row per customer per interval with the customer's number of orders and order total in dollars, plus a grand-total footer across all customers. Useful for finding how many orders a customer placed and how much they spent in a period.",
+                "operationId": "customer_totals_report",
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Admin backend to log into and read. Pass the value of the SHOPPING_ADMIN_DOMAIN environment variable. Defaults to this server's own backend, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7780'"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'From' date in M/D/YYYY format (e.g. '1/1/2022')"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "'To' date in M/D/YYYY format (e.g. '12/31/2023')"
+                    },
+                    {
+                        "name": "aggregation",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "enum": ["Day", "Month", "Year"],
+                        "default": "Month",
+                        "description": "Reporting interval used to group the report rows"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "The parsed customers order total report",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "aggregation", "start_date", "end_date", "items"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "description": "Whether the report was retrieved and parsed"
+                                },
+                                "aggregation": {
+                                    "type": "string",
+                                    "description": "The applied reporting interval (day, month, or year)"
+                                },
+                                "start_date": {
+                                    "type": "string",
+                                    "description": "The applied 'From' date"
+                                },
+                                "end_date": {
+                                    "type": "string",
+                                    "description": "The applied 'To' date"
+                                },
+                                "totals": {
+                                    "type": "object",
+                                    "description": "The grid's Total footer across all customers and intervals",
+                                    "properties": {
+                                        "orders": {
+                                            "type": "integer",
+                                            "description": "Total number of orders in the date range"
+                                        },
+                                        "total": {
+                                            "type": "number",
+                                            "description": "Total order amount in dollars"
+                                        }
+                                    }
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "description": "One entry per customer row in the report; intervals without orders are omitted",
+                                    "items": {
+                                        "type": "object",
+                                        "required": ["customer"],
+                                        "properties": {
+                                            "period": {
+                                                "type": "string",
+                                                "description": "The interval this row belongs to (e.g. '2022', '01/2022')"
+                                            },
+                                            "customer": {
+                                                "type": "string",
+                                                "description": "Customer name"
+                                            },
+                                            "orders": {
+                                                "type": "integer",
+                                                "description": "Number of orders the customer placed in the interval"
+                                            },
+                                            "total": {
+                                                "type": "number",
+                                                "description": "The customer's order total in dollars for the interval"
+                                            }
+                                        }
+                                    }
+                                },
+                                "error_message": {
+                                    "type": "string",
+                                    "description": "Set when success is false"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/search_terms": {
+            "get": {
+                "summary": "Get the store's search terms",
+                "description": "Log in to the Luma admin panel and fetch the Marketing > SEO & Search > Search Terms grid. Returns every search term customers have used, with the number of matching results and how many times it was searched (uses). Useful for finding the most popular search terms in the store.",
+                "operationId": "search_terms",
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Admin backend to log into and read. Pass the value of the SHOPPING_ADMIN_DOMAIN environment variable. Defaults to this server's own backend, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7780'"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "The parsed search terms grid",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "records_found", "items"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "description": "Whether the grid was retrieved and parsed"
+                                },
+                                "records_found": {
+                                    "type": "integer",
+                                    "description": "The grid's 'N records found' counter"
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "description": "One entry per search term",
+                                    "items": {
+                                        "type": "object",
+                                        "required": ["search_query"],
+                                        "properties": {
+                                            "search_query": {
+                                                "type": "string",
+                                                "description": "The search term customers typed"
+                                            },
+                                            "results": {
+                                                "type": "integer",
+                                                "description": "Number of products matching the term"
+                                            },
+                                            "uses": {
+                                                "type": "integer",
+                                                "description": "How many times the term was searched"
+                                            }
+                                        }
+                                    }
+                                },
+                                "error_message": {
+                                    "type": "string",
+                                    "description": "Set when success is false"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/fuzzy_search": {
+            "get": {
+                "summary": "Fuzzy search the product catalog",
+                "description": "Log in to the Luma admin panel and search the Catalog > Products grid by keyword. The keyword matches fuzzily across product attributes (name, SKU, ...). Returns each matching product's id, name, type, SKU, price, quantity, and status. This endpoint lives on the Shopping Admin Extra API server, NOT on the admin panel itself — resolve its host from $SHOPPING_ADMIN_EXTRA_DOMAIN, falling back to config.servers SERVER_URLS['shopping_admin_extra']. Requesting $SHOPPING_ADMIN_DOMAIN/fuzzy_search hits Magento and returns a 404 HTML page. ALWAYS send base_url set to $SHOPPING_ADMIN_DOMAIN — this server is shared across eval workers and otherwise reads its own default backend, not the one the task is graded on.",
+                "operationId": "fuzzy_search",
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Admin backend to log into and search. Pass the value of the SHOPPING_ADMIN_DOMAIN environment variable. Defaults to this server's own backend, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7780'"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "The search keyword (e.g. 'running shorts')"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "The parsed product search results",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "query", "records_found", "items"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean",
+                                    "description": "Whether the search ran and the grid was parsed"
+                                },
+                                "query": {
+                                    "type": "string",
+                                    "description": "The applied search keyword"
+                                },
+                                "records_found": {
+                                    "type": "integer",
+                                    "description": "Total number of matching products (items contains at most the first grid page of 200 rows)"
+                                },
+                                "items": {
+                                    "type": "array",
+                                    "description": "One entry per matching product row",
+                                    "items": {
+                                        "type": "object",
+                                        "required": ["name"],
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer",
+                                                "description": "Product entity ID"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "Product name"
+                                            },
+                                            "type": {
+                                                "type": "string",
+                                                "description": "Product type (e.g. 'Simple Product', 'Configurable Product')"
+                                            },
+                                            "sku": {
+                                                "type": "string",
+                                                "description": "Product SKU"
+                                            },
+                                            "price": {
+                                                "type": "number",
+                                                "description": "Product price in dollars (absent for bundle/grouped products)"
+                                            },
+                                            "quantity": {
+                                                "type": "number",
+                                                "description": "Stock quantity"
+                                            },
+                                            "status": {
+                                                "type": "string",
+                                                "description": "Product status ('Enabled' or 'Disabled')"
+                                            }
+                                        }
+                                    }
+                                },
+                                "error_message": {
+                                    "type": "string",
+                                    "description": "Set when success is false"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

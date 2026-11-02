@@ -1,0 +1,75 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "GitLab Extra API",
+        "description": "Custom endpoints for GitLab that aren't covered by the REST API (e.g. RSS/feed token).",
+        "version": "1.0.0"
+    },
+    "host": "127.0.0.1:7792",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/rss_token": {
+            "get": {
+                "summary": "Get current RSS/feed token",
+                "description": "Read the current GitLab user's RSS/Atom feed token from their profile page. Logs in with default credentials from environment. This endpoint lives on the GitLab Extra API server, NOT on GitLab itself — resolve its host from $GITLAB_EXTRA_DOMAIN, falling back to config.servers SERVER_URLS['gitlab_extra']. Requesting $GITLAB_DOMAIN/rss_token hits GitLab and returns a 404 HTML page. ALWAYS send base_url set to $GITLAB_DOMAIN — this server is shared across eval workers and otherwise reads its own default GitLab instance, not the one the task is graded on.",
+                "operationId": "rss_token",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "GitLab instance to read the token from, e.g. http://127.0.0.1:8023. Defaults to $GITLAB_DOMAIN on the server, then config.servers SERVER_URLS['gitlab']."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Current RSS token",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success"],
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "token": {"type": "string", "description": "The user's RSS/feed token"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/reset_rss_token": {
+            "post": {
+                "summary": "Reset (regenerate) the RSS/feed token",
+                "description": "Reset the current GitLab user's RSS/Atom feed token and return the newly generated value. The previous token is immediately invalidated, so call this ONLY when the task explicitly asks to reset, regenerate, or revoke the token — never to simply read it. Same host resolution as GET /rss_token: $GITLAB_EXTRA_DOMAIN, not $GITLAB_DOMAIN, and always send base_url set to $GITLAB_DOMAIN.",
+                "operationId": "reset_rss_token",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "GitLab instance to rotate the token on, e.g. http://127.0.0.1:8023. Defaults to $GITLAB_DOMAIN on the server, then config.servers SERVER_URLS['gitlab']."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Newly generated RSS token",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success"],
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "token": {"type": "string", "description": "The newly generated RSS/feed token"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

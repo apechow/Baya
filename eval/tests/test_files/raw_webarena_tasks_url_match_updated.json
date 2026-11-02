@@ -1,0 +1,3900 @@
+[
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 44,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Check out my todos",
+    "instantiation_dict": {},
+    "intent": "Check out my todos",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/dashboard/todos",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 303,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 45,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "Check out the most recent open issues",
+    "instantiation_dict": {},
+    "intent": "Check out the most recent open issues",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?sort=created_date&state=opened |OR| __GITLAB__/a11yproject/a11yproject.com/-/issues/?sort=created_desc&state=opened",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 300,
+    "read_only": true,
+    "fixed_notes": "changed created_asc to created_desc/create_date which by default is desc"
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 46,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Check out the most recent open issues",
+    "instantiation_dict": {},
+    "intent": "Check out the most recent open issues",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/issues/?sort=created_date&state=opened |OR| __GITLAB__/primer/design/-/issues/?sort=created_desc&state=opened",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 300,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 102,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Display the list of issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "help needed",
+      "repo": "a11yproject/a11yproject.com"
+    },
+    "intent": "Display the list of issues in the a11yproject/a11yproject.com repository that have labels related to help needed",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues/?label_name%5B%5D=help%20wanted",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 349,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 103,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Display the list of issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "questions",
+      "repo": "kkroening/ffmpeg-python"
+    },
+    "intent": "Display the list of issues in the kkroening/ffmpeg-python repository that have labels related to questions",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/kkroening/ffmpeg-python/-/issues/?label_name%5B%5D=question",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 349,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 104,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Display the list of issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "flaky-test",
+      "repo": "keycloak/keycloak"
+    },
+    "intent": "Display the list of issues in the keycloak/keycloak repository that have labels related to flaky-test",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/keycloak/keycloak/-/issues/?label_name%5B%5D=flaky-test",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 349,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 105,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Display the list of issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "OpenAPI Generator CLI",
+      "repo": "OpenAPITools/openapi-generator"
+    },
+    "intent": "Display the list of issues in the OpenAPITools/openapi-generator repository that have labels related to OpenAPI Generator CLI",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/OpenAPITools/openapi-generator/-/issues/?label_name%5B%5D=OpenAPI%20Generator%20CLI",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 349,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 106,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Display the list of issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "BUG",
+      "repo": "umano/AndroidSlidingUpPanel"
+    },
+    "intent": "Display the list of issues in the umano/AndroidSlidingUpPanel repository that have labels related to BUG",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues/?label_name%5B%5D=BUG",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 349,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 156,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Checkout merge requests assigned to me",
+    "instantiation_dict": {},
+    "intent": "Checkout merge requests assigned to me",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/dashboard/merge_requests?assignee_username=byteblaze",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 290,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 157,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Show all customers",
+    "instantiation_dict": {},
+    "intent": "Show all customers",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING_ADMIN__/customer/index/",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 255
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 158,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 11
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 11 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/heiying-game-card-case-for-nintendo-switch-switch-oled-game-card-or-micro-sd-memory-cards-portable-switch-game-memory-card-storage-with-24-game-card-slots-and-24-micro-sd-card-slots-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 159,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 31
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 31 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/game-card-holder-storage-case-for-nintendo-switch-games-or-ps-vita-game-case-or-sd-memory-cards-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 160,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 6
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 6 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/heiying-game-card-case-for-nintendo-switch-switch-oled-game-card-or-micro-sd-memory-cards-portable-switch-game-memory-card-storage-with-24-game-card-slots-and-24-micro-sd-card-slots-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 161,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 23
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 23 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/heiying-game-card-case-for-nintendo-switch-switch-oled-game-card-or-micro-sd-memory-cards-portable-switch-game-memory-card-storage-with-24-game-card-slots-and-24-micro-sd-card-slots-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 162,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 40
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 40 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/game-card-holder-storage-case-for-nintendo-switch-games-or-ps-vita-game-case-or-sd-memory-cards-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from PS4 accessories category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 239,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "nutrition bars and drinks"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from nutrition bars and drinks category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/kellogg-s-special-k-protein-meal-bars-chocolate-caramel-12-7oz-6-count.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 240,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "competitive swimwear"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from competitive swimwear category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/women-cross-flower-beachwear-tankini-bandeau-bandage-bikini-set-push-up-swimwear-bathing-suit-two-pieces-swimsuits.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 241,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "skin care tool"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from skin care tool category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/professional-medi-spa-scar-stretch-mark-reduction-system.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 242,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "Household Supplies"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from Household Supplies category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/lynx-battery-12v-200ah-lithium-iron-phosphate-lifepo4-prismatic-deep-cell-battery-set-of-4-3-2v-cells-with-3-bus-bars-and-8-lug-nuts-for-rv-solar-marine-off-grid-applications.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 258,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "See all public projects",
+    "instantiation_dict": {},
+    "intent": "See all public projects",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/explore",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 325,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 260,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Video Game"
+    },
+    "intent": "I want to browse the products in the Video Game category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/video-games.html |OR| __SHOPPING__/catalog/category/view/id/13",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/13); the SEO path and the id URL serve the same category page, verified against the Magento category tree"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 261,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Headphones"
+    },
+    "intent": "I want to browse the products in the Headphones category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/electronics/headphones.html |OR| __SHOPPING__/catalog/category/view/id/60",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/60); the SEO path and the id URL serve the same category page, verified against the Magento category tree"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 262,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Men shoes"
+    },
+    "intent": "I want to browse the products in the Men shoes category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/clothing-shoes-jewelry/men/shoes.html |OR| __SHOPPING__/catalog/category/view/id/145",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/145); the SEO path and the id URL serve the same category page, verified against the Magento category tree"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 263,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Woman clothing"
+    },
+    "intent": "I want to browse the products in the Woman clothing category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/clothing-shoes-jewelry/women/clothing.html |OR| __SHOPPING__/catalog/category/view/id/143",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/143); the SEO path and the id URL serve the same category page, verified against the Magento category tree"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 264,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I want to browse the products in the {{category}} category",
+    "instantiation_dict": {
+      "category": "Cabinets, Racks & Shelves"
+    },
+    "intent": "I want to browse the products in the Cabinets, Racks & Shelves category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/office-products/office-furniture-lighting/cabinets-racks-shelves.html |OR| __SHOPPING__/catalog/category/view/id/187",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 211,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/187); the SEO path and the id URL serve the same category page, verified against the Magento category tree"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 269,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "25",
+      "product_category": "women shoes"
+    },
+    "intent": "Show me products under $25 in \"women shoes\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/clothing-shoes-jewelry/women/shoes.html?price=0-25 |OR| __SHOPPING__/catalog/category/view/id/144?price=0-25",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/144?price=0-25); the SEO path and the id URL render the same price-filtered category listing, verified against the Magento category tree and by comparing the rendered result sets"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 270,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "30",
+      "product_category": "men shoes"
+    },
+    "intent": "Show me products under $30 in \"men shoes\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/clothing-shoes-jewelry/men/shoes.html?price=0-30 |OR| __SHOPPING__/catalog/category/view/id/145?price=0-30",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/145?price=0-30); the SEO path and the id URL render the same price-filtered category listing, verified against the Magento category tree and by comparing the rendered result sets"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 271,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "46.99",
+      "product_category": "makeup remover"
+    },
+    "intent": "Show me products under $46.99 in \"makeup remover\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/beauty-personal-care/makeup/makeup-remover.html?price=0-46.99 |OR| __SHOPPING__/catalog/category/view/id/140?price=0-46.99",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/140?price=0-46.99); the SEO path and the id URL render the same price-filtered category listing, verified against the Magento category tree and by comparing the rendered result sets"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 272,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "78",
+      "product_category": "children dental care"
+    },
+    "intent": "Show me products under $78 in \"children dental care\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/beauty-personal-care/oral-care/children-s-dental-care.html?price=0-78 |OR| __SHOPPING__/catalog/category/view/id/116?price=0-78",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/116?price=0-78); the SEO path and the id URL render the same price-filtered category listing, verified against the Magento category tree and by comparing the rendered result sets"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 273,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "199",
+      "product_category": "furtiture with accent"
+    },
+    "intent": "Show me products under $199 in \"furtiture with accent\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/home-kitchen/furniture/accent-furniture.html?price=0-199 |OR| __SHOPPING__/catalog/category/view/id/157?price=0-199",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139,
+    "fixed_notes": "added |OR| id-based category URL (/catalog/category/view/id/157?price=0-199); the SEO path and the id URL render the same price-filtered category listing, verified against the Magento category tree and by comparing the rendered result sets"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 274,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Search for \"{{keyword}}\"",
+    "instantiation_dict": {
+      "keyword": "usb wifi"
+    },
+    "intent": "Search for \"usb wifi\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=usb+wifi",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 212
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 275,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Search for \"{{keyword}}\"",
+    "instantiation_dict": {
+      "keyword": "xbox"
+    },
+    "intent": "Search for \"xbox\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=xbox",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 212
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 276,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Search for \"{{keyword}}\"",
+    "instantiation_dict": {
+      "keyword": "switch accessories"
+    },
+    "intent": "Search for \"switch accessories\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=switch+accessories",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 212
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 277,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Search for \"{{keyword}}\"",
+    "instantiation_dict": {
+      "keyword": "batteries for iphone 13"
+    },
+    "intent": "Search for \"batteries for iphone 13\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=batteries+for+iphone+13",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 212,
+    "fixed_notes": "link incorrect: only searched iphone 13"
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 278,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Search for \"{{keyword}}\"",
+    "instantiation_dict": {
+      "keyword": "green tea bag for weight loss"
+    },
+    "intent": "Search for \"green tea bag for weight loss\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=green+tea+bag+for+weight+loss",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 212
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 283,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Look up the most recent models of XBox controllers released between 2020-2021?",
+    "instantiation_dict": {},
+    "intent": "Look up the most recent models of XBox controllers released between 2020-2021?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/microsoft-xbox-controller-carbon-black-for-series-x-series-s-xbox-one-windows-10-android-ios-bundled-with-dual-port-charging-dock-xbox-controller-skin-voucher-premgear-cloth.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 210
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 284,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the least expensive {{product}} with a minimum storage capacity of {{min_storage}}.",
+    "instantiation_dict": {
+      "product": "shoe storage",
+      "min_storage": "12 pairs"
+    },
+    "intent": "Show the least expensive shoe storage with a minimum storage capacity of 12 pairs.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/onlyeasy-over-the-door-shoe-storage-organizer-hanging-shoe-rack-holder-with-24-large-fabric-pockets-22-1-x-61-4-herringbone-grey-mxrodsb1p.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 207
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 285,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the least expensive {{product}} with a minimum storage capacity of {{min_storage}}.",
+    "instantiation_dict": {
+      "product": "switch card holder",
+      "min_storage": "15 cards"
+    },
+    "intent": "Show the least expensive switch card holder with a minimum storage capacity of 15 cards.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/game-card-holder-storage-case-for-nintendo-switch-games-or-ps-vita-game-case-or-sd-memory-cards-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 207
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 286,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the least expensive {{product}} with a minimum storage capacity of {{min_storage}}.",
+    "instantiation_dict": {
+      "product": "ssd hard drive",
+      "min_storage": "1TB"
+    },
+    "intent": "Show the least expensive ssd hard drive with a minimum storage capacity of 1TB.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/external-hard-drive-2tb-ultra-thin-external-hard-drive-2000gb-ultra-high-speed-portable-3-1-type-c-storage-drive-compatible-with-pc-laptop-and-mac-2tb-a1.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 207
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 298,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the most recent {{status}} order",
+    "instantiation_dict": {
+      "status": "completed"
+    },
+    "intent": "Show the most recent completed order",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/sales/order/view/order_id/180/",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 180
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 299,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the most recent {{status}} order",
+    "instantiation_dict": {
+      "status": "cancelled"
+    },
+    "intent": "Show the most recent cancelled order",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/sales/order/view/order_id/170/",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 180
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 300,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show the most recent {{status}} order",
+    "instantiation_dict": {
+      "status": "pending"
+    },
+    "intent": "Show the most recent pending order",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/sales/order/view/order_id/189/",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 180
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 324,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me the \"{{product}}\" listings by {{sorting_order}}.",
+    "instantiation_dict": {
+      "product": "chairs",
+      "sorting_order": "ascending price"
+    },
+    "intent": "Show me the \"chairs\" listings by ascending price.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/index/?product_list_order=price&q=chairs&product_list_dir=asc",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 208
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 325,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me the \"{{product}}\" listings by {{sorting_order}}.",
+    "instantiation_dict": {
+      "product": "mouth night guard",
+      "sorting_order": "descending price"
+    },
+    "intent": "Show me the \"mouth night guard\" listings by descending price.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/index/?q=mouth%20night%20guard%20&product_list_order=price",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 208
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 326,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me the \"{{product}}\" listings by {{sorting_order}}.",
+    "instantiation_dict": {
+      "product": "Canon photo printer",
+      "sorting_order": "search relevance, from most to least"
+    },
+    "intent": "Show me the \"Canon photo printer\" listings by search relevance, from most to least.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=Canon+photo+printer",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 208
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 327,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me the \"{{product}}\" listings by {{sorting_order}}.",
+    "instantiation_dict": {
+      "product": "iphone 12 phone case",
+      "sorting_order": "name alphabetically"
+    },
+    "intent": "Show me the \"iphone 12 phone case\" listings by name alphabetically.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/index/?q=%20iphone%2012%20phone%20case&product_list_order=name",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 208
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 328,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Show me the \"{{product}}\" listings by {{sorting_order}}.",
+    "instantiation_dict": {
+      "product": "iphone 12 phone case",
+      "sorting_order": "price"
+    },
+    "intent": "Show me the \"iphone 12 phone case\" listings by price.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/catalogsearch/result/index/?product_list_order=price&q=%20iphone%2012%20phone%20case",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 208
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 339,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "List all opened issues {{description}}",
+    "instantiation_dict": {
+      "description": "that report bugs"
+    },
+    "intent": "List all opened issues that report bugs",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?label_name%5B%5D=bug",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 299,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 340,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "List all opened issues {{description}}",
+    "instantiation_dict": {
+      "description": "that report bugs"
+    },
+    "intent": "List all opened issues that report bugs",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/issues/?label_name%5B%5D=type%3A%20bug%20%F0%9F%90%9E",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 299,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 341,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "List all opened issues {{description}}",
+    "instantiation_dict": {
+      "description": "requesting new features"
+    },
+    "intent": "List all opened issues requesting new features",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?label_name%5B%5D=enhancement",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 299,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 342,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "List all opened issues {{description}}",
+    "instantiation_dict": {
+      "description": "that ask about OPT model related questions"
+    },
+    "intent": "List all opened issues that ask about OPT model related questions",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?search=OPT&label_name%5B%5D=question",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 299,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 343,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "List all opened issues {{description}}",
+    "instantiation_dict": {
+      "description": "that don't have any labels"
+    },
+    "intent": "List all opened issues that don't have any labels",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?label_name%5B%5D=None",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 299,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 351,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "List products from {{product_category}} category by {{order}} price",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories",
+      "order": "ascending"
+    },
+    "intent": "List products from PS4 accessories category by ascending price",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/video-games/playstation-4/accessories.html?product_list_order=price&product_list_dir=asc |OR| __SHOPPING__/video-games/playstation-4/accessories.html?product_list_order=price",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 137,
+    "fixed_notes": "didn't add product list asc as option default to asc "
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 352,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "List products from {{product_category}} category by {{order}} price",
+    "instantiation_dict": {
+      "product_category": "nutrition bars and drinks",
+      "order": "ascending"
+    },
+    "intent": "List products from nutrition bars and drinks category by ascending price",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/health-household/diet-sports-nutrition/nutrition-bars-drinks.html?product_list_order=price",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 137
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 353,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "List products from {{product_category}} category by {{order}} price",
+    "instantiation_dict": {
+      "product_category": "competitive swimwear",
+      "order": "ascending"
+    },
+    "intent": "List products from competitive swimwear category by ascending price",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/clothing-shoes-jewelry/sport-specific-clothing/competitive-swimwear.html?product_list_order=price",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 137
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 354,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "List products from {{product_category}} category by {{order}} price",
+    "instantiation_dict": {
+      "product_category": "living room furtniture",
+      "order": "descending"
+    },
+    "intent": "List products from living room furtniture category by descending price",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/home-kitchen/furniture/living-room-furniture.html?product_list_order=price&product_list_dir=desc",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 137
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 355,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "List products from {{product_category}} category by {{order}} price",
+    "instantiation_dict": {
+      "product_category": "kids' bedding",
+      "order": "descending"
+    },
+    "intent": "List products from kids' bedding category by descending price",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING__/home-kitchen/bedding/kids-bedding.html?product_list_dir=desc",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 137
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 357,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Checkout merge requests requiring my review",
+    "instantiation_dict": {},
+    "intent": "Checkout merge requests requiring my review",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/dashboard/merge_requests?reviewer_username=byteblaze",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 291,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 374,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Preview the {{name}} theme for my shop",
+    "instantiation_dict": {
+      "name": "Magento Blank"
+    },
+    "intent": "Preview the Magento Blank theme for my shop",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING_ADMIN__/admin/system_design_theme/edit/id/1",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 266
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 375,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Preview the {{name}} theme for my shop",
+    "instantiation_dict": {
+      "name": "Magento Luma"
+    },
+    "intent": "Preview the Magento Luma theme for my shop",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "__SHOPPING_ADMIN__/admin/system_design_theme/edit/id/3/key/",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 266
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 595,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "space"
+    },
+    "intent": "Subscribe to the \"space\" forum from the page of the hottest post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/space",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/space",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 596,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "books"
+    },
+    "intent": "Subscribe to the \"books\" forum from the page of the all time top post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/books",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 597,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "consoles"
+    },
+    "intent": "Subscribe to the \"consoles\" forum from the page of the most controversial post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/consoles",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 598,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "pittsburgh"
+    },
+    "intent": "Subscribe to the \"pittsburgh\" forum from the page of the all time most commented post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/pittsburgh",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 599,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the \"{{forum}}\" forum from the page of the {{post_selector}} post in that forum.",
+    "instantiation_dict": {
+      "subreddit": "machine learning"
+    },
+    "intent": "Subscribe to the \"machine learning\" forum from the page of the newest post in that forum.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/MachineLearning",
+      "program_html": [
+        {
+          "url": "__REDDIT__/f/MachineLearning",
+          "locator": "document.querySelector(\"form[action*='/unsubscribe'] button\") ? 'subscribed' : 'not subscribed'",
+          "required_contents": {
+            "must_include": [
+              "subscribed"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 4
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 600,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "what is the recommended console to buy these days"
+    },
+    "intent": "Post my question with the title \"what is the recommended console to buy these days?\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the recommended console to buy these days"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 601,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "is car necessary in NYC"
+    },
+    "intent": "Post my question with the title \"is car necessary in NYC\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "is car necessary in NYC"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 602,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "places for new drivers to learn driving in pittsburgh"
+    },
+    "intent": "Post my question with the title \"places for new drivers to learn driving in pittsburgh\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "places for new drivers to learn driving in pittsburgh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 603,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "safe and budge apartment to live in nyc"
+    },
+    "intent": "Post my question with the title \"safe and budget apartment to live in nyc\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "safe and budget apartment to live in nyc"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 604,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post my question with the title \"{{question}}\", in a forum where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "intent": "Post my question with the title \"what is the SOTA web navigation agent repo\", in a forum where I'm likely to get an answer",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/deeplearning |OR| __REDDIT__/f/MachineLearning |OR| __REDDIT__/f/singularity",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 3765
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 605,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "gaming consoles",
+      "question": "what is the recommended console to buy these days"
+    },
+    "intent": "Find a forum focused on topics related to gaming consoles, and post my question, \"what is the recommended console to buy these days\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/consoles",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the recommended console to buy these days"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 606,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "NYC",
+      "question": "is car necessary"
+    },
+    "intent": "Find a forum focused on topics related to NYC, and post my question, \"is car necessary\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "is car necessary"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 607,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "city Pittsburgh",
+      "question": "places for new drivers to learn driving"
+    },
+    "intent": "Find a forum focused on topics related to city Pittsburgh, and post my question, \"places for new drivers to learn driving\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "places for new drivers to learn driving"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 608,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "city lives in DMV area",
+      "question": "safe and budge apartment to live"
+    },
+    "intent": "Find a forum focused on topics related to city lives in DMV area, and post my question, \"safe and budget apartment to live\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/washington |OR| __REDDIT__/f/washingtondc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "safe and budget apartment to live"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 609,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Find a forum focused on topics related to {{topic}}, and post my question, \"{{question}}\" there",
+    "instantiation_dict": {
+      "topic": "ML, DL, NLP",
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "intent": "Find a forum focused on topics related to ML, DL, NLP, and post my question, \"what is the SOTA web navigation agent repo\" there",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/deeplearning |OR| __REDDIT__/f/MachineLearning |OR| __REDDIT__/f/singularity",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 5
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 610,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "To Kill a Mockingbird by Harper Lee",
+      "content": "good book!"
+    },
+    "intent": "Post a review of my recent reading, titled \"To Kill a Mockingbird by Harper Lee\" in f/books and then comment \"good book!\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "To Kill a Mockingbird by Harper Lee",
+              "good book!"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 611,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Harry Potter",
+      "content": "Wonderful journey"
+    },
+    "intent": "Post a review of my recent reading, titled \"Harry Potter\" in f/books and then comment \"Wonderful journey\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Harry Potter",
+              "Wonderful journey"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 612,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "big little lies",
+      "content": "can't stop it"
+    },
+    "intent": "Post a review of my recent reading, titled \"big little lies\" in f/books and then comment \"can't stop it\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "big little lies",
+              "can't stop it"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 613,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Love story",
+      "content": "I cried"
+    },
+    "intent": "Post a review of my recent reading, titled \"Love story\" in f/books and then comment \"I cried\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Love story",
+              "I cried"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 614,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a review of my recent reading, titled \"{{book}}\" in f/books and then comment \"{{content}}\" on the created post",
+    "instantiation_dict": {
+      "book": "Gone with the wind",
+      "content": "It's a book with history"
+    },
+    "intent": "Post a review of my recent reading, titled \"Gone with the wind\" in f/books and then comment \"It's a book with history\" on the created post",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('main').outerText",
+          "required_contents": {
+            "must_include": [
+              "Gone with the wind",
+              "It's a book with history"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 9
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 615,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Bald Eagle",
+      "subreddit": "earthporn"
+    },
+    "intent": "Re-post the image of Bald Eagle from this forum to connecticut forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/connecticut",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "b02113033af32feae9ff147dbbe3764039368d67d193885bd04e65c2e6beea9c.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 616,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Thanksgiving turkey",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of Thanksgiving turkey from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "2e4fa0a328e653a97a7d07046291c298ef5b4e0d0c73a287f317ca86a8e8685f.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 617,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Firework",
+      "subreddit": "earthporn"
+    },
+    "intent": "Re-post the image of Firework from this forum to news forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/earthporn",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "92411be6af4e9ad5ccd3ccbaa01c10457bb00e704e99c58dd430de1a958307fd.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 618,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "Wife's costume",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of Wife's costume from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "6bfbf1280d28d84a9261695f0cac5a90addaaff1174807a2b381fdc159f3ed00.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 619,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pics",
+    "geolocation": null,
+    "intent_template": "Re-post the image of {{content}} from this forum to {{forum}} forum using the image URL and title \"from /f/pics\"",
+    "instantiation_dict": {
+      "content": "costume contest",
+      "subreddit": "funny"
+    },
+    "intent": "Re-post the image of costume contest from this forum to funny forum using the image URL and title \"from /f/pics\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/funny",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "from /f/pics"
+            ]
+          }
+        },
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "[...document.querySelector('.submission__inner').querySelectorAll('[href],[src]')].map(elem => elem.getAttribute('href') || elem.getAttribute('src')).join(' ')",
+          "required_contents": {
+            "must_include": [
+              "bd8bc5f4c846aac4df08626faa3a34a7d47c8f3bdd92bf615a54afd939f063a7.jpg"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 11
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 620,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "deal with long-distance relationships"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"deal with long-distance relationships\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "long",
+              "distance",
+              "relation"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 621,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "cheat"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"cheat\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "cheat"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 622,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "sexual harassment"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"sexual harassment\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "sexual",
+              "harassment"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 623,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "gift for birthday"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"gift for birthday\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "gift",
+              "birthday"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 624,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Ask for advice in a forum for relations. Title it \"{{issue}}\" and in post details ask \"Please help\"",
+    "instantiation_dict": {
+      "issue": "break-up remedy"
+    },
+    "intent": "Ask for advice in a forum for relations. Title it \"break-up remedy\" and in post details ask \"Please help\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "break",
+              "remedy"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 12
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 625,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "the effectiveness of online learning"
+    },
+    "intent": "Create a discussion post titled \"the effectiveness of deep learning\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/machinelearning |OR| __REDDIT__/f/deeplearning",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "the effectiveness of deep learning"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 626,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Iphone 14"
+    },
+    "intent": "Create a discussion post titled \"Iphone 14\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Iphone 14"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 627,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Harry Potter movie series"
+    },
+    "intent": "Create a discussion post titled \"Harry Potter movie series\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/movies",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Harry Potter movie series"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 628,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "long distance relationship"
+    },
+    "intent": "Create a discussion post titled \"long distance relationship\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/relationship_advice",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "long distance relationship"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 629,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a discussion post titled \"{{topic}}\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "Fun thing to do in Pittsburgh"
+    },
+    "intent": "Create a discussion post titled \"Fun thing to do in Pittsburgh\" in a relevant forum and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "Fun thing to do in Pittsburgh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 13
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 630,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "noise-cancelling headphones",
+      "price": "$200",
+      "subreddit": "r/headphones"
+    },
+    "intent": "Create a post in f/headphones. Title it \"noise-cancelling headphones recommendations?\" and in post details ask \"Hey, looking for good noise-cancelling headphones under $200, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "200",
+              "noise-cancelling",
+              "headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 631,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running shoes",
+      "price": "$100",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running shoes recommendations?\" and in post details ask \"Hey, looking for good running shoes under $100, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "100",
+              "running",
+              "shoes"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 632,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running shoes",
+      "price": "$500",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running shoes recommendations?\" and in post details ask \"Hey, looking for good running shoes under $500, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "running",
+              "shoes"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 633,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "running pants",
+      "price": "$500",
+      "subreddit": "r/sports"
+    },
+    "intent": "Create a post in f/sports. Title it \"running pants recommendations?\" and in post details ask \"Hey, looking for good running pants under $500, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/sports",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "running",
+              "pants"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 634,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in {{forum}}. Title it \"{{category}} recommendations?\" and in post details ask \"Hey, looking for good {{category}} under {{price}}, any suggestions?\"",
+    "instantiation_dict": {
+      "category": "used iphone",
+      "price": "$1000",
+      "subreddit": "r/iphone"
+    },
+    "intent": "Create a post in f/iphone. Title it \"used iphone recommendations?\" and in post details ask \"Hey, looking for good used iphone under $1000, any suggestions?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "1000",
+              "used iphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 15
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 635,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "noise-cancelling headphones",
+      "price": "$200"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"noise-cancelling headphones recommendations\" and in post details ask \"I need recommendations for noise-cancelling headphones within a budget of $200 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "200",
+              "noise-cancelling",
+              "headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 636,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "DIY toolkit",
+      "price": "$100"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"DIY toolkit recommendations\" and in post details ask \"I need recommendations for DIY toolkit within a budget of $100 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/DIY",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "100",
+              "DIY",
+              "toolkit"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 637,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "sony headphones",
+      "price": "$500"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"sony headphones recommendations\" and in post details ask \"I need recommendations for sony headphones within a budget of $500 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/headphones",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "sony headphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 638,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "must-have product in my life",
+      "price": "$30"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"Must have product at last for ever recommendations\" and in post details ask \"I need recommendations for Must have product at last for ever within a budget of $30 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/BuyItForLife",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "30",
+              "Must have",
+              "product",
+              "life"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 639,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Create a post in the most appropriate forum. Title it \"{{category}} recommendations\" and in post details ask \"I need recommendations for {{category}} within a budget of {{price}} please\"",
+    "instantiation_dict": {
+      "category": "used iphone",
+      "price": "$1000"
+    },
+    "intent": "Create a post in the most appropriate forum. Title it \"used iphone recommendations\" and in post details ask \"I need recommendations for used iphone within a budget of $1000 please\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/iphone",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "1000",
+              "used iphone"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 6100
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 640,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "book reading",
+      "date": "March 15th",
+      "subreddit": "r/books"
+    },
+    "intent": "Post a notice in f/books titled \"book reading Meet up!\". Set post details to \"virtual meetup for book reading on March 15th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "book reading",
+              "March 15th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 641,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Harry Potter",
+      "date": "July 8th",
+      "subreddit": "books"
+    },
+    "intent": "Post a notice in books forum titled \"Harry Potter Meet up!\". Set post details to \"virtual meetup for Harry Potter on July 8th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Harry Potter",
+              "July 8th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 642,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Big little lies",
+      "date": "Sep 10th",
+      "subreddit": "books"
+    },
+    "intent": "Post a notice in books forum titled \"Big little lies Meet up!\". Set post details to \"virtual meetup for Big little lies on Sep 10th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Big little lies",
+              "Sep 10th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 643,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "racing cars",
+      "date": "Oct 21st",
+      "subreddit": "nyc"
+    },
+    "intent": "Post a notice in nyc forum titled \"racing cars Meet up!\". Set post details to \"virtual meetup for racing cars on Oct 21st\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/nyc",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "racing cars",
+              "Oct 21st",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 644,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post a notice in {{forum}} titled \"{{interest}} Meet up!\". Set post details to \"virtual meetup for {{interest}} on {{date}}\"",
+    "instantiation_dict": {
+      "interest": "Tears of Kingdom",
+      "date": "Dec 15th",
+      "subreddit": "games"
+    },
+    "intent": "Post a notice in games forum titled \"Tears of Kingdom Meet up!\". Set post details to \"virtual meetup for Tears of Kingdom on Dec 15th\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/gaming",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "Tears of Kingdom",
+              "Dec 15th",
+              "virtual meetup"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 16
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 645,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "books"
+    },
+    "intent": "Post in books forum with title \"What could machine learning help the books field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "machine learning",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 646,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "DIY"
+    },
+    "intent": "Post in DIY forum with title \"What could midjourney help the DIY field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/diy",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "midjourney",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 647,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "technology"
+    },
+    "intent": "Post in technology forum with title \"What could open-source LLMs help the technology field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/technology",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "open-source LLMs",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 648,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "dataisbeautiful"
+    },
+    "intent": "Post in dataisbeautiful forum with title \"What could large language models help the dataisbeautiful field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/dataisbeautiful",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "large language models",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 649,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Post in {{forum}} forum with title \"{{title}}\"",
+    "instantiation_dict": {
+      "subreddit": "history"
+    },
+    "intent": "Post in dataisbeautiful forum with title \"What could diffusion model help the dataisbeautiful field?\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/history",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "diffusion model",
+              "help"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 19
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 650,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "I am a big fan of the bookorg"
+    },
+    "intent": "Reply to the post on this page with my comment \"I am a big fan of the bookorg\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/books/59421/friendly-reminder-bookshop-org-exists",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "I am a big fan of the bookorg"
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 651,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "Yeah, pittsburgh traffic, you know..."
+    },
+    "intent": "Reply to the post on this page with my comment \"Yeah, pittsburgh traffic, you know...\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "Yeah, pittsburgh traffic, you know..."
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 652,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+    "geolocation": null,
+    "intent_template": "Reply to {{position_description}} {{location}} with {{comment_prefix}}\"{{content_description}}\"",
+    "instantiation_dict": {
+      "position_description": "the post",
+      "content_description": "???"
+    },
+    "intent": "Reply to the post on this page with my comment \"???\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__REDDIT__/f/technology/134852/ai-experts-disown-musk-backed-campaign-citing-their-research",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "???"
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 23
+  }
+]

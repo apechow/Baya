@@ -1,0 +1,2326 @@
+[
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 44,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open my todos page",
+    "instantiation_dict": {},
+    "intent": "Open my todos page",
+    "require_reset": true,
+    "intent_template_id": 303,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "feat: add WCAG levels",
+          "Add color utility classes"
+        ]
+      },
+      "reference_url": "__GITLAB__/dashboard/todos",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 45,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "Open the issues page for the current project filtered to the most recent open issues",
+    "instantiation_dict": {},
+    "intent": "Open the issues page for the current project filtered to the most recent open issues",
+    "require_reset": true,
+    "intent_template_id": 300,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "HOWTO: Ajax with ARIA-LIVE",
+          "What is Semantic HTML?"
+        ]
+      },
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?sort=created_desc&state=opened",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 46,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Open the issues page for the current project filtered to the most recent open issues",
+    "instantiation_dict": {},
+    "intent": "Open the issues page for the current project filtered to the most recent open issues",
+    "require_reset": true,
+    "intent_template_id": 300,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "css-utilities",
+          "Spinners"
+        ]
+      },
+      "reference_url": "__GITLAB__/primer/design/-/issues/?sort=created_date&state=opened",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 102,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Navigate to the page showing the list of {{state}} issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "help wanted",
+      "repo": "a11yproject/a11yproject.com",
+      "state": "open"
+    },
+    "intent": "Navigate to the page showing the list of open issues in the a11yproject/a11yproject.com repository that have labels related to help wanted",
+    "require_reset": true,
+    "intent_template_id": 349,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "help wanted"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues/?label_name%5B%5D=help%20wanted",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 103,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Navigate to the page showing the list of {{state}} issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "question",
+      "repo": "kkroening/ffmpeg-python",
+      "state": "closed"
+    },
+    "intent": "Navigate to the page showing the list of closed issues in the kkroening/ffmpeg-python repository that have labels related to question",
+    "require_reset": true,
+    "intent_template_id": 349,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "question"
+        ]
+      },
+      "reference_url": "__GITLAB__/kkroening/ffmpeg-python/-/issues/?label_name%5B%5D=question",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 104,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Navigate to the page showing the list of {{state}} issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "flaky-test",
+      "repo": "keycloak/keycloak",
+      "state": "all"
+    },
+    "intent": "Navigate to the page showing the list of all issues in the keycloak/keycloak repository that have labels related to flaky-test",
+    "require_reset": true,
+    "intent_template_id": 349,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "flaky-test"
+        ]
+      },
+      "reference_url": "__GITLAB__/keycloak/keycloak/-/issues/?label_name%5B%5D=flaky-test",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 105,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Navigate to the page showing the list of {{state}} issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "OpenAPI Generator CLI",
+      "repo": "OpenAPITools/openapi-generator",
+      "state": "not yet closed"
+    },
+    "intent": "Navigate to the page showing the list of not yet closed issues in the OpenAPITools/openapi-generator repository that have labels related to OpenAPI Generator CLI",
+    "require_reset": true,
+    "intent_template_id": 349,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "OpenAPI Generator CLI"
+        ]
+      },
+      "reference_url": "__GITLAB__/OpenAPITools/openapi-generator/-/issues/?label_name%5B%5D=OpenAPI%20Generator%20CLI",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 106,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Navigate to the page showing the list of {{state}} issues in the {{repo}} repository that have labels related to {{label}}",
+    "instantiation_dict": {
+      "label": "all except BUG",
+      "repo": "umano/AndroidSlidingUpPanel",
+      "state": "open"
+    },
+    "intent": "Navigate to the page showing the list of open issues in the umano/AndroidSlidingUpPanel repository that have labels related to all except BUG",
+    "require_reset": true,
+    "intent_template_id": 349,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "BUG"
+        ]
+      },
+      "reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues/?label_name%5B%5D=BUG",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 132,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "kilian",
+      "repo": "a11yproject.com",
+      "date": "March 5, 2023"
+    },
+    "intent": "How many commits did kilian make to a11yproject.com on March 5, 2023?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 322,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 133,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "Eric",
+      "repo": "a11yproject.com",
+      "date": "March 2, 2023"
+    },
+    "intent": "How many commits did Eric make to a11yproject.com on March 2, 2023?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "2"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "2"
+    },
+    "intent_template_id": 322,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 134,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "kilian",
+      "repo": "a11yproject.com",
+      "date": "March 1, 2023"
+    },
+    "intent": "How many commits did kilian make to a11yproject.com on March 1, 2023?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 322,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 135,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "Eric and Kilian",
+      "repo": "a11yproject.com",
+      "date": "January 3, 2023"
+    },
+    "intent": "How many commits did Eric and Kilian make to a11yproject.com on January 3, 2023?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 322,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 136,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "Steven Woodson",
+      "repo": "a11y-webring.club",
+      "date": "February 6, 2023"
+    },
+    "intent": "How many commits did Steven Woodson make to a11y-webring.club on February 6, 2023?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "5"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "5"
+    },
+    "intent_template_id": 322,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 156,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Go to the merge requests assigned to me",
+    "instantiation_dict": {},
+    "intent": "Go to the merge requests assigned to me",
+    "require_reset": true,
+    "intent_template_id": 290,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Add verification functions",
+          "feat: add WCAG levels"
+        ]
+      },
+      "reference_url": "__GITLAB__/dashboard/merge_requests?assignee_username=byteblaze",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 168,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the project ID(s) of my personal project(s) that received {{description}}",
+    "instantiation_dict": {
+      "description": "more than 100 stars"
+    },
+    "intent": "Get the project ID(s) of my personal project(s) that received more than 100 stars",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": "N/A"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "No repo found",
+      "reference_answer_raw_annotation": "No repo found"
+    },
+    "intent_template_id": 289,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 169,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the project ID(s) of my personal project(s) that received {{description}}",
+    "instantiation_dict": {
+      "description": "the most stars"
+    },
+    "intent": "Get the project ID(s) of my personal project(s) that received the most stars",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "187",
+          "183"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "a11yproject.com, Primer/design"
+    },
+    "intent_template_id": 289,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 170,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the project ID(s) of my personal project(s) that received {{description}}",
+    "instantiation_dict": {
+      "description": "the least stars"
+    },
+    "intent": "Get the project ID(s) of my personal project(s) that received the least stars",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "193",
+          "190",
+          "189",
+          "188",
+          "184",
+          "181"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "cloud-to-butt, dotfiles, timeit, solarized-prism-theme,  gimmiethat.space, remove-board-movement-events-from-the-github-issue-timeline"
+    },
+    "intent_template_id": 289,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 171,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the project ID(s) of my personal project(s) that received {{description}}",
+    "instantiation_dict": {
+      "description": "less than 5 stars"
+    },
+    "intent": "Get the project ID(s) of my personal project(s) that received less than 5 stars",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "182",
+          "179",
+          "186",
+          "185",
+          "193",
+          "190",
+          "189",
+          "188",
+          "184",
+          "181"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "a11y-syntax-highlighting, a11y-webring.club, accessible-html-content-patterns, ericwbailey.website, cloud-to-butt, dotfiles, timeit, solarized-prism-theme,  gimmiethat.space, remove-board-movement-events-from-the-github-issue-timeline"
+    },
+    "intent_template_id": 289,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 172,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the project ID(s) of my personal project(s) that received {{description}}",
+    "instantiation_dict": {
+      "description": "no stars"
+    },
+    "intent": "Get the project ID(s) of my personal project(s) that received no stars",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "193",
+          "190",
+          "189",
+          "188",
+          "184",
+          "181"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "cloud-to-butt, dotfiles, timeit, solarized-prism-theme,  gimmiethat.space, remove-board-movement-events-from-the-github-issue-timeline"
+    },
+    "intent_template_id": 289,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 173,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest updated issue with \"{{keyword}}\" in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "better",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest updated issue with \"better\" in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "False"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/empathy-prompts/-/issues/8",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed",
+      "string_note": "",
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 310,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 174,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest updated issue with \"{{keyword}}\" in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "feature",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest updated issue with \"feature\" in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "false"
+        ]
+      },
+      "reference_url": "__GITLAB__/dashboard/issues?scope=created_by_me&search=feature&sort=updated_desc&state=all",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed (open)",
+      "string_note": ""
+    },
+    "intent_template_id": 310,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 175,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest updated issue with \"{{keyword}}\" in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "dependency",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest updated issue with \"dependency\" in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "False"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/empathy-prompts/-/issues/18",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed",
+      "string_note": ""
+    },
+    "intent_template_id": 310,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 176,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest updated issue with \"{{keyword}}\" in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "theme editor",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest updated issue with \"theme editor\" in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "false"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues/1",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed (open)",
+      "string_note": ""
+    },
+    "intent_template_id": 310,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 177,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest updated issue with \"{{keyword}}\" in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "homepage content",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest updated issue with \"homepage content\" in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "True"
+        ]
+      },
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/719",
+      "program_html": [],
+      "reference_answer_raw_annotation": "closed",
+      "string_note": ""
+    },
+    "intent_template_id": 310,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 178,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest created issue with {{keyword}} in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "better",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest created issue with better in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "True"
+        ]
+      },
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/1057",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Closed",
+      "string_note": ""
+    },
+    "intent_template_id": 500,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 179,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest created issue with {{keyword}} in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "feature",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest created issue with feature in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "True"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/a11y-webring.club/-/issues/39",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed (open)",
+      "string_note": ""
+    },
+    "intent_template_id": 500,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 180,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest created issue with {{keyword}} in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "dependency",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest created issue with dependency in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "False"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/empathy-prompts/-/issues/18",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed (open)",
+      "string_note": ""
+    },
+    "intent_template_id": 500,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 181,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest created issue with {{keyword}} in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "theme editor",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest created issue with theme editor in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "false"
+        ]
+      },
+      "reference_url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues/1",
+      "program_html": [],
+      "reference_answer_raw_annotation": "Not closed (open)",
+      "string_note": ""
+    },
+    "intent_template_id": 500,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 182,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get whether my latest created issue with {{keyword}} in its title is closed. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "keyword": "homepage content",
+      "retrieved_data_format_spec": "Return a boolean (true if closed, false if opened)"
+    },
+    "intent": "Get whether my latest created issue with homepage content in its title is closed. Return a boolean (true if closed, false if opened).",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "True"
+        ]
+      },
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/719",
+      "program_html": [],
+      "reference_answer_raw_annotation": "closed",
+      "string_note": ""
+    },
+    "intent_template_id": 500,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 205,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make on {{date}}{{modifier}} for the current project?",
+    "instantiation_dict": {
+      "user": "kilian",
+      "date": "March 5, 2023",
+      "modifier": ""
+    },
+    "intent": "How many commits did kilian make on March 5, 2023 for the current project?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 320,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 206,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make on {{date}}{{modifier}} for the current project?",
+    "instantiation_dict": {
+      "user": "Eric",
+      "date": "March 2, 2023",
+      "modifier": ""
+    },
+    "intent": "How many commits did Eric make on March 2, 2023 for the current project?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "2"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "2"
+    },
+    "intent_template_id": 320,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 207,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make on {{date}}{{modifier}} for the current project?",
+    "instantiation_dict": {
+      "user": "Eric and Kilian",
+      "date": "January 3, 2023",
+      "modifier": " in total"
+    },
+    "intent": "How many commits did Eric and Kilian make on January 3, 2023 in total for the current project?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 320,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 258,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open the public projects listing",
+    "instantiation_dict": {},
+    "intent": "Open the public projects listing",
+    "require_reset": true,
+    "intent_template_id": 325,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "a11yproject.com",
+          [
+            "primer/design",
+            "design"
+          ]
+        ]
+      },
+      "reference_url": "__GITLAB__/explore",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+    {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 259,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get me my RSS feed token",
+    "instantiation_dict": {},
+    "intent": "Get me my RSS feed token",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": "TMN_bBn9Z48qVbUFZV45"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "TMN_bBn9Z48qVbUFZV45"
+    },
+    "intent_template_id": 312,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 293,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the URL to clone {{repo}} with SSH. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "repo": "Super_Awesome_Robot",
+      "retrieved_data_format_spec": "Return the URL only, without any additional details"
+    },
+    "intent": "Get the URL to clone Super_Awesome_Robot with SSH. Return the URL only, without any additional details.",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "git@localhost:convexegg/super_awesome_robot.git"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "git clone ssh://git@127.0.0.1:2222/convexegg/super_awesome_robot.git"
+    },
+    "intent_template_id": 329,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 294,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the URL to clone {{repo}} with SSH. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "repo": "ChatGPT",
+      "retrieved_data_format_spec": "Return the URL only, without any additional details"
+    },
+    "intent": "Get the URL to clone ChatGPT with SSH. Return the URL only, without any additional details.",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "git@localhost:convexegg/chatgpt.git"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "git clone ssh://git@127.0.0.1:2222/convexegg/chatgpt.git"
+    },
+    "intent_template_id": 329,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 295,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the URL to clone {{repo}} with SSH. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "repo": "metaseq",
+      "retrieved_data_format_spec": "Return the URL only, without any additional details"
+    },
+    "intent": "Get the URL to clone metaseq with SSH. Return the URL only, without any additional details.",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "git@localhost:root/metaseq.git"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "git clone ssh://git@127.0.0.1:2222/root/metaseq.git"
+    },
+    "intent_template_id": 329,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 296,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the URL to clone {{repo}} with SSH. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "repo": "the best GAN python implementation",
+      "retrieved_data_format_spec": "Return the URL only, without any additional details"
+    },
+    "intent": "Get the URL to clone the best GAN python implementation with SSH. Return the URL only, without any additional details.",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "git@localhost:eriklindernoren/PyTorch-GAN.git"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "ssh://git@127.0.0.1:2222/eriklindernoren/PyTorch-GAN.git"
+    },
+    "intent_template_id": 329,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 297,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the URL to clone {{repo}} with SSH. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "repo": "the most stared Covid related project",
+      "retrieved_data_format_spec": "Return the URL only, without any additional details"
+    },
+    "intent": "Get the URL to clone the most stared Covid related project with SSH. Return the URL only, without any additional details.",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "git@localhost:covid19india/covid19india-react.git"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "ssh://git@127.0.0.1:2222/yjlou/2019-nCov.git"
+    },
+    "intent_template_id": 329,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 303,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}} in the current repository?",
+    "instantiation_dict": {
+      "user": "Kilian",
+      "period": "during 2023"
+    },
+    "intent": "How many commits did Kilian make during 2023 in the current repository?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 321,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 304,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}} in the current repository?",
+    "instantiation_dict": {
+      "user": "Eric Bailey",
+      "period": "between start of Feb 2023 and end of May 2023"
+    },
+    "intent": "How many commits did Eric Bailey make between start of Feb 2023 and end of May 2023 in the current repository?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "14"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "14"
+    },
+    "intent_template_id": 321,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 305,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}} in the current repository?",
+    "instantiation_dict": {
+      "user": "Philip",
+      "period": "in Jan 2023"
+    },
+    "intent": "How many commits did Philip make in Jan 2023 in the current repository?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 321,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 306,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}} in the current repository?",
+    "instantiation_dict": {
+      "user": "Anthony",
+      "period": "between August 2022 through September 2022"
+    },
+    "intent": "How many commits did Anthony make between August 2022 through September 2022 in the current repository?",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 321,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 307,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}} in the current repository?",
+    "instantiation_dict": {
+      "user": "Nic Chan",
+      "period": "on April 7th 2022"
+    },
+    "intent": "How many commits did Nic Chan make on April 7th 2022 in the current repository?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "5"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "16"
+    },
+    "intent_template_id": 321,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 308,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the username(s) of the user(s) with the most commits to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "primer/design"
+    },
+    "intent": "Get the username(s) of the user(s) with the most commits to the primer/design project",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Shawn Allen"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Shawn Allen"
+    },
+    "intent_template_id": 323,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 309,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the username(s) of the user(s) with the most commits to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "thoughtbot/administrate"
+    },
+    "intent": "Get the username(s) of the user(s) with the most commits to the thoughtbot/administrate project",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Grayson Wright"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Grayson Wright"
+    },
+    "intent_template_id": 323,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 310,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the username(s) of the user(s) with the most commits to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "AndroidSlidingUpPanel"
+    },
+    "intent": "Get the username(s) of the user(s) with the most commits to the AndroidSlidingUpPanel project",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "tokudu"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "tokudu"
+    },
+    "intent_template_id": 323,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 311,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the username(s) of the user(s) with the most commits to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "Pytorch GAN"
+    },
+    "intent": "Get the username(s) of the user(s) with the most commits to the Pytorch GAN project",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "eriklindernoren"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "eriklindernoren"
+    },
+    "intent_template_id": 323,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 312,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the username(s) of the user(s) with the most commits to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "csvkit"
+    },
+    "intent": "Get the username(s) of the user(s) with the most commits to the csvkit project",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Christopher Groskopf"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Christopher Groskopf"
+    },
+    "intent_template_id": 323,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 314,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the top 3 contributors (by commit count) to {{repo}} repo{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "repo": "primer/design",
+      "attribute": "full names",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the full names of the top 3 contributors (by commit count) to primer/design repo",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Shawn Allen",
+          "Inayaili León",
+          "Aurora Pleguezuelo"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Shawn Allen, Inayaili León, Aurora Pleguezuelo"
+    },
+    "intent_template_id": 324,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 315,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the top 3 contributors (by commit count) to {{repo}} repo{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "repo": "Pytorch GAN",
+      "attribute": "email addresses",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the email addresses of the top 3 contributors (by commit count) to Pytorch GAN repo",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "eriklindernoren@live.se",
+          "eriklindernoren@gmail.com",
+          "pinnacle.chen@qq.com"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "eriklindernoren@live.se, eriklindernoren@gmail.com, pinnacle.chen@qq.com"
+    },
+    "intent_template_id": 324,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 316,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the top 3 contributors (by commit count) to {{repo}} repo{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "repo": "facebook\"s guide on building react apps",
+      "attribute": "email addresses",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the email addresses of the top 3 contributors (by commit count) to facebook\"s guide on building react apps repo",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "dan.abramov@gmail.com",
+          "timer150@gmail.com",
+          "ian@iansutherland.ca"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Ian Sutherland, Joe Haddad, Dan Abramov"
+    },
+    "intent_template_id": 324,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 317,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the top 3 contributors (by commit count) to {{repo}} repo{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "repo": "metaseq",
+      "attribute": "names and number of commits",
+      "retrieved_data_format_spec": ". Return a list of objects with keys \"first_name\", \"last_name\", and \"number_of_commits\"."
+    },
+    "intent": "Get the names and number of commits of the top 3 contributors (by commit count) to metaseq repo. Return a list of objects with keys \"first_name\", \"last_name\", and \"number_of_commits\".",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Susan",
+          "Zhang",
+          "70",
+          "Stephen",
+          "Roller",
+          "51",
+          "Peter",
+          "Albert",
+          "12"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Susan Zhang: 70, Stephen Roller: 51, Peter Albert: 12"
+    },
+    "intent_template_id": 324,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 318,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the top 3 contributors (by commit count) to {{repo}} repo{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "repo": "2019-nCov",
+      "attribute": "last names",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the last names of the top 3 contributors (by commit count) to 2019-nCov repo",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Lo",
+          "Chen",
+          "Chu"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Lo, Chen, Chu"
+    },
+    "intent_template_id": 324,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 339,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "Go to the list of all opened issues {{description}} for the current project",
+    "instantiation_dict": {
+      "description": "that report bugs"
+    },
+    "intent": "Go to the list of all opened issues that report bugs for the current project",
+    "require_reset": true,
+    "intent_template_id": 299,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "bug"
+        ]
+      },
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?label_name%5B%5D=bug",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 340,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Go to the list of all opened issues {{description}} for the current project",
+    "instantiation_dict": {
+      "description": "that report bugs"
+    },
+    "intent": "Go to the list of all opened issues that report bugs for the current project",
+    "require_reset": true,
+    "intent_template_id": 299,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Clarify usage of flash alert"
+        ]
+      },
+      "reference_url": "__GITLAB__/primer/design/-/issues/?label_name%5B%5D=type%3A%20bug%20%F0%9F%90%9E",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 341,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "Go to the list of all opened issues {{description}} for the current project",
+    "instantiation_dict": {
+      "description": "requesting new features"
+    },
+    "intent": "Go to the list of all opened issues requesting new features for the current project",
+    "require_reset": true,
+    "intent_template_id": 299,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "enhancement"
+        ]
+      },
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?label_name%5B%5D=enhancement",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 342,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "Go to the list of all opened issues {{description}} for the current project",
+    "instantiation_dict": {
+      "description": "that ask about OPT model related questions"
+    },
+    "intent": "Go to the list of all opened issues that ask about OPT model related questions for the current project",
+    "require_reset": true,
+    "intent_template_id": 299,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "question",
+          "OPT"
+        ]
+      },
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?search=OPT&label_name%5B%5D=question",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 343,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/root/metaseq",
+    "geolocation": null,
+    "intent_template": "Go to the list of all opened issues {{description}} for the current project",
+    "instantiation_dict": {
+      "description": "that don't have any labels"
+    },
+    "intent": "Go to the list of all opened issues that don't have any labels for the current project",
+    "require_reset": true,
+    "intent_template_id": 299,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Release Planning",
+          "Data processing details in pretraining"
+        ]
+      },
+      "reference_url": "__GITLAB__/root/metaseq/-/issues/?label_name%5B%5D=None",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 349,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the usernames of other users who have access to my repo {{repo}}",
+    "instantiation_dict": {
+      "repo": "gimmiethat.space"
+    },
+    "intent": "Get the usernames of other users who have access to my repo gimmiethat.space",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "yjlou"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "yjlou"
+    },
+    "intent_template_id": 298,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 350,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Get the usernames of other users who have access to my repo {{repo}}",
+    "instantiation_dict": {
+      "repo": "prism-theme"
+    },
+    "intent": "Get the usernames of other users who have access to my repo prism-theme",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "abisubramanya27"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Abishek S, abisubramanya27"
+    },
+    "intent_template_id": 298,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 357,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Go to the merge requests requiring my review",
+    "instantiation_dict": {},
+    "intent": "Go to the merge requests requiring my review",
+    "require_reset": true,
+    "intent_template_id": 291,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "WIP - Post: Pitfalls of accessible components",
+          "feat: add WCAG levels"
+        ]
+      },
+      "reference_url": "__GITLAB__/dashboard/merge_requests?reviewer_username=byteblaze",
+      "program_html": [],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 783,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Add the following users to {{repo_prefix}} {{repo}} as {{role}}: {{user_list}}",
+    "instantiation_dict": {
+      "repo": "kkroening/ffmpeg-python",
+      "role": "maintainer",
+      "user_list": "\"yjlou\" and \"a11yproject\"",
+      "repo_prefix": "repo"
+    },
+    "intent": "Add the following users to repo kkroening/ffmpeg-python as maintainer: \"yjlou\" and \"a11yproject\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": "N/A"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "not the owner of the repo so cannot add maintainer",
+      "reference_answer_raw_annotation": "N/A"
+    },
+    "intent_template_id": 351,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 784,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/CellularPrivacy/Android-IMSI-Catcher-Detector",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the contributor who has the most commits to branch {{branch_name}} in the current repository{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "branch_name": "master",
+      "attribute": "email address",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the email address of the contributor who has the most commits to branch master in the current repository",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "secupwn@users.noreply.github.com"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "secupwn@users.noreply.github.com"
+    },
+    "intent_template_id": 316,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 785,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/CellularPrivacy/Android-IMSI-Catcher-Detector",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the contributor who has the most commits to branch {{branch_name}} in the current repository{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "branch_name": "gh-page",
+      "attribute": "email address",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the email address of the contributor who has the most commits to branch gh-page in the current repository",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "secupwn@users.noreply.github.com"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "secupwn@users.noreply.github.com"
+    },
+    "intent_template_id": 316,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 786,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/vinta/awesome-python",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the contributor who has the most commits to branch {{branch_name}} in the current repository{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "branch_name": "master",
+      "attribute": "number of commits",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the number of commits of the contributor who has the most commits to branch master in the current repository",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "414"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "412"
+    },
+    "intent_template_id": 316,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 787,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/dehenne/awesome-visibility/-/graphs/master",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the contributor who has the most commits to branch {{branch_name}} in the current repository{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "branch_name": "master",
+      "attribute": "number of followers",
+      "retrieved_data_format_spec": ""
+    },
+    "intent": "Get the number of followers of the contributor who has the most commits to branch master in the current repository",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 316,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 788,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/amwhalen/archive-my-tweets/-/tree/github/fork/chtitux/addRssFeed",
+    "geolocation": null,
+    "intent_template": "Get the {{attribute}} of the contributor who has the most commits to branch {{branch_name}} in the current repository{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "branch_name": "php52",
+      "attribute": "full name, username, user location and email",
+      "retrieved_data_format_spec": ". Return a list of objects with keys \"full_name\", \"username\", \"user_location\", and \"email\"."
+    },
+    "intent": "Get the full name, username, user location and email of the contributor who has the most commits to branch php52 in the current repository. Return a list of objects with keys \"full_name\", \"username\", \"user_location\", and \"email\".",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Andrew M. Whalen",
+          "amwhalen",
+          "Massachusetts",
+          "github@amwhalen.com"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Andrew M. Whalen, amwhalen, Massachusetts, github@amwhalen.com"
+    },
+    "intent_template_id": 316,
+    "read_only": true
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 789,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue with title \"{{title}}\" to {{issue}} in the respository {{repo}}.",
+    "instantiation_dict": {
+      "title": "WebAgent Support Plan",
+      "issue": "ask the team if they have any plan on supporting Webagent in the next quater",
+      "repo": "huggingface dataset"
+    },
+    "intent": "Open an issue with title \"WebAgent Support Plan\" to ask the team if they have any plan on supporting Webagent in the next quater in the respository huggingface dataset.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": "N/A"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "huggingface repo does not exist",
+      "reference_answer_raw_annotation": "N/A"
+    },
+    "intent_template_id": 328,
+    "read_only": false
+  }
+]

@@ -1,0 +1,2481 @@
+[
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 423,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Set all {{brand}} shirts to on-sale status",
+    "instantiation_dict": {
+      "brand": "Hollister"
+    },
+    "intent": "Set all Hollister shirts to on-sale status",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/126/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('126', 'sale')",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 237
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 453,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Disable {{product}} from the site, they are facing some quality issues.",
+    "instantiation_dict": {
+      "product": "Teton pullover hoodie"
+    },
+    "intent": "Disable Teton pullover hoodie from the site, they are facing some quality issues.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/78/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('78', 'status')",
+          "required_contents": {
+            "exact_match": "2"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 242
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 454,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Disable {{product}} from the site, they are facing some quality issues.",
+    "instantiation_dict": {
+      "product": "Ryker Tee Crew Neck"
+    },
+    "intent": "Disable Ryker Tee Crew Neck from the site, they are facing some quality issues.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/478/",
+          "locator": "document.querySelector('[name=\"product[status]\"').value",
+          "required_contents": {
+            "exact_match": "2"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 242
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 455,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Disable {{product}} from the site, they are facing some quality issues.",
+    "instantiation_dict": {
+      "product": "lHelios Endurance Tank"
+    },
+    "intent": "Disable Helios Endurance Tank from the site, they are facing some quality issues.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/676/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('676', 'status')",
+          "required_contents": {
+            "exact_match": "2"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 242
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 456,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Disable {{product}} from the site, they are facing some quality issues.",
+    "instantiation_dict": {
+      "product": "Cora Pant"
+    },
+    "intent": "Disable Cora Pant from the site, they are facing some quality issues.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1840/",
+          "locator": "document.querySelector('[name=\"product[status]\"').value",
+          "required_contents": {
+            "exact_match": "2"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 242
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 457,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Disable {{product}} from the site, they are facing some quality issues.",
+    "instantiation_dict": {
+      "product": "Karmen yoga pants"
+    },
+    "intent": "Disable Karmen yoga pants from the site, they are facing some quality issues.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1819/",
+          "locator": "document.querySelector('[name=\"product[status]\"').value",
+          "required_contents": {
+            "exact_match": "2"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 242
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 458,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1481/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "$5",
+      "action": "Reduce"
+    },
+    "intent": "Reduce the price of the product on the current page by $5",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1481/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "27.00"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 459,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/237/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "10%",
+      "action": "Reduce"
+    },
+    "intent": "Reduce the price of the product on the current page by 10%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/237/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('237', 'price')",
+          "required_contents": {
+            "exact_match": "62.10"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 460,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/418/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "15%",
+      "action": "Reduce"
+    },
+    "intent": "Reduce the price of the product on the current page by 15%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/418/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('418', 'price')",
+          "required_contents": {
+            "exact_match": "38.25"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 461,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/721/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "$11.5",
+      "action": "Increase"
+    },
+    "intent": "Increase the price of the product on the current page by $11.5",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/721/",
+          "locator": "func:shopping_admin_get_product_attr_by_id('721', 'price')",
+          "required_contents": {
+            "exact_match": "29.50"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 462,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/710/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "10%",
+      "action": "Increase"
+    },
+    "intent": "Increase the price of the product on the current page by 10%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/710/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "19.80"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 463,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/996/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of the product on the current page by {{amount}}",
+    "instantiation_dict": {
+      "amount": "15%",
+      "action": "Increase"
+    },
+    "intent": "Increase the price of the product on the current page by 15%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/996/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "36.80"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 247
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 464,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update the product description of {{product}} to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "instantiation_dict": {
+      "product": "Antonia Racer Tank"
+    },
+    "intent": "Update the product description of Antonia Racer Tank to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/../antonia-racer-tank.html",
+          "locator": "document.querySelector('.data.item.content').outerText + (document.querySelector('.product.attribute.overview [itemprop=\"description\"]')?.outerText || '')",
+          "required_contents": {
+            "must_include": [
+              "1 customer(s) love it!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 251
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 470,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Cancel order {{id}}",
+    "instantiation_dict": {
+      "id": "302"
+    },
+    "intent": "Cancel order 302",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/302/",
+          "locator": "func:shopping_admin_get_order_status('302')",
+          "required_contents": {
+            "exact_match": "Canceled"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 257
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 471,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Cancel order {{id}}",
+    "instantiation_dict": {
+      "id": "307"
+    },
+    "intent": "Cancel order 307",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/307/",
+          "locator": "func:shopping_admin_get_order_status('307')",
+          "required_contents": {
+            "exact_match": "Canceled"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 257
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 472,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Cancel order {{id}}",
+    "instantiation_dict": {
+      "id": "299"
+    },
+    "intent": "Cancel order 299",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/299/",
+          "locator": "func:shopping_admin_get_order_status('299')",
+          "required_contents": {
+            "exact_match": "Canceled"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 257
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 473,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Cancel order {{id}}",
+    "instantiation_dict": {
+      "id": "301"
+    },
+    "intent": "Cancel order 301",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/301/",
+          "locator": "func:shopping_admin_get_order_status('301')",
+          "required_contents": {
+            "exact_match": "Canceled"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 257
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 474,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Cancel order {{id}}",
+    "instantiation_dict": {
+      "id": "305"
+    },
+    "intent": "Cancel order 305",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/305/",
+          "locator": "func:shopping_admin_get_order_status('305')",
+          "required_contents": {
+            "exact_match": "Canceled"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 257
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 486,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Change the page title of \"{{old_heading}}\" page on my site to \"{{heading}}\".",
+    "instantiation_dict": {
+      "old-heading": "404 Not Found",
+      "heading": "Bruh bro you clicked the wrong page"
+    },
+    "intent": "Change the page title of \"404 Not Found\" page on my site to \"Bruh bro you clicked the wrong page\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/cms/page/edit/page_id/1/",
+          "locator": "document.querySelector('input[name=\"title\"').value",
+          "required_contents": {
+            "exact_match": "Bruh bro you clicked the wrong page"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 275
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 487,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Change the page title of \"{{old_heading}}\" page on my site to \"{{heading}}\".",
+    "instantiation_dict": {
+      "old-heading": "Enable Cookies",
+      "heading": "Cookie monster coming to your place"
+    },
+    "intent": "Change the page title of \"Enable Cookies\" page on my site to \"Cookie monster coming to your place\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/cms/page/edit/page_id/3/",
+          "locator": "document.querySelector('input[name=\"title\"').value",
+          "required_contents": {
+            "exact_match": "Cookie monster coming to your place"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 275
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 488,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Change the page title of \"{{old_heading}}\" page on my site to \"{{heading}}\".",
+    "instantiation_dict": {
+      "old-heading": "Home Page",
+      "heading": "This is the home page!! Leave here!!"
+    },
+    "intent": "Change the page title of \"Home Page\" page on my site to \"This is the home page!! Leave here!!\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/cms/page/edit/page_id/2/",
+          "locator": "document.querySelector('input[name=\"title\"').value",
+          "required_contents": {
+            "exact_match": "This is the home page!! Leave here!!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 275
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 489,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Change the page title of \"{{old_heading}}\" page on my site to \"{{heading}}\".",
+    "instantiation_dict": {
+      "old-heading": "Privacy Policy",
+      "heading": "No privacy policy is needed is this dystopian world"
+    },
+    "intent": "Change the page title of \"Privacy Policy\" page on my site to \"No privacy policy is needed in this dystopian world\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/cms/page/edit/page_id/4/",
+          "locator": "func:shopping_admin_get_cms_page_title('4')",
+          "required_contents": {
+            "exact_match": "No privacy policy is needed in this dystopian world"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 275
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 490,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Change the page title of \"{{old_heading}}\" page on my site to \"{{heading}}\".",
+    "instantiation_dict": {
+      "old-heading": "About us",
+      "heading": "Secret"
+    },
+    "intent": "Change the page title of \"About us\" page on my site to \"Secret\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/cms/page/edit/page_id/5/",
+          "locator": "func:shopping_admin_get_cms_page_title('5')",
+          "required_contents": {
+            "exact_match": "Secret"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 275
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 492,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Notify {{name}} in their most recent pending order with message \"{{message}}\"",
+    "instantiation_dict": {
+      "name": "Jane Doe",
+      "message": "sorry we are out of stock, please reorder"
+    },
+    "intent": "Notify Jane Doe in their most recent pending order with message \"sorry we are out of stock, please reorder\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/302/",
+          "locator": "func:shopping_admin_get_order_last_comment('302')",
+          "required_contents": {
+            "exact_match": "sorry we are out of stock, please reorder"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 280
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 493,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Notify {{name}} in their most recent pending order with message \"{{message}}\"",
+    "instantiation_dict": {
+      "name": "Grace Nguyen",
+      "message": "sorry we are bankrupt, please contact our customer service for refund"
+    },
+    "intent": "Notify Grace Nguyen in their most recent pending order with message \"sorry we are bankrupt, please contact our customer service for refund\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/65/",
+          "locator": "func:shopping_admin_get_order_last_comment('65')",
+          "required_contents": {
+            "exact_match": "sorry we are bankrupt, please contact our customer service for refund"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 280
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 494,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Notify {{name}} in their most recent pending order with message \"{{message}}\"",
+    "instantiation_dict": {
+      "name": "Alex Thomas",
+      "message": "Yo, your order will be shipped soon!"
+    },
+    "intent": "Notify Alex Thomas in their most recent pending order with message \"Yo, your order will be shipped soon!\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/304/",
+          "locator": "document.querySelector(\"#order_history_block\").querySelector(\".note-list\").firstElementChild.querySelector(\".note-list-comment\").outerText",
+          "required_contents": {
+            "exact_match": "Yo, your order will be shipped soon!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 280
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 495,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Notify {{name}} in their most recent pending order with message \"{{message}}\"",
+    "instantiation_dict": {
+      "name": "Lily Potter",
+      "message": "Thanks, your order is ready to be shipped!"
+    },
+    "intent": "Notify Lily Potter in their most recent pending order with message \"Thanks, your order is ready to be shipped!\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/303/",
+          "locator": "func:shopping_admin_get_order_last_comment('303')",
+          "required_contents": {
+            "exact_match": "Thanks, your order is ready to be shipped!"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 280
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 496,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update order #{{order}} with the {{service}} tracking number {{tracking}}",
+    "instantiation_dict": {
+      "tracking": "8974568499",
+      "order": "299",
+      "service": "Federal Express"
+    },
+    "intent": "Update order #299 with the Federal Express tracking number 8974568499",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/commentsHistory/order_id/299/active_tab/order_shipments/",
+          "locator": "func:shopping_admin_get_order_shipment_tracks('299')",
+          "required_contents": {
+            "must_include": [
+              "Tracking number 8974568499 for Federal Express assigned"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 284
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 497,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update order #{{order}} with the {{service}} tracking number {{tracking}}",
+    "instantiation_dict": {
+      "tracking": "24353446464",
+      "order": "307",
+      "service": "DHL"
+    },
+    "intent": "Update order #307 with the DHL tracking number 24353446464",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/commentsHistory/order_id/307/active_tab/order_shipments/",
+          "locator": "func:shopping_admin_get_order_shipment_tracks('307')",
+          "required_contents": {
+            "must_include": [
+              "Tracking number 24353446464 for DHL assigned"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 284
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 498,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update order #{{order}} with the {{service}} tracking number {{tracking}}",
+    "instantiation_dict": {
+      "tracking": "55591023930",
+      "order": "306",
+      "service": "UPS"
+    },
+    "intent": "Update order #306 with the UPS tracking number 55591023930",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/commentsHistory/order_id/306/active_tab/order_shipments/",
+          "locator": "func:shopping_admin_get_order_shipment_tracks('306')",
+          "required_contents": {
+            "must_include": [
+              "Tracking number 55591023930 for United Parcel Service assigned"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 284
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 499,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update order #{{order}} with the {{service}} tracking number {{tracking}}",
+    "instantiation_dict": {
+      "tracking": "13849373987",
+      "order": "304",
+      "service": "USPS"
+    },
+    "intent": "Update order #304 with the USPS tracking number 13849373987",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/commentsHistory/order_id/304/active_tab/order_shipments/",
+          "locator": "func:shopping_admin_get_order_shipment_tracks('304')",
+          "required_contents": {
+            "must_include": [
+              "Tracking number 13849373987 for United States Postal Service assigned"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 284
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 500,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update order #{{order}} with the {{service}} tracking number {{tracking}}",
+    "instantiation_dict": {
+      "tracking": "239028439840",
+      "order": "301",
+      "service": "DHL"
+    },
+    "intent": "Update order #301 with the DHL tracking number 239028439840",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/commentsHistory/order_id/301/active_tab/order_shipments/",
+          "locator": "func:shopping_admin_get_order_shipment_tracks('301')",
+          "required_contents": {
+            "must_include": [
+              "Tracking number 239028439840 for DHL assigned"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 284
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 501,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Mark all {{product}} as out of stock",
+    "instantiation_dict": {
+      "product": "Taurus Elements Shell"
+    },
+    "intent": "Mark all Taurus Elements Shell as out of stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/350/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "0"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 287
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 502,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Mark all {{product}} as out of stock",
+    "instantiation_dict": {
+      "product": "Gobi HeatTec Tee"
+    },
+    "intent": "Mark all Gobi HeatTec Tee as out of stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/446/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "0"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 287
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 503,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Mark all {{product}} as out of stock",
+    "instantiation_dict": {
+      "product": "rocco gym tank"
+    },
+    "intent": "Mark all rocco gym tank as out of stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/682/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "0"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 287
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 504,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Mark all {{product}} as out of stock",
+    "instantiation_dict": {
+      "product": "Selene yoga hoodie"
+    },
+    "intent": "Mark all Selene yoga hoodie as out of stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1108/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "0"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 287
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 505,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Mark all {{product}} as out of stock",
+    "instantiation_dict": {
+      "product": "Aeno capri"
+    },
+    "intent": "Mark all Aeon capri as out of stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1861/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "0"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 287
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 538,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Modify the address of order #{{order_id}} to {{address}}",
+    "instantiation_dict": {
+      "order_id": "299",
+      "address": "456 Oak Avenue, Apartment 5B, New York, NY, 10001"
+    },
+    "intent": "Modify the address of order #299 to 456 Oak Avenue, Apartment 5B, New York, NY, 10001",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/299",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "456 Oak Avenue",
+              "Apartment 5B",
+              "New York",
+              "10001"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 240
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 539,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Modify the address of order #{{order_id}} to {{address}}",
+    "instantiation_dict": {
+      "order_id": "65",
+      "address": "789 Pine Lane, San Francisco, CA, 94102"
+    },
+    "intent": "Modify the address of order #65 to 789 Pine Lane, San Francisco, CA, 94102",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/65",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "789 Pine Lane",
+              "San Francisco",
+              "California",
+              "94102"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 240
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 540,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Modify the address of order #{{order_id}} to {{address}}",
+    "instantiation_dict": {
+      "order_id": "301",
+      "address": "321 Birch Boulevard, Suite 200, Dallas, TX, 75201"
+    },
+    "intent": "Modify the address of order #301 to 321 Birch Boulevard, Suite 200, Dallas, TX, 75201",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/301",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "321 Birch Boulevard",
+              "Suite 200",
+              "Dallas",
+              "Texas",
+              "75201"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 240
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 541,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Modify the address of order #{{order_id}} to {{address}}",
+    "instantiation_dict": {
+      "order_id": "125",
+      "address": "654 Elm Drive, Apartment 12, Miami, FL, 33101"
+    },
+    "intent": "Modify the address of order #125 to 654 Elm Drive, Apartment 12, Miami, FL, 33101",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/125",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "654 Elm Drive",
+              "Apartment 12",
+              "Miami",
+              "Florida",
+              "33101"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 240
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 542,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Modify the address of order #{{order_id}} to {{address}}",
+    "instantiation_dict": {
+      "order_id": "300",
+      "address": "987 Cedar Court, Los Angeles, CA, 90012"
+    },
+    "intent": "Modify the address of order #300 to 987 Cedar Court, Los Angeles, CA, 90012",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/sales/order/view/order_id/300",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "987 Cedar Court",
+              "Los Angeles",
+              "California",
+              "90012"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 240
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 543,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update the product description of {{product}} to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "instantiation_dict": {
+      "product": "Bella Tank"
+    },
+    "intent": "Update the product description of Bella Tank to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/../bella-tank.html",
+          "locator": "document.querySelector('.data.item.content').outerText + (document.querySelector('.product.attribute.overview [itemprop=\"description\"]')?.outerText || '')",
+          "required_contents": {
+            "must_include": [
+              "2 customer(s) love it!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 251
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 544,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update the product description of {{product}} to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "instantiation_dict": {
+      "product": "Selena Yoga Hoodie"
+    },
+    "intent": "Update the product description of Selene Yoga Hoodie to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/../selene-yoga-hoodie.html",
+          "locator": "document.querySelector('.data.item.content').outerText + (document.querySelector('.product.attribute.overview [itemprop=\"description\"]')?.outerText || '')",
+          "required_contents": {
+            "must_include": [
+              "3 customer(s) love it!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 251
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 545,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update the product description of {{product}} to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "instantiation_dict": {
+      "product": "Radiant Tee"
+    },
+    "intent": "Update the product description of Radiant Tee to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/../radiant-tee.html",
+          "locator": "document.querySelector('.data.item.content').outerText + (document.querySelector('.product.attribute.overview [itemprop=\"description\"]')?.outerText || '')",
+          "required_contents": {
+            "must_include": [
+              "1 customer(s) love it!"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 251
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 546,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Update the product description of {{product}} to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "instantiation_dict": {
+      "product": "Lucia Cross-Fit Bra"
+    },
+    "intent": "Update the product description of Lucia Cross-Fit Bra to \"{count} customer(s) love it!\" where count is the number of reviews with 4 stars or above, or \"don't miss out on this amazing product\" when there are no such reviews.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/../lucia-cross-fit-bra.html",
+          "locator": "document.querySelector('.data.item.content').outerText + (document.querySelector('.product.attribute.overview [itemprop=\"description\"]')?.outerText || '')",
+          "required_contents": {
+            "must_include": [
+              "don't miss out on this amazing product"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 251
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 547,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Add {{option_spec}} to {{base_setting}} {{product}}",
+    "instantiation_dict": {
+      "option": "color",
+      "value": "brown",
+      "base_setting": "size S",
+      "product": "Phoebe Zipper Sweatshirt"
+    },
+    "intent": "Add a new color option brown to the size S of Phoebe Zipper Sweatshirt",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1130/",
+          "locator": "func:shopping_admin_get_configurable_children_by_id('1130')",
+          "required_contents": {
+            "must_include": [
+              "Phoebe Zipper Sweatshirt-S-Brown"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 252
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 548,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Add {{option_spec}} to {{base_setting}} {{product}}",
+    "instantiation_dict": {
+      "option": "color",
+      "value": "blue",
+      "base_setting": "size S and M",
+      "product": "Frankie Sweatshirt"
+    },
+    "intent": "Add a new color blue to size S and M of Frankie Sweatshirt",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/110/",
+          "locator": "document.querySelector('[data-index=\"configurable\"').outerText",
+          "required_contents": {
+            "must_include": [
+              "Sweatshirt-M-Blue",
+              "Sweatshirt-S-Blue"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 252
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 549,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Add {{option_spec}} to {{base_setting}} {{product}}",
+    "instantiation_dict": {
+      "option": "size",
+      "value": "XXXL",
+      "base_setting": "green",
+      "product": "Minerva LumaTech V-Tee"
+    },
+    "intent": "Add a new size XXXL to green Minerva LumaTech V-Tee",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1492/",
+          "locator": "document.querySelector('[data-index=\"configurable\"').outerText",
+          "required_contents": {
+            "must_include": [
+              "V-Tee-XXXL-Green"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 252
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 550,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Add {{option_spec}} to {{base_setting}} {{product}}",
+    "instantiation_dict": {
+      "option": "size",
+      "value": "XXS",
+      "base_setting": "blue and purple",
+      "product": "Nona Fitness Tank"
+    },
+    "intent": "Add a new size XXS to blue and purple Nona Fitness Tank",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1732/",
+          "locator": "document.querySelector('[data-index=\"configurable\"').outerText",
+          "required_contents": {
+            "must_include": [
+              "Tank-XXS-Blue",
+              "Tank-XXS-Purple"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 252
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 551,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Add {{option_spec}} to {{base_setting}} {{product}}",
+    "instantiation_dict": {
+      "option": "size",
+      "value": "30 and 31",
+      "base_setting": "all color variants",
+      "product": "Diana Tights"
+    },
+    "intent": "Add new size 30 and 31 to all color variants of Diana Tights",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1854/",
+          "locator": "document.querySelector('[data-index=\"configurable\"').outerText",
+          "required_contents": {
+            "must_include": [
+              "Tights-30-Blue",
+              "Tights-30-Black",
+              "Tights-30-Orange",
+              "Tights-31-Blue",
+              "Tights-31-Black",
+              "Tights-31-Orange"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 252
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 768,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{arrival_phrase}}, {{update_phrase}}",
+    "instantiation_dict": {
+      "quantity": "5",
+      "product": "blue Cronus yoga pants with size 33"
+    },
+    "intent": "5 blue Cronus yoga pants with size 33 arrived, update the stock",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/872/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "5"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/872/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][is_in_stock]\"').value",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 241
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 769,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{arrival_phrase}}, {{update_phrase}}",
+    "instantiation_dict": {
+      "quantity": "378",
+      "product": "brown Aero daily fitness tee in every size"
+    },
+    "intent": "We've received 378 brown Aero daily fitness tee in every size, please update the inventory",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/544/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "478"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/547/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "478"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/550/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "478"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/553/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "478"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/556/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "478"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 241
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 770,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{arrival_phrase}}, {{update_phrase}}",
+    "instantiation_dict": {
+      "quantity": "12 white Cora parachute pant of size 28 and 56 blue of size 29"
+    },
+    "intent": "We've received 12 white Cora parachute pant of size 28 and 56 blue of size 29, update the inventory",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1836/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "112"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1838/",
+          "locator": "document.querySelector('[name=\"product[quantity_and_stock_status][qty]\"').value",
+          "required_contents": {
+            "exact_match": "156"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 241
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 771,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Approve reviews with four stars or higher to display in our store.",
+    "instantiation_dict": {},
+    "intent": "Approve reviews with four stars or higher to display in our store.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/352",
+          "locator": "document.querySelector('[name=\"status_id\"').value",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/349",
+          "locator": "document.querySelector('[name=\"status_id\"').value",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/347",
+          "locator": "document.querySelector('[name=\"status_id\"').value",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 243
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 772,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "pending negative reviews for Circe fleece"
+    },
+    "intent": "Delete all pending negative reviews for Circe fleece",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/353",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 246
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 773,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "pending negative reviews"
+    },
+    "intent": "Delete all pending negative reviews",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/351",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/353",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 246
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 774,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "pending reviews with less than 4 stars"
+    },
+    "intent": "Delete all pending reviews with less than 4 stars",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/351",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/353",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/349",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "Rating isn't Available"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 246
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 775,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "reviews from the scammer Arden"
+    },
+    "intent": "Delete all reviews from the scammer Arden",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/51",
+          "locator": "func:shopping_admin_review_exists('51')",
+          "required_contents": {
+            "exact_match": "no"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 246
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 776,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "Delete all {{review_type}}",
+    "instantiation_dict": {
+      "review_type": "reviews from the scammer Carlo"
+    },
+    "intent": "Delete all reviews from the scammer Carlo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/93",
+          "locator": "func:shopping_admin_review_exists('93')",
+          "required_contents": {
+            "exact_match": "no"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/review/product/edit/id/109",
+          "locator": "func:shopping_admin_review_exists('109')",
+          "required_contents": {
+            "exact_match": "no"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 246
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 777,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "$5",
+      "action": "Reduce",
+      "config": "green Hollister backyard sweater in all size"
+    },
+    "intent": "Reduce the price of green Hollister backyard sweatshirt in all sizes by $5",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/120/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "47.00"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/117/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "47.00"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/114/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "47.00"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/111/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "47.00"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/123/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "47.00"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 778,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "13.5%",
+      "action": "Reduce",
+      "config": "size 28 Sahara leggings"
+    },
+    "intent": "Reduce the price of size 28 Sahara leggings by 13.5%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1841/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "64.88"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1842/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "64.88"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1843/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "64.88"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 779,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "15%",
+      "action": "Reduce",
+      "config": "yellow shirts from Gwyn Endurance in all size below L"
+    },
+    "intent": "Reduce the price of yellow shirts from Gwyn Endurance in all sizes below L by 15%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1559/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "20.40"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1562/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "20.40"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1565/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "20.40"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 780,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1481/",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "$17",
+      "action": "Increase",
+      "config": "white Ingrid Running with size L and above"
+    },
+    "intent": "Increase the price of white Ingrid Running with size L and above by $17",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1264/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "101.00"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1267/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "101.00"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 781,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "37%",
+      "action": "Increase",
+      "config": "black fitness tshirts from Desiree with size XS"
+    },
+    "intent": "Increase the price of black fitness tshirts from Desiree with size XS by 37%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/1573/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "32.88"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  },
+  {
+    "sites": [
+      "shopping_admin"
+    ],
+    "task_id": 782,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_admin_state.json",
+    "start_url": "__SHOPPING_ADMIN__",
+    "geolocation": null,
+    "intent_template": "{{action}} the price of {{config}} by {{amount}}",
+    "instantiation_dict": {
+      "amount": "23%",
+      "action": "Increase",
+      "config": "all blue running tshirts in extra small and small sizes"
+    },
+    "intent": "Increase the price of all blue running tshirts in extra small and small sizes by 23%",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/496/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "35.67"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/499/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "35.67"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/479/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "34.44"
+          }
+        },
+        {
+          "url": "__SHOPPING_ADMIN__/catalog/product/edit/id/482/",
+          "locator": "document.querySelector('[name=\"product[price]\"').value",
+          "required_contents": {
+            "exact_match": "34.44"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 742
+  }
+]

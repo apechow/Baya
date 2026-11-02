@@ -1,0 +1,4416 @@
+[
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 389,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Post \"{{content}}\" for the merge request related to {{mr}} in {{repo}} project",
+    "instantiation_dict": {
+      "mr": "octovisuals page",
+      "repo": "primer/design",
+      "content": "Thanks, working on reviews"
+    },
+    "intent": "Post \"Thanks, working on reviews\" for the merge request related to octovisuals page in primer/design project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/merge_requests/450",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/primer%2Fdesign/merge_requests/450/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); return notes.map(n => n.body).join('\\n'); })()",
+          "required_contents": {
+            "must_include": [
+              "Thanks, working on reviews"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 348,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 390,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Post \"{{content}}\" for the merge request related to {{mr}} in {{repo}} project",
+    "instantiation_dict": {
+      "mr": "semantic HTML post",
+      "repo": "a11yproject/a11yproject.com",
+      "content": "lgtm"
+    },
+    "intent": "Post \"lgtm\" for the merge request related to semantic HTML post in a11yproject/a11yproject.com project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests/1531",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/a11yproject%2Fa11yproject.com/merge_requests/1531/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); return notes.map(n => n.body).join('\\n'); })()",
+          "required_contents": {
+            "must_include": [
+              "lgtm"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 348,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 391,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Post \"{{content}}\" for the merge request related to {{mr}} in {{repo}} project",
+    "instantiation_dict": {
+      "mr": "focus edge cases",
+      "repo": "a11yproject/a11yproject.com",
+      "content": "close because non reproducible"
+    },
+    "intent": "Post \"close because non reproducible\" for the merge request related to focus edge cases in a11yproject/a11yproject.com project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests/1265",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/a11yproject%2Fa11yproject.com/merge_requests/1265/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); return notes.map(n => n.body).join('\\n'); })()",
+          "required_contents": {
+            "must_include": [
+              "close because non reproducible"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 348,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 392,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Post \"{{content}}\" for the merge request related to {{mr}} in {{repo}} project",
+    "instantiation_dict": {
+      "mr": "color ulitity",
+      "repo": "a11yproject.com",
+      "content": "Good idea"
+    },
+    "intent": "Post \"Good idea\" for the merge request related to color ulitity in a11yproject.com project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests/1071",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/a11yproject%2Fa11yproject.com/merge_requests/1071/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); return notes.map(n => n.body).join('\\n'); })()",
+          "required_contents": {
+            "must_include": [
+              "Good idea"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 348,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 393,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Post \"{{content}}\" for the merge request related to {{mr}} in {{repo}} project",
+    "instantiation_dict": {
+      "mr": "fixing the broken links",
+      "repo": "byteblaze/empathy-prompts",
+      "content": "lgtm"
+    },
+    "intent": "Post \"lgtm\" for the merge request related to fixing the broken links in byteblaze/empathy-prompts project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/empathy-prompts/-/merge_requests/19",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fempathy-prompts/merge_requests/19/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); return notes.map(n => n.body).join('\\n'); })()",
+          "required_contents": {
+            "must_include": [
+              "lgtm"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 348,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 394,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "2019-nCov"
+    },
+    "intent": "Fork 2019-nCov.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/2019-nCov",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "2019-nCov"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 395,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "the Pytorch GAN repo with most stars"
+    },
+    "intent": "Fork the Pytorch GAN repo with most stars.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/PyTorch-GAN",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "PyTorch-GAN"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 396,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "ChatGPT"
+    },
+    "intent": "Fork ChatGPT.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/chatgpt",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "chatgpt"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 397,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "MetaSeq"
+    },
+    "intent": "Fork MetaSeq.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/metaseq",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "metaseq"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 398,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "all source repos from Akilesh Kannan"
+    },
+    "intent": "Fork all repos from Akilesh Kannan.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/SimCache",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "SimCache"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dots",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "dots"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/CacheEval",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "CacheEval"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/nvidia-patch",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "nvidia-patch"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/viewgrades-scraper",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "viewgrades-scraper"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 411,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to MIT license.",
+    "instantiation_dict": {
+      "repo": "byteblaze/cloud-to-butt"
+    },
+    "intent": "Change the LICENSE for repo byteblaze/cloud-to-butt to an MIT license",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/cloud-to-butt/-/blob/master/LICENSE.txt",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "MIT license"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 355,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 412,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to Apache License",
+    "instantiation_dict": {
+      "repo": "byteblaze/accessible-html-content-patterns"
+    },
+    "intent": "Change the LICENSE for repo byteblaze/accessible-html-content-patterns to an Apache License",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/accessible-html-content-patterns/-/blob/main/LICENSE",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Faccessible-html-content-patterns/repository/files/LICENSE/raw?ref=main', {credentials: 'include'}); return r.ok ? await r.text() : ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Apache License",
+              "http://www.apache.org/licenses/LICENSE-2.0"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 355,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 413,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to one that mandates all copies and derivative works to be under the same license",
+    "instantiation_dict": {
+      "repo": "byteblaze/a11y-syntax-highlighting"
+    },
+    "intent": "Change the LICENSE for repo byteblaze/a11y-syntax-highlighting to one that mandates all copies and derivative works to be under the same license",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/blob/main/LICENSE",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "GENERAL PUBLIC LICENSE"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 355,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 414,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to MIT license.",
+    "instantiation_dict": {
+      "repo": "byteblaze/dotfiles"
+    },
+    "intent": "Change the LICENSE for repo byteblaze/dotfiles to an MIT license",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/raw/main/LICENSE",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "MIT",
+              "Permission is hereby granted"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 355,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 415,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Go to the merge request on {{topic}} I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+    "instantiation_dict": {
+      "topic": "verification functions"
+    },
+    "intent": "Reply on the merge request assigned to me for verification functions: if the last comment is from the author, reply \"Thank you\"; otherwise tag the author (e.g., @user) as a reminder.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/a11y-webring.club/-/merge_requests/40",
+          "locator": "document.querySelector('[id=\"notes-list\"]').lastElementChild?.querySelector('.timeline-discussion-body')?.outerText",
+          "required_contents": {
+            "must_include": [
+              "@davepgreene"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 360,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 416,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Go to the merge request on {{topic}} I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+    "instantiation_dict": {
+      "topic": "wcag"
+    },
+    "intent": "Reply on the merge request assigned to me for wcag: if the last comment is from the author, reply \"Thank you\"; otherwise tag the author (e.g., @user) as a reminder.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests/1270",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/174/merge_requests/1270/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); const mine = notes.filter(n => n.author && n.author.username === 'byteblaze'); return mine.map(n => n.body).join('\\n'); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@aguscha333"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 360,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 417,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Go to the merge request on {{topic}} I have to review, find if the author of the merge request responded at the end, and reply \"Thank you\" if he did. Otherwise remind him with a simple @.",
+    "instantiation_dict": {
+      "topic": "404 link"
+    },
+    "intent": "Reply on the merge request assigned to me for 404 link: if the last comment is from the author, reply \"Thank you\"; otherwise tag the author (e.g., @user) as a reminder.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests/1485",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/174/merge_requests/1485/notes?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const notes = await r.json(); const mine = notes.filter(n => n.author && n.author.username === 'byteblaze'); return mine.map(n => n.body).join('\\n'); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@Roshanjossey"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 360,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 418,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set my gitlab status as {{status}}.",
+    "instantiation_dict": {
+      "status": "Busy"
+    },
+    "intent": "Set my gitlab status as Busy.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/users/byteblaze/status', {credentials: 'include'}); const d = await r.json(); return d.availability || ''; })()",
+          "required_contents": {
+            "exact_match": "busy"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 361,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 419,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set my gitlab status as {{status}}.",
+    "instantiation_dict": {
+      "status": "Enjoying life"
+    },
+    "intent": "Set my gitlab status as Enjoying life.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/users/byteblaze/status', {credentials: 'include'}); const d = await r.json(); return d.message || ''; })()",
+          "required_contents": {
+            "exact_match": "Enjoying life"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 361,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 420,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set my gitlab status as {{status}}.",
+    "instantiation_dict": {
+      "status": "Playing Badminton"
+    },
+    "intent": "Set my gitlab status as Playing Badminton.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/users/byteblaze/status', {credentials: 'include'}); const d = await r.json(); return d.message || ''; })()",
+          "required_contents": {
+            "exact_match": "Playing Badminton"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 361,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 421,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set my gitlab status as {{status}}.",
+    "instantiation_dict": {
+      "status": "Resting due to leg injury"
+    },
+    "intent": "Set my gitlab status as Resting due to leg injury.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/users/byteblaze/status', {credentials: 'include'}); const d = await r.json(); return d.message || ''; })()",
+          "required_contents": {
+            "exact_match": "Resting due to leg injury"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 361,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 422,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set my gitlab status as {{status}}.",
+    "instantiation_dict": {
+      "status": "Out of Office"
+    },
+    "intent": "Set my gitlab status as Out of Office.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/users/byteblaze/status', {credentials: 'include'}); const d = await r.json(); return d.message || ''; })()",
+          "required_contents": {
+            "exact_match": "Out of Office"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 361,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 441,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+      "title": "GIVE ME SPACE"
+    },
+    "intent": "Update and commit (to the default branch) the website code for the current project using the simple online file editor to change the browser tab title to \"GIVE ME SPACE\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/raw/main/index.html",
+          "locator": "(async () => { await new Promise(r => setTimeout(r, 2000)); const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/repository/files/index.html/raw?ref=main&_=' + Date.now(), {credentials: 'include'}); return r.ok ? await r.text() : ''; })()",
+          "required_contents": {
+            "must_include": [
+              "<title>GIVE ME SPACE</title>"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 308,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 442,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+      "title": "Welcome to my site"
+    },
+    "intent": "Update and commit (to main) the website code for the current project using the simple online file editor to change the browser tab title to \"Welcome to my site\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/raw/main/index.html",
+          "locator": "(async () => { await new Promise(r => setTimeout(r, 2000)); const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/repository/files/index.html/raw?ref=main&_=' + Date.now(), {credentials: 'include'}); return r.ok ? await r.text() : ''; })()",
+          "required_contents": {
+            "must_include": [
+              "<title>Welcome to my site</title>"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 308,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 443,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+      "title": "Not an interesting site"
+    },
+    "intent": "Update and commit (to a new branch with no merged request) the website code for the current project using the simple online file editor to change the browser tab title to \"Not an interesting site\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space",
+          "locator": "(async () => { const proj = 'byteblaze%2Fgimmiethat.space'; const r = await fetch('/api/v4/projects/' + proj + '/repository/branches', {credentials: 'include'}); const branches = await r.json(); if (!Array.isArray(branches)) return ''; for (const b of branches) { if (b.name === 'main') continue; const fr = await fetch('/api/v4/projects/' + proj + '/repository/files/index.html/raw?ref=' + encodeURIComponent(b.name), {credentials: 'include'}); if (fr.ok) { const c = await fr.text(); if (c.toLowerCase().includes('<title>not an interesting site</title>')) return c; } } return ''; })()",
+          "required_contents": {
+            "must_include": [
+              "<title>Not an interesting site</title>"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 308,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 444,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+      "title": "Title Wanted"
+    },
+    "intent": "Update and commit (to a new branch called title-update with no merged request) the website code for the current project using the simple online file editor to change the browser tab title to \"Title Wanted\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/raw/title-update/index.html",
+          "locator": "(async () => { await new Promise(r => setTimeout(r, 2000)); const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/repository/files/index.html/raw?ref=title-update&_=' + Date.now(), {credentials: 'include'}); return r.ok ? await r.text() : ''; })()",
+          "required_contents": {
+            "must_include": [
+              "<title>Title Wanted</title>"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 308,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 445,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/gimmiethat.space",
+    "geolocation": null,
+    "intent_template": "Update the project site's title to \"{{title}}\"",
+    "instantiation_dict": {
+      "title": "Hello"
+    },
+    "intent": "Update and commit (to main) the website code for the current project using the simple online file editor to change the browser tab title to \"Hello\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/raw/main/index.html",
+          "locator": "(async () => { await new Promise(r => setTimeout(r, 2000)); const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/repository/files/index.html/raw?ref=main&_=' + Date.now(), {credentials: 'include'}); return r.ok ? await r.text() : ''; })()",
+          "required_contents": {
+            "must_include": [
+              "<title>Hello</title>"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 308,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 446,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Assign the issue regarding {{issue}} in {{repo}} to {{account}}.",
+    "instantiation_dict": {
+      "repo": "a11yproject",
+      "issue": 404,
+      "account": "Roshanjossey"
+    },
+    "intent": "Assign the issue regarding 404 errors in a11yproject to Roshanjossey.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=Roshanjossey",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/174/issues?assignee_username=Roshanjossey&state=opened&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const i = await r.json(); return i.map(x => x.title).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "404s, bad host, timeouts, bad urls for URLs linked from website"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 999,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 447,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Assign the issue regarding {{issue}} in {{repo}} to {{account}}.",
+    "instantiation_dict": {
+      "repo": "a11y-webring.club",
+      "issue": "linking to an accessibility statement",
+      "account": "Rohan"
+    },
+    "intent": "Assign the issue regarding linking to an accessibility statement in a11y-webring.club to Rohan.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=Seirdy",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Fa11y-webring.club/issues?assignee_username=Seirdy&state=opened&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const i = await r.json(); return i.map(x => x.title).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "linking to an accessibility statement"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 999,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 475,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set up a new, empty repository with the name {{project_name}}?",
+    "instantiation_dict": {
+      "project_name": "chatgpt_plugin"
+    },
+    "intent": "Set up a new, empty repository with the name chatgpt_plugin",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/chatgpt_plugin",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "chatgpt_plugin"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 292,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 476,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set up a new, empty repository with the name {{project_name}}?",
+    "instantiation_dict": {
+      "project_name": "awesome_llm_reading"
+    },
+    "intent": "Set up a new, empty repository with the name awesome_llm_reading",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/awesome_llm_reading",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "awesome_llm_reading"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 292,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 477,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set up a new, empty repository with the name {{project_name}}?",
+    "instantiation_dict": {
+      "project_name": "awesome_program_aided_reasoning"
+    },
+    "intent": "Set up a new, empty repository with the name awesome_program_aided_reasoning",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/awesome_program_aided_reasoning",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "awesome_program_aided_reasoning"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 292,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 478,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set up a new, empty repository with the name {{project_name}}?",
+    "instantiation_dict": {
+      "project_name": "webagent"
+    },
+    "intent": "Set up a new, empty repository with the name webagent",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/webagent",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "webagent"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 292,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 479,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Set up a new, empty repository with the name {{project_name}}?",
+    "instantiation_dict": {
+      "project_name": "awesome_webagent"
+    },
+    "intent": "Set up a new, empty repository with the name awesome_webagent",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/awesome_webagent",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "awesome_webagent"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 292,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 480,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Invite {{collaborator_account_list}} as collaborator to {{repo}}",
+    "instantiation_dict": {
+      "collaborator_account_list": "yjlou",
+      "repo": "solarized-prism-theme"
+    },
+    "intent": "Invite yjlou as collaborator(s) to solarized-prism-theme repo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/solarized-prism-theme/-/project_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Fsolarized-prism-theme/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "yjlou"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 293,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 481,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "{{name}} wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "instantiation_dict": {
+      "name": "Abishek"
+    },
+    "intent": "Abishek wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'abisubramanya27')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 294,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 482,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "{{name}} wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "instantiation_dict": {
+      "name": "yjlou"
+    },
+    "intent": "yjlou wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'yjlou')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 294,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 483,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "{{name}} wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "instantiation_dict": {
+      "name": "Koushik"
+    },
+    "intent": "Koushik wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'koush')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 294,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 484,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "{{name}} wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "instantiation_dict": {
+      "name": "Jakub Klinkovsk\u00fd"
+    },
+    "intent": "Jakub Klinkovsk\u00fd wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'lahwaacz')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 294,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 485,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "{{name}} wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "instantiation_dict": {
+      "name": "Vinta"
+    },
+    "intent": "Vinta wants to check my dotfile configurations. Please invite him to the repo as a guest.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'vinta')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 294,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 522,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Fork {{repo}}.",
+    "instantiation_dict": {
+      "repo": "all repos from facebook"
+    },
+    "intent": "Fork all repos from facebook.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/projects",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects?owned=true&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.map(x => x.name).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "create-react-app",
+              "buck"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 352,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 523,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "five"
+    },
+    "intent": "Star the top five most stared repos in Gitlab",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/starred",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "AndroidSlidingUpPanel",
+              "create-react-app",
+              "ffmpeg-python",
+              "PHP_XLSXWriter",
+              "AndroidAsync"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 354,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 524,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "eight"
+    },
+    "intent": "Star the top eight most stared repos in Gitlab",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/starred",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "AndroidSlidingUpPanel",
+              "create-react-app",
+              "ffmpeg-python",
+              "PHP_XLSXWriter",
+              "AndroidAsync",
+              "PyTorch-GAN",
+              "administrate",
+              "keycloak"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 354,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 525,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "four"
+    },
+    "intent": "Star the top four most stared repos in Gitlab",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/starred",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "AndroidSlidingUpPanel",
+              "create-react-app",
+              "ffmpeg-python",
+              "PHP_XLSXWriter"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 354,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 526,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "three"
+    },
+    "intent": "Star the top three most stared repos in Gitlab",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/starred",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "AndroidSlidingUpPanel",
+              "create-react-app",
+              "ffmpeg-python"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 354,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 527,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Star the top {{number}} most stared repos in Gitlab",
+    "instantiation_dict": {
+      "number": "one"
+    },
+    "intent": "Star the top one most stared repos in Gitlab",
+    "require_reset": true,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/starred",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "AndroidSlidingUpPanel"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 354,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 533,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Follow {{account_list}} on Gitlab",
+    "instantiation_dict": {
+      "account_list": [
+        "convexegg",
+        "yjlou"
+      ]
+    },
+    "intent": "Follow [\"convexegg\", \"yjlou\"] on Gitlab",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/following",
+          "locator": "document.querySelector('.user-profile').outerText",
+          "required_contents": {
+            "must_include": [
+              "@convexegg",
+              "@yjlou"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 330,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 534,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Follow {{account_list}} on Gitlab",
+    "instantiation_dict": {
+      "account_list": [
+        "Jakub Klinkovsk\u00fd",
+        "Koushik",
+        "Vinta Chen"
+      ]
+    },
+    "intent": "Follow [\"Jakub Klinkovsk\u00fd\", \"Koushik\", \"Vinta Chen\"] on Gitlab",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/following",
+          "locator": "document.querySelector('.user-profile').outerText",
+          "required_contents": {
+            "must_include": [
+              "@lahwaacz",
+              "@koush",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 330,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 535,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Follow {{account_list}} on Gitlab",
+    "instantiation_dict": {
+      "account_list": [
+        "Jakub K",
+        "ghost",
+        "Beno\u00eet Blanchon"
+      ]
+    },
+    "intent": "Follow [\"Jakub K\", \"ghost\", \"Beno\u00eet Blanchon\"] on Gitlab",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/following",
+          "locator": "document.querySelector('.user-profile').outerText",
+          "required_contents": {
+            "must_include": [
+              "@lahwaacz",
+              "@ghost",
+              "@bblanchon"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 330,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 536,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Follow {{account_list}} on Gitlab",
+    "instantiation_dict": {
+      "account_list": [
+        "ghost",
+        "R1kk3r",
+        "Abishek"
+      ]
+    },
+    "intent": "Follow [\"ghost\", \"R1kk3r\", \"Abishek\"] on Gitlab",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/following",
+          "locator": "document.querySelector('.user-profile').outerText",
+          "required_contents": {
+            "must_include": [
+              "@ghost",
+              "@R1kk3r",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 330,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 537,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Follow {{account_list}} on Gitlab",
+    "instantiation_dict": {
+      "account_list": [
+        "Jakub Klinkovsk",
+        "convexegg",
+        "Vinta Chen",
+        "yjlou",
+        "Abishek S"
+      ]
+    },
+    "intent": "Follow [\"Jakub Klinkovsk\", \"convexegg\", \"Vinta Chen\", \"yjlou\", \"Abishek S\"] on Gitlab",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/users/byteblaze/following",
+          "locator": "document.querySelector('.user-profile').outerText",
+          "required_contents": {
+            "must_include": [
+              "@lahwaacz",
+              "@convexegg",
+              "@vinta",
+              "@yjlou",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 330,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 567,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Invite {{collaborator_account_list}} as collaborator to {{repo}} repo",
+    "instantiation_dict": {
+      "collaborator_account_list": "Jakub Klinkovsk\u00fd and Beno\u00eet Blanchon",
+      "repo": "gimmiethat.space"
+    },
+    "intent": "Invite Jakub Klinkovsk\u00fd and Beno\u00eet Blanchon as collaborator(s) to gimmiethat.space repo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/project_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@lahwaacz",
+              "@bblanchon"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 293,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 568,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Invite {{collaborator_account_list}} as collaborator to {{repo}} repo",
+    "instantiation_dict": {
+      "collaborator_account_list": "Abishek and Vinta",
+      "repo": "a11yproject.com"
+    },
+    "intent": "Invite Abishek and Vinta as collaborator(s) to a11yproject.com repo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/project_members",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "@abisubramanya27",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 293,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 569,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Invite {{collaborator_account_list}} as collaborator to {{repo}} repo",
+    "instantiation_dict": {
+      "collaborator_account_list": "Beno\u00eet and Abishek",
+      "repo": "my HTML5 markup extention"
+    },
+    "intent": "Invite Beno\u00eet and Abishek as collaborator(s) to my HTML5 markup extention repo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/accessible-html-content-patterns/-/project_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Faccessible-html-content-patterns/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@bblanchon",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 293,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 570,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Invite {{collaborator_account_list}} as collaborator to {{repo}} repo",
+    "instantiation_dict": {
+      "collaborator_account_list": "Jakub K, Alex Dills, Alex Hutnik and Beno\u00eet Blanchon",
+      "repo": "my time tracking tool project"
+    },
+    "intent": "Invite Jakub K, Alex Dills, Alex Hutnik and Beno\u00eet Blanchon as collaborator(s) to my time tracking tool project repo",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/timeit/-/project_members",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "@lahwaacz",
+              "@V13Axel",
+              "@alexhutnik",
+              "@bblanchon"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 293,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 576,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Add the following users to repo {{repo}} as {{role}}: {{user_list}}",
+    "instantiation_dict": {
+      "repo": "a11y-webring.club",
+      "role": "developer",
+      "user_list": [
+        "abisubramanya27",
+        "lahwaacz"
+      ]
+    },
+    "intent": "Add the following users to repo a11y-webring.club as developer: \"abisubramanya27\" and \"lahwaacz\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/a11y-webring.club/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'abisubramanya27')",
+          "required_contents": {
+            "must_include": [
+              "Developer"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/a11y-webring.club/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'lahwaacz')",
+          "required_contents": {
+            "must_include": [
+              "Developer"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 351,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 577,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Add the following users to my {{repo}} as {{role}}: {{user_list}}",
+    "instantiation_dict": {
+      "repo": "GitHub timeline item management extension",
+      "role": "maintainer",
+      "user_list": [
+        "abisubramanya27",
+        "lahwaacz"
+      ]
+    },
+    "intent": "Add the following users to my GitHub timeline item management extension as maintainer: \"abisubramanya27\" and \"lahwaacz\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/remove-board-movement-events-from-the-github-issue-timeline/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'abisubramanya27')",
+          "required_contents": {
+            "must_include": [
+              "Maintainer"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/remove-board-movement-events-from-the-github-issue-timeline/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'lahwaacz')",
+          "required_contents": {
+            "must_include": [
+              "Maintainer"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 351,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 578,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Add the following users to repo {{repo}} as {{role}}: {{user_list}}",
+    "instantiation_dict": {
+      "repo": "millennials-to-snake-people",
+      "role": "reporter",
+      "user_list": [
+        "yjlou",
+        "a11yproject"
+      ]
+    },
+    "intent": "Add the following users to repo millennials-to-snake-people as reporter: \"yjlou\" and \"a11yproject\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/millennials-to-snake-people/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'yjlou')",
+          "required_contents": {
+            "must_include": [
+              "Reporter"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/millennials-to-snake-people/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'a11yproject')",
+          "required_contents": {
+            "must_include": [
+              "Reporter"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 351,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 579,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Add the following users to my {{repo}} as {{role}}: {{user_list}}",
+    "instantiation_dict": {
+      "repo": "time tracking tool",
+      "role": "guest",
+      "user_list": [
+        "yjlou"
+      ]
+    },
+    "intent": "Add the following users to my time tracking tool as guest: \"yjlou\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/timeit/-/project_members",
+          "locator": "func:gitlab_get_project_memeber_role(__page__, 'yjlou')",
+          "required_contents": {
+            "must_include": [
+              "Guest"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 351,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 590,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+      "event": "event of product launch",
+      "start_date": "1/16/2023",
+      "end_date": "1/30/2023"
+    },
+    "intent": "Create a milestone in the current repo with title \"product launch\" for the upcoming event of product launch starting on January 16, 2023 and ending on January 30, 2023",
+    "require_reset": false,
+    "intent_template_id": 339,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/milestones",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector(\"#content-body\").outerText",
+          "required_contents": {
+            "must_include": [
+              "product launch"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Jan 16, 2023"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Jan 30, 2023"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 591,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+      "event": "practice of collective code review",
+      "start_date": "1/16/2023",
+      "end_date": "in 20 days"
+    },
+    "intent": "Create a milestone in the current repo with title \"code review\" for the upcoming practice of collective code review starting on January 16, 2023 and ending in 20 days (inclusive)",
+    "require_reset": false,
+    "intent_template_id": 339,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/milestones",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector(\"#content-body\").outerText",
+          "required_contents": {
+            "must_include": [
+              "code review"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Jan 16, 2023"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Feb 4, 2023"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 592,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+      "event": "task of cleaning sensitive information",
+      "start_date": "2/16/2023",
+      "end_date": "in 20 days"
+    },
+    "intent": "Create a milestone in the current repo with title \"sensitive information\" for the upcoming task of cleaning sensitive information starting on February 16, 2023 and ending in 20 days (inclusive)",
+    "require_reset": false,
+    "intent_template_id": 339,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/milestones",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector(\"#content-body\").outerText",
+          "required_contents": {
+            "must_include": [
+              "sensitive information"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Feb 16, 2023"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/primer/design/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Mar 7, 2023"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 593,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/dotfiles",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+      "event": "task of merging all branches to main",
+      "start_date": "March 15, 2044",
+      "end_date": "March 30, 2044"
+    },
+    "intent": "Create a milestone in the current repo with title \"all branches to main\" for the upcoming task of merging all branches to main starting on March 15, 2044 and ending on March 30, 2044",
+    "require_reset": false,
+    "intent_template_id": 339,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector(\"#content-body\").outerText",
+          "required_contents": {
+            "must_include": [
+              "all branches to main"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Mar 15, 2044"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Mar 30, 2044"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 594,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/dotfiles",
+    "geolocation": null,
+    "intent_template": "Create a milestone for the upcoming {{event}} starting on {{start_date}} and ending on {{end_date}}",
+    "instantiation_dict": {
+      "event": "task of adding a new branch for zsh comprehensive support",
+      "start_date": "5/1/2044",
+      "end_date": "in 20 days"
+    },
+    "intent": "Create a milestone in the current repo with title \"zsh comprehensive support\" for the upcoming task of adding a new branch for zsh comprehensive support starting on May 1, 2044 and ending in 20 days (inclusive)",
+    "require_reset": false,
+    "intent_template_id": 339,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector(\"#content-body\").outerText",
+          "required_contents": {
+            "must_include": [
+              "zsh comprehensive support"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "May 1, 2044"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/milestones",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "May 20, 2044"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 658,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create an issue in {{repo}} repo with title \"{{issue}}\". Assign the issue to {{account}}. Set due date to be {{due}}",
+    "instantiation_dict": {
+      "repo": "a11yproject",
+      "issue": "401 bad gateway",
+      "account": "Roshanjossey",
+      "due": "the end of 2030"
+    },
+    "intent": "Create an issue in a11yproject repo with title \"401 bad gateway\". Assign the issue to Roshanjossey (you can invite users to the project if needed). Set due date to be the end of 2030",
+    "require_reset": false,
+    "intent_template_id": 327,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/issues?search=401+bad+gateway&sort=created_desc",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "401 bad gateway"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 659,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create an issue in {{repo}} repo with title \"{{issue}}\". Assign the issue to {{account}}. Set due date to be {{due}}",
+    "instantiation_dict": {
+      "repo": "empathy-prompts",
+      "issue": "Integrating LLMs for better prompts",
+      "account": "Roshanjossey",
+      "due": "the beginning of Q2 2033"
+    },
+    "intent": "Create an issue in my empathy-prompts repo with title \"Integrating LLMs for better prompts\". Assign the issue to Roshanjossey (you can invite users to the project if needed). Set due date to be the beginning of Q2 2033",
+    "require_reset": false,
+    "intent_template_id": 327,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/empathy-prompts/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/empathy-prompts/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Integrating LLMs for better prompts"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 660,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create an issue in {{repo}} repo with title \"{{issue}}\". Assign the issue to {{account}}. Set due date to be {{due}}",
+    "instantiation_dict": {
+      "repo": "dotfiles",
+      "issue": "add support for oh-my-zsh",
+      "account": "Abishek",
+      "due": "July 18 2033"
+    },
+    "intent": "Create an issue in my dotfiles repo with title \"add support for oh-my-zsh\". Assign the issue to Abishek (you can invite users to the project if needed). Set due date to be July 18 2033",
+    "require_reset": false,
+    "intent_template_id": 327,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/dotfiles/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "add support for oh-my-zsh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 661,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue to {{issue}} in {{repo}}.",
+    "instantiation_dict": {
+      "repo": "ChatGPT",
+      "issue": "report the issue of connection refused"
+    },
+    "intent": "Open an issue with title \"Connection refused\" to discuss the connection refused exception in the respository ChatGPT.",
+    "require_reset": false,
+    "intent_template_id": 328,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/convexegg/chatgpt/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/convexegg/chatgpt/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "connection refused"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 662,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue to {{issue}} in {{repo}}.",
+    "instantiation_dict": {
+      "repo": "aem-hacker",
+      "issue": "report experiencing \"OSError: [Errno 98] Address already in use\" during executions"
+    },
+    "intent": "Open an issue with title \"OSError: [Errno 98] Address already in use\" to discuss the OS error in the respository aem-hacker.",
+    "require_reset": false,
+    "intent_template_id": 328,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/0ang3el/aem-hacker/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/0ang3el/aem-hacker/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "OSError: [Errno 98] Address already in use"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 663,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue to {{issue}} in {{repo}}.",
+    "instantiation_dict": {
+      "repo": "metaseq",
+      "issue": "ask their plan on supporting Llama and other llama family models"
+    },
+    "intent": "Open an issue with title \"Llama model support timeline\" to ask the team\"s plan on supporting Llama and other llama family models in the respository metaseq.",
+    "require_reset": false,
+    "intent_template_id": 328,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/root/metaseq/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/root/metaseq/-/issues",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/root%2Fmetaseq/issues?state=opened&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const i = await r.json(); return i.map(x => x.title).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "llama"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 664,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue to {{issue}} in {{repo}}.",
+    "instantiation_dict": {
+      "repo": "awesome-python",
+      "issue": "ask their plans on adding Python 3.11 related resources"
+    },
+    "intent": "Open an issue with title \"Question on future usage of Python 3.11\" to ask the team\"s plans on adding Python 3.11 related resources in the respository awesome-python.",
+    "require_reset": false,
+    "intent_template_id": 328,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/vinta/awesome-python/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/vinta/awesome-python/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Python 3.11"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 665,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Open an issue to {{issue}} in {{repo}}.",
+    "instantiation_dict": {
+      "repo": "a11y-syntax-highlighting",
+      "issue": "request adding support for MT theme editor"
+    },
+    "intent": "Open an issue with title \"Feature Request: MT support\" to request adding support for MT theme editor in the respository a11y-syntax-highlighting.",
+    "require_reset": false,
+    "intent_template_id": 328,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/a11y-syntax-highlighting/-/issues",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Fa11y-syntax-highlighting/issues?state=opened&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const i = await r.json(); return i.map(x => x.title).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "MT support"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 666,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Submit a request to merge {{source_branch}} branch into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "dialog-component",
+      "target_branch": "dialog",
+      "reviewer": "Carol"
+    },
+    "intent": "Submit a merge request for dialog-component in the current repository to be merged into dialog branch, assign Primer as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "dialog"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 667,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "dialog-component",
+      "target_branch": "bump-doctocat",
+      "reviewer": "primer"
+    },
+    "intent": "Submit a merge request for dialog-component in the current repository to be merged into bump-doctocat branch, assign primer as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "bump-doctocat"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 668,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "a11yproject.com/redesign",
+      "target_branch": "master",
+      "reviewer": "Justin Armstrong"
+    },
+    "intent": "Submit a merge request for redesign in a11yproject.com to be merged into main branch, assign Roshan Jossy as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "redesign"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 669,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/solarized-prism-theme",
+    "geolocation": null,
+    "intent_template": "Open a new issue to discuss the implementation of {{feature}}",
+    "instantiation_dict": {
+      "feature": "dark mode"
+    },
+    "intent": "Open a new issue to discuss the implementation of dark mode for the current project. Use an appropriate issue title.",
+    "require_reset": false,
+    "intent_template_id": 337,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/solarized-prism-theme/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/solarized-prism-theme/-/issues",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/projects/byteblaze%2Fsolarized-prism-theme/issues?state=opened&per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const i = await r.json(); return i.map(x => x.title).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "dark mode"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 670,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/byteblaze/dotfiles",
+    "geolocation": null,
+    "intent_template": "Open a new issue to discuss the implementation of {{feature}}",
+    "instantiation_dict": {
+      "feature": "default plugins for .zsh"
+    },
+    "intent": "Open a new issue to discuss the implementation of default plugins for .zsh for the current project. Use an appropriate issue title.",
+    "require_reset": false,
+    "intent_template_id": 337,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/dotfiles/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "default plugins",
+              "zsh"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 736,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Make the LICENSE of {{repo}} to MIT license.",
+    "instantiation_dict": {
+      "repo": "gimmiethat.space and dotfiles"
+    },
+    "intent": "Change the LICENSE for repo byteblaze/gimmiethat.space and byteblaze/dotfiles to MIT licenses",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/gimmiethat.space/-/raw/main/LICENSE",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fgimmiethat.space/repository/files/LICENSE/raw?ref=main', {credentials: 'include'}); return await r.text(); })()",
+          "required_contents": {
+            "must_include": [
+              "MIT license",
+              "Permission is hereby granted, free of charge, to any person obtaining a copy"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/dotfiles/-/raw/main/LICENSE",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fdotfiles/repository/files/LICENSE/raw?ref=main', {credentials: 'include'}); return await r.text(); })()",
+          "required_contents": {
+            "must_include": [
+              "MIT license",
+              "Permission is hereby granted, free of charge, to any person obtaining a copy"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 355,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 742,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a new {{scope}} project \"planner\" and add {{account_list}} as members",
+    "instantiation_dict": {
+      "scope": "private",
+      "account_list": "Abishek, Vinta"
+    },
+    "intent": "Create a new private project \"planner\" and add Abishek, Vinta as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/planner",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fplanner', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/planner/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fplanner/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@abisubramanya27",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 743,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a new {{scope}} project \"web_arena\" and add {{account_list}} as members",
+    "instantiation_dict": {
+      "scope": "public",
+      "account_list": "Abishek, Vinta"
+    },
+    "intent": "Create a new public project \"web_arena\" and add Abishek, Vinta as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_arena",
+          "locator": "document.querySelector('.visibility-icon').getAttribute('title')",
+          "required_contents": {
+            "must_include": [
+              "public"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_arena/-/project_members",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "@abisubramanya27",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 744,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a new {{scope}} project \"AutoAGI\" and add {{account_list}} as members",
+    "instantiation_dict": {
+      "scope": "public",
+      "account_list": "primer"
+    },
+    "intent": "Create a new public project \"AutoAGI\" and add primer as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/AutoAGI",
+          "locator": "document.querySelector('.visibility-icon').getAttribute('title')",
+          "required_contents": {
+            "must_include": [
+              "public"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/AutoAGI/-/project_members",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "@primer"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 745,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a new {{scope}} project \"awesome-llms\" and add {{account_list}} as members",
+    "instantiation_dict": {
+      "scope": "public",
+      "account_list": "primer, convexegg, abishek"
+    },
+    "intent": "Create a new public project \"awesome-llms\" and add primer, convexegg, abishek as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/awesome-llms",
+          "locator": "document.querySelector('.visibility-icon').getAttribute('title')",
+          "required_contents": {
+            "must_include": [
+              "public"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/awesome-llms/-/project_members",
+          "locator": "",
+          "required_contents": {
+            "must_include": [
+              "@primer",
+              "@convexegg",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 746,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a new {{scope}} project \"llm_bulk_inference\" and add {{account_list}} as members",
+    "instantiation_dict": {
+      "scope": "private",
+      "account_list": "primer, convexegg, abishek"
+    },
+    "intent": "Create a new private project \"llm_bulk_inference\" and add primer, convexegg, abishek as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/llm_bulk_inference",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fllm_bulk_inference', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/llm_bulk_inference/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fllm_bulk_inference/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@primer",
+              "@convexegg",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 747,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Start a private project {{project_name}} with {{template}} template and add {{account_list}} as members",
+    "instantiation_dict": {
+      "project_name": "awesome_web_agents",
+      "template": "blank",
+      "account_list": "Abishek, Vinta"
+    },
+    "intent": "Start a private project called \"awesome_web_agents\" with blank template and add Abishek, Vinta as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/awesome_web_agents",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fawesome_web_agents', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/awesome_web_agents/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fawesome_web_agents/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@abisubramanya27",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 2100,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 748,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Start a private project {{project_name}} with {{template}} template and add {{account_list}} as members",
+    "instantiation_dict": {
+      "project_name": "web_agent_android_xl",
+      "template": "Android",
+      "account_list": "primer, convexegg, abishek"
+    },
+    "intent": "Start a private project called \"web_agent_android_xl\" with Android template and add primer, convexegg, abishek as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_android_xl",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_android_xl', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_android_xl/-/commits",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_android_xl/repository/commits?per_page=10', {credentials: 'include'}); if (!r.ok) return ''; const c = await r.json(); return c.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Initialized from 'Android' project template"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_android_xl/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_android_xl/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@primer",
+              "@convexegg",
+              "@abisubramanya27"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 2100,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 749,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Start a private project {{project_name}} with {{template}} template and add {{account_list}} as members",
+    "instantiation_dict": {
+      "project_name": "project_site",
+      "template": "NodeJS",
+      "account_list": "primer, convexegg, vinta"
+    },
+    "intent": "Start a private project called \"project_site\" with NodeJS template and add primer, convexegg, vinta as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/project_site",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fproject_site', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/project_site/-/commits",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fproject_site/repository/commits?per_page=10', {credentials: 'include'}); if (!r.ok) return ''; const c = await r.json(); return c.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Initialized from 'NodeJS Express' project template"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/project_site/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fproject_site/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@primer",
+              "@convexegg",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 2100,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 750,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Start a private project {{project_name}} with {{template}} template and add {{account_list}} as members",
+    "instantiation_dict": {
+      "project_name": "agi_index",
+      "template": "HTML",
+      "account_list": "Vinta Chen"
+    },
+    "intent": "Start a private project called \"agi_index\" with HTML Gitlab pages template and add Vinta Chen as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/agi_index",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fagi_index', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/agi_index",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fagi_index', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.description || ''; })()",
+          "required_contents": {
+            "must_include": [
+              [
+                "Example plain HTML site using GitLab Pages: https://pages.gitlab.io/plain-html",
+                "A plain HTML site that uses Netlify for CI/CD instead of GitLab, but still with all the other great GitLab features."
+              ]
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/agi_index/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fagi_index/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 2100,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 751,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Start a private project {{project_name}} with {{template}} template and add {{account_list}} as members",
+    "instantiation_dict": {
+      "project_name": "AGISite",
+      "template": "JEKYLL",
+      "account_list": "Rohan and Vinta"
+    },
+    "intent": "Start a private project called \"AGISite\" with JEKYLL template and add Rohan and Vinta as members",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/AGISite",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2FAGISite', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/AGISite",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2FAGISite', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.description || ''; })()",
+          "required_contents": {
+            "must_include": [
+              [
+                "Example Jekyll site using GitLab Pages: https://pages.gitlab.io/jekyll",
+                "A Jekyll site that uses Netlify for CI/CD instead of GitLab, but still with all the other great GitLab features."
+              ]
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/AGISite/-/project_members",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2FAGISite/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "@Seirdy",
+              "@vinta"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 2100,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 752,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a private {{template}} repository called \"{{project_name}}\" using the right template to speed up development.",
+    "instantiation_dict": {
+      "project_name": "web_agent",
+      "template": "blank"
+    },
+    "intent": "Create a private blank repository called \"web_agent\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_agent",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 753,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a private {{template}} repository called \"{{project_name}}\" using the right template to speed up development.",
+    "instantiation_dict": {
+      "project_name": "web_agent_android_xs",
+      "template": "Android"
+    },
+    "intent": "Create a private Android repository called \"web_agent_android_xs\" using the right template to speed up development.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_android_xs",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_android_xs', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_android_xs/-/commits",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_android_xs/repository/commits?per_page=10', {credentials: 'include'}); if (!r.ok) return ''; const c = await r.json(); return c.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Initialized from 'Android' project template"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 754,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a private {{template}} repository called \"{{project_name}}\" using the right template to speed up development.",
+    "instantiation_dict": {
+      "project_name": "web_agent_nodejs",
+      "template": "NodeJS"
+    },
+    "intent": "Create a private NodeJS repository called \"web_agent_nodejs\" using the right template to speed up development.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_nodejs",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_nodejs', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_nodejs/-/commits",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_nodejs/repository/commits?per_page=10', {credentials: 'include'}); if (!r.ok) return ''; const c = await r.json(); return c.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Initialized from 'NodeJS Express' project template"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 755,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a private {{template}} repository called \"{{project_name}}\" using the right template to speed up development.",
+    "instantiation_dict": {
+      "project_name": "web_agent_index",
+      "template": "HTML"
+    },
+    "intent": "Create a private HTML repository called \"web_agent_index\" using the right template to speed up development.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_index",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_index', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/web_agent_index",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2Fweb_agent_index', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.description || ''; })()",
+          "required_contents": {
+            "must_include": [
+              [
+                "Example plain HTML site using GitLab Pages: https://pages.gitlab.io/plain-html",
+                "A plain HTML site that uses Netlify for CI/CD instead of GitLab, but still with all the other great GitLab features."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 756,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create a private {{template}} repository called \"{{project_name}}\" using the right template to speed up development.",
+    "instantiation_dict": {
+      "project_name": "11711_gitlab",
+      "template": "JEKYLL"
+    },
+    "intent": "Create a private JEKYLL repository called \"11711_gitlab\" using the right template to speed up development.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/11711_gitlab",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2F11711_gitlab', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.visibility || ''; })()",
+          "required_contents": {
+            "must_include": [
+              "Private"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/byteblaze/11711_gitlab",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/byteblaze%2F11711_gitlab', {credentials: 'include'}); if (!r.ok) return ''; const p = await r.json(); return p.description || ''; })()",
+          "required_contents": {
+            "must_include": [
+              [
+                "Example Jekyll site using GitLab Pages: https://pages.gitlab.io/jekyll",
+                "A Jekyll site that uses Netlify for CI/CD instead of GitLab, but still with all the other great GitLab features."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 332,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 799,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+      "name": "n-lab",
+      "members": "patou, egpast, westurner, jontutcher"
+    },
+    "intent": "create a new group \"n-lab\" with members patou, egpast, westurner, jontutcher",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/groups/n-lab/-/group_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/groups/n-lab/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@patou",
+              "@egpast",
+              "@westurner",
+              "@jontutcher"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 600,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 800,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+      "name": "x-lab",
+      "members": "JonasVautherin, dilipchandima, dawiss1337, bmyun, DCMJY"
+    },
+    "intent": "create a new group \"x-lab\" with members JonasVautherin, dilipchandima, dawiss1337, bmyun, DCMJY",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/groups/x-lab/-/group_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/groups/x-lab/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@JonasVautherin",
+              "@dilipchandima",
+              "@dawiss1337",
+              "@bmyun",
+              "@DCMJY"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 600,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 801,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+      "name": "crew",
+      "members": "ASWATFZLLC, patrickhlauke, westurner, linkmatrix"
+    },
+    "intent": "create a new group \"crew\" with members ASWATFZLLC, patrickhlauke, westurner, linkmatrix",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/groups/crew/-/group_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/groups/crew/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@ASWATFZLLC",
+              "@patrickhlauke",
+              "@westurner",
+              "@linkmatrix"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 600,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 802,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+      "name": "coding_friends",
+      "members": "qhduan, Agnes-U"
+    },
+    "intent": "create a new group \"coding_friends\" with members qhduan, Agnes-U",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/groups/coding_friends/-/group_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/groups/coding_friends/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@qhduan",
+              "@Agnes-U"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 600,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 803,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "create a new group \"{{name}}\" with members {{members}}",
+    "instantiation_dict": {
+      "name": "webagent",
+      "members": "pandey2000, sayakpaul, sayakpaul"
+    },
+    "intent": "create a new group \"webagent\" with members pandey2000, sayakpaul, sayakpaul",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/groups/webagent/-/group_members",
+          "locator": "(async () => { try { const r = await fetch('/api/v4/groups/webagent/members/all?per_page=100', {credentials: 'include'}); if (!r.ok) return ''; const m = await r.json(); return m.map(x => '@' + x.username).join(', '); } catch(e) { return ''; } })()",
+          "required_contents": {
+            "must_include": [
+              "@pandey2000",
+              "@sayakpaul"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 600,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 804,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Assign the issue regarding {{issue}} to {{account}}.",
+    "instantiation_dict": {
+      "issue": "flash alerts",
+      "account": "myself and primer"
+    },
+    "intent": "Assign the issue regarding flash alerts in dialog components to myself and tag primer to include them as a participant.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/180/issues?assignee_username=byteblaze&state=opened&per_page=100', {credentials: 'include'}); const i = await r.json(); return i.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Add documentation on using Flash alerts in dialog components"
+            ]
+          }
+        },
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=primer",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/180/issues?assignee_username=primer&state=opened&per_page=100', {credentials: 'include'}); const i = await r.json(); return i.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Add documentation on using Flash alerts in dialog components"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 999,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 805,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "the branch that implements the support of template strings",
+      "target_branch": "master",
+      "reviewer": "myself and Roshan"
+    },
+    "intent": "Submit a merge request for the branch that implements the support of template strings in the current repository to be merged into the default branch branch, assign myself and Roshan as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "feature/replace-gulp"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 806,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "a11yproject.com/redesign",
+      "target_branch": "markdown-figure-block",
+      "reviewer": "myself"
+    },
+    "intent": "Submit a merge request for redesign in a11yproject.com to be merged into markdown-figure-block branch, assign myself as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "redesign"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 807,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__/primer/design",
+    "geolocation": null,
+    "intent_template": "Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer",
+    "instantiation_dict": {
+      "source_branch": "build time debug",
+      "target_branch": "main",
+      "reviewer": "myself"
+    },
+    "intent": "Submit a merge request for build time debug in the current repository to be merged into main branch, assign myself as the reviewer",
+    "require_reset": false,
+    "intent_template_id": 335,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/primer/design/-/merge_requests",
+      "program_html": [
+        {
+          "url": "__GITLAB__/primer/design/-/merge_requests",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "build time debug"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 808,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create an issue in {{repo}} repo with title \"{{issue}}\". Assign the issue to {{account}}. Set due date to be {{due}}",
+    "instantiation_dict": {
+      "repo": "cloud-to-butt",
+      "issue": "Let's keep the project alive",
+      "account": "myself",
+      "due": "the end of Q1 2033"
+    },
+    "intent": "Create an issue in cloud-to-butt repo with title \"Let's keep the project alive\". Assign the issue to myself (you can invite users to the project if needed). Set due date to be the end of Q1 2033",
+    "require_reset": false,
+    "intent_template_id": 327,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/byteblaze/cloud-to-butt/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/byteblaze/cloud-to-butt/-/issues",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "Let's keep the project alive"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 809,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Create an issue in {{repo}} repo with title \"{{issue}}\". Assign the issue to {{account}}. Set due date to be {{due}}",
+    "instantiation_dict": {
+      "repo": "a11yproject",
+      "issue": "404 for many URLs",
+      "account": "myself",
+      "due": "2030-1-3"
+    },
+    "intent": "Create an issue in a11yproject repo with title \"404 for many URLs\". Assign the issue to myself (you can invite users to the project if needed). Set due date to be 2030-1-3",
+    "require_reset": false,
+    "intent_template_id": 327,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues",
+      "program_html": [
+        {
+          "url": "__GITLAB__/a11yproject/a11yproject.com/-/issues?search=404+for+many+URLs&sort=created_desc",
+          "locator": "document.querySelector('#content-body').outerText",
+          "required_contents": {
+            "must_include": [
+              "404 for many URLs"
+            ]
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED",
+      "string_note": "",
+      "reference_answer_raw_annotation": ""
+    },
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 810,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Assign the issue regarding {{issue}} in {{repo}} repo to {{account}}.",
+    "instantiation_dict": {
+      "repo": "primer design guide",
+      "issue": "flash alert",
+      "account": "myself"
+    },
+    "intent": "Assign the issue regarding flash alert bug in primer design guide repo to myself.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/180/issues?assignee_username=byteblaze&state=opened&per_page=100', {credentials: 'include'}); const i = await r.json(); return i.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "Clarify usage of flash alert"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 999,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 811,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "__GITLAB__",
+    "geolocation": null,
+    "intent_template": "Assign the issue regarding {{issue}} in {{repo}} to {{account}}.",
+    "instantiation_dict": {
+      "repo": "a11yproject",
+      "issue": 404,
+      "account": "myself"
+    },
+    "intent": "Assign the issue regarding 404 in a11yproject to myself.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__GITLAB__/dashboard/issues?scope=all&state=opened&assignee_username=byteblaze",
+          "locator": "(async () => { const r = await fetch('/api/v4/projects/174/issues?assignee_username=byteblaze&state=opened&per_page=100', {credentials: 'include'}); const i = await r.json(); return i.map(x => x.title).join(', '); })()",
+          "required_contents": {
+            "must_include": [
+              "404s, bad host, timeouts, bad urls for URLs linked from website"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 999,
+    "read_only": false
+  }
+]

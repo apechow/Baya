@@ -1,0 +1,913 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Reddit API",
+        "description": "Playwright-based API for the WebArena Reddit (Postmill) site. All endpoints are served by a local FastAPI server (port 7791) that drives a headless browser — no CSRF tokens, session cookies, or form scraping required. All write operations are idempotent where noted.",
+        "version": "1.0.0"
+    },
+    "host": "127.0.0.1:7791",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/list_forums": {
+            "get": {
+                "summary": "List all forums on this site",
+                "description": "Returns the names of every forum (subreddit) available on the site.",
+                "operationId": "list_forums",
+                "produces": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List of all forum names",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "forums": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {"type": "string"}
+                                        }
+                                    },
+                                    "description": "Sorted list of forums, each with a 'name' field."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/find_forum_by_name": {
+            "get": {
+                "summary": "Resolve a user-supplied forum name to its canonical form",
+                "description": "Looks up a forum by exact name, then case-insensitive, then by single unambiguous substring match (so 'relationships' resolves to 'relationship_advice', 'Worcester' to 'WorcesterMA'). Returns the canonical name to pass to /create_post, /forum_posts, /vote_post, etc. When `fuzzy_match` is true in the response, treat `name` as the resolved canonical name and proceed normally. Prefer this over /list_forums + JSONPath filtering when you already know the forum the user is asking about — it's one call and produces the exact case-sensitive name that downstream endpoints require.",
+                "operationId": "find_forum_by_name",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Forum name from the user's request (any casing). 'r/' or 'f/' prefixes are stripped."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Match result.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "Canonical forum name when exists=true, otherwise null."
+                                },
+                                "exists": {"type": "boolean"},
+                                "url": {
+                                    "type": "string",
+                                    "description": "Relative URL of the forum when exists=true."
+                                },
+                                "candidates": {
+                                    "type": "array",
+                                    "items": {"type": "string"},
+                                    "description": "Up to 8 substring-match suggestions when exists=false."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/forum_posts": {
+            "get": {
+                "summary": "List posts in a forum",
+                "description": "Return posts from a forum with their scores.",
+                "operationId": "get_forum_posts",
+                "parameters": [
+                    {
+                        "name": "forum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Forum name."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "enum": ["hot", "new", "top", "controversial", "active"],
+                        "default": "hot",
+                        "description": "Sort order. Use sort=new for recent posts, sort=hot (default) for trending, sort=top for all-time best, sort=active for most commented."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "default": 25,
+                        "description": "Max posts to return (max 50)"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "List of posts with scores",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {"type": "string", "description": "Numeric post ID (e.g. '58461' from /f/WritingPrompts/58461/slug)."},
+                                            "title": {"type": "string"},
+                                            "body": {"type": "string", "description": "Post body text (empty string for link posts or posts with no body)"},
+                                            "author": {"type": "string"},
+                                            "subreddit": {"type": "string"},
+                                            "url": {"type": "string", "description": "Full URL of the submission page"},
+                                            "score": {"type": "integer", "description": "Net vote score (upvotes - downvotes). Negative means more downvotes."},
+                                            "link_url": {"type": "string", "description": "External URL for link posts (null for text posts)"}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/search": {
+            "get": {
+                "summary": "Search posts by keyword",
+                "description": "Full-text search across post titles and body content. Returns post metadata only. Results are ranked by keyword frequency, not by relevance or exact title match.",
+                "operationId": "search_posts",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Search query string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "default": 25,
+                        "description": "Max posts to return (max 50)"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "List of matching posts NOT sorted by best match.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {"type": "string", "description": "Numeric post ID (e.g. '58461' from /f/WritingPrompts/58461/slug)."},
+                                            "title": {"type": "string"},
+                                            "body": {"type": "string", "description": "Post body text (empty string for link posts or posts with no body)"},
+                                            "author": {"type": "string"},
+                                            "subreddit": {"type": "string"},
+                                            "url": {"type": "string", "description": "Full URL of the submission page"},
+                                            "score": {"type": "integer", "description": "Net vote score (upvotes - downvotes). Negative means more downvotes."},
+                                            "link_url": {"type": "string", "description": "External URL for link posts (null for text posts)"}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/user_posts": {
+            "get": {
+                "summary": "List submissions by a specific user",
+                "description": "Returns posts authored by a specific user from their profile page.",
+                "operationId": "get_user_posts",
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "The username whose submissions to fetch"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "default": 50,
+                        "description": "Max posts to return (default 50, max 50)"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "User's submissions",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {"type": "string", "description": "Numeric post ID"},
+                                            "title": {"type": "string"},
+                                            "body": {"type": "string", "description": "Post body text (empty string for link posts or posts with no body)"},
+                                            "author": {"type": "string"},
+                                            "subreddit": {"type": "string"},
+                                            "url": {"type": "string", "description": "Full Postmill URL to this submission"},
+                                            "score": {"type": "integer", "description": "Net vote score (upvotes - downvotes). Negative means more downvotes."},
+                                            "link_url": {"type": "string", "description": "External URL for link posts, null for text posts"}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/post": {
+            "get": {
+                "summary": "Get a single post with its full body text",
+                "description": "Fetch a single post by forum name and post ID. Returns the full body text — use this when you need to read what was written in a post description (body text is not included in /forum_posts or /user_posts list responses).",
+                "operationId": "get_post",
+                "parameters": [
+                    {
+                        "name": "forum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Forum name (e.g. 'books')"
+                    },
+                    {
+                        "name": "post_id",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Numeric post ID from the post URL (/f/{forum}/{post_id}/...)"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "Full post details including body text",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "id": {"type": "string"},
+                                "title": {"type": "string"},
+                                "body": {"type": "string", "description": "Full post body text (empty string for link posts)"},
+                                "author": {"type": "string"},
+                                "subreddit": {"type": "string"},
+                                "url": {"type": "string"},
+                                "score": {"type": "integer"},
+                                "link_url": {"type": "string", "description": "External URL for link posts (null for text posts)"},
+                                "error_message": {"type": "string", "description": "Non-null if the post was not found"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/comments": {
+            "get": {
+                "summary": "Get comments on a post with vote scores",
+                "description": "Returns all comments on a submission with their net vote scores. score > 0 means more upvotes; score < 0 means more downvotes than upvotes.",
+                "operationId": "get_comments",
+                "parameters": [
+                    {
+                        "name": "forum",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Forum name (e.g. 'books')"
+                    },
+                    {
+                        "name": "post_id",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "Numeric post ID (from the post URL: /f/{forum}/{post_id}/...)"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "List of comments with scores",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "comments": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {"type": "string", "description": "Numeric comment ID (e.g. '999273' from article id='comment_999273')."},
+                                            "body": {"type": "string"},
+                                            "author": {"type": "string"},
+                                            "url": {"type": "string", "description": "Full comment permalink (e.g. http://host/f/forum/post_id/-/comment/comment_id)."},
+                                            "score": {"type": "integer", "description": "Net vote score (upvotes - downvotes). Negative means more downvotes."}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/create_post": {
+            "post": {
+                "summary": "Create a new submission",
+                "description": "Create a post in a forum. Idempotent — returns already_existed=true if a post with the same title already exists. Set url to post a link (image URL, external URL); leave url empty for a text post.",
+                "operationId": "create_post",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["forum", "title"],
+                            "properties": {
+                                "forum": {
+                                    "type": "string",
+                                    "description": "Forum name"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Submission title"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "default": "",
+                                    "description": "Body text (markdown supported). Leave empty for link posts."
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "description": "External URL for link/image posts (optional)"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Post creation result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "post_url": {"type": "string"},
+                                "already_existed": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/create_comment": {
+            "post": {
+                "summary": "Post a top-level comment on a submission",
+                "description": "Add a comment directly on a post (not a reply to another comment).",
+                "operationId": "create_comment",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["post_url", "comment_text"],
+                            "properties": {
+                                "post_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the submission (e.g. http://127.0.0.1:9999/f/books/59421/slug)"
+                                },
+                                "comment_text": {
+                                    "type": "string",
+                                    "description": "Comment body text"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Comment creation result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "comment_url": {"type": "string"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/reply_to_comment": {
+            "post": {
+                "summary": "Reply to a specific comment",
+                "description": "Post a reply to a specific comment (nested reply).",
+                "operationId": "reply_to_comment",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "comment_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the comment to reply to. Use this instead of post_url+comment_id."
+                                },
+                                "post_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the submission containing the comment (alternative to comment_url)"
+                                },
+                                "comment_id": {
+                                    "type": "string",
+                                    "description": "Numeric ID of the comment to reply to (alternative to comment_url)"
+                                },
+                                "reply_text": {
+                                    "type": "string",
+                                    "description": "Reply body text (can also be passed as 'text')"
+                                },
+                                "text": {
+                                    "type": "string",
+                                    "description": "Alias for reply_text"
+                                }
+                            },
+                            "example": {
+                                "comment_url": "http://127.0.0.1:9999/f/forum_name/12345/-/comment/67890",
+                                "reply_text": "your reply text here"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Reply result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "comment_url": {"type": "string"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/vote_post": {
+            "post": {
+                "summary": "Upvote or downvote a submission",
+                "description": "Upvote or downvote a submission. Pass post_url and direction='up' or direction='down'. Alternatively pass post_id and forum instead of post_url.",
+                "operationId": "vote_post",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "post_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the submission"
+                                },
+                                "post_id": {
+                                    "type": "string",
+                                    "description": "Numeric post ID (alternative to post_url)"
+                                },
+                                "forum": {
+                                    "type": "string",
+                                    "description": "Forum name (required when using post_id instead of post_url)"
+                                },
+                                "direction": {
+                                    "type": "string",
+                                    "enum": ["up", "down"],
+                                    "description": "'up' to upvote, 'down' to downvote"
+                                }
+                            },
+                            "example": {
+                                "post_url": "http://127.0.0.1:9999/f/forum_name/12345/post-slug",
+                                "direction": "up"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Vote result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit_post": {
+            "post": {
+                "summary": "Edit a submission's title and/or body",
+                "description": "Edit a post you own. By default, new_body replaces the existing body entirely. Set append=true to add to the end instead. The post_url can use any slug (e.g. /f/books/59421/any-slug).",
+                "operationId": "edit_post",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["post_url"],
+                            "properties": {
+                                "post_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the submission to edit"
+                                },
+                                "new_body": {
+                                    "type": "string",
+                                    "description": "Body text. Replaces the existing body by default; set append=true to add to the end instead. Omit to leave the body unchanged."
+                                },
+                                "append": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "If true, new_body is appended after the existing body. If false (default), new_body replaces the body entirely."
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Edit result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "post_url": {"type": "string"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/subscribe_forum": {
+            "post": {
+                "summary": "Subscribe to a forum",
+                "description": "Subscribe (join) a forum/subreddit. Idempotent — returns already_subscribed=true if already done.",
+                "operationId": "subscribe_forum",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["forum_name"],
+                            "properties": {
+                                "forum_name": {
+                                    "type": "string",
+                                    "description": "Forum name"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Subscribe result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "already_subscribed": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/update_biography": {
+            "post": {
+                "summary": "Update the logged-in user's biography",
+                "description": "Set or replace the biography for the currently logged-in user. Markdown is supported. username must be the logged-in user's username.",
+                "operationId": "update_biography",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["username", "biography"],
+                            "properties": {
+                                "username": {
+                                    "type": "string",
+                                    "description": "The logged-in user's username"
+                                },
+                                "biography": {
+                                    "type": "string",
+                                    "description": "New biography text (replaces existing)"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Biography update result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/send_message": {
+            "post": {
+                "summary": "Send a private message to a user",
+                "description": "Send a DM to another user. Navigates to /user/{recipient}/compose_message and submits the message form.",
+                "operationId": "send_message",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["recipient_username", "message_body"],
+                            "properties": {
+                                "recipient_username": {
+                                    "type": "string",
+                                    "description": "Username of the message recipient"
+                                },
+                                "subject": {
+                                    "type": "string",
+                                    "default": "",
+                                    "description": "Message subject line (optional)"
+                                },
+                                "message_body": {
+                                    "type": "string",
+                                    "description": "Body text of the message"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Send result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get_messages": {
+            "get": {
+                "summary": "Read the inbox",
+                "description": "Scrape the /messages page and return each message's subject, sender, and body preview.",
+                "operationId": "get_messages",
+                "produces": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "List of inbox messages",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "messages": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "subject": {"type": "string"},
+                                            "sender": {"type": "string"},
+                                            "body": {"type": "string"}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/delete_post": {
+            "post": {
+                "summary": "Delete a post",
+                "description": "Delete a post by its URL. The logged-in user must be the post owner.",
+                "operationId": "delete_post",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["post_url"],
+                            "properties": {
+                                "post_url": {
+                                    "type": "string",
+                                    "description": "Full URL of the post to delete"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Delete result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/update_email": {
+            "post": {
+                "summary": "Update the logged-in user's email address",
+                "description": "Change the email address for a user account via /user/{username}/account settings.",
+                "operationId": "update_email",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["username", "new_email"],
+                            "properties": {
+                                "username": {
+                                    "type": "string",
+                                    "description": "The logged-in user's username"
+                                },
+                                "new_email": {
+                                    "type": "string",
+                                    "description": "New email address to set"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Update result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get_block_list": {
+            "get": {
+                "summary": "Get the block list for a user",
+                "description": "Return the list of usernames blocked by the given user, scraped from /user/{username}/block_list.",
+                "operationId": "get_block_list",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "The username whose block list to fetch"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Block list",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "blocked_users": {
+                                    "type": "array",
+                                    "items": {"type": "string"},
+                                    "description": "List of blocked usernames"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/create_forum": {
+            "post": {
+                "summary": "Create a new forum (subreddit)",
+                "description": "Create a new forum. Idempotent — returns already_existed=true if a forum with that name already exists. Both forum_description and forum_sidebar are required.",
+                "operationId": "create_forum",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["forum_name", "forum_title", "forum_description", "forum_sidebar"],
+                            "properties": {
+                                "forum_name": {
+                                    "type": "string",
+                                    "description": "URL-safe forum identifier (e.g. 'sci_fi')"
+                                },
+                                "forum_title": {
+                                    "type": "string",
+                                    "description": "Display title for the forum"
+                                },
+                                "forum_description": {
+                                    "type": "string",
+                                    "description": "Description of the forum's purpose"
+                                },
+                                "forum_sidebar": {
+                                    "type": "string",
+                                    "description": "Sidebar content (rules, markdown supported)"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Forum creation result",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "success": {"type": "boolean"},
+                                "forum_url": {"type": "string"},
+                                "forum_name": {"type": "string"},
+                                "already_existed": {"type": "boolean"},
+                                "error_message": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

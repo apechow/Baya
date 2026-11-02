@@ -1,0 +1,1571 @@
+[
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 431,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/tall-pink-taper-candles-4-piece-orange-colored-tapered-candles-gradient-candles-10-6-inches-tall-tie-dye-candle-set-large-dripless-long-burning-candlesticks-two-color-taper-candles-candlesticks.html |AND| __SHOPPING__/spaas-white-taper-candles-4-pack-10-inch-tall-candles-scent-free-premium-wax-candle-sticks-8-hour-long-burning-white-candlesticks-for-home-decoration-wedding-holiday-and-parties.html |AND| __SHOPPING__/white-starfish-wall-candle-sconces-set-of-2-beach-decor-ocean-themed-wall-mount-candleholders-nautical-style-beach-bathroom-decor-coastal-farmhouse-seashell-candle-holders.html",
+    "geolocation": null,
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_customer_cart_items('emma.lopez@gmail.com', 'Password.123')",
+          "required_contents": {
+            "must_include": [
+              [
+                "SPAAS White Taper Candles - 4 Pack",
+                "10 Inch Tall Candles, Scent-Free Premium Wax Candle Sticks",
+                "8 Hour Long Burning White Candlesticks for Home Decoration, Wedding, Holiday and Parties"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 145,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 432,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/ciclon-energy-drink-regular-24-cans-8-3oz.html |AND| __SHOPPING__/v8-energy-healthy-energy-drink-steady-energy-from-black-and-green-tea-pomegranate-blueberry-8-ounce-can-pack-of-24.html",
+    "geolocation": null,
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_customer_cart_items('emma.lopez@gmail.com', 'Password.123')",
+          "required_contents": {
+            "must_include": [
+              "V8 +Energy, Healthy Energy Drink, Steady Energy from Black and Green Tea, Pomegranate Blueberry, 8 Ounce Can ,Pack of 24"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 145,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 433,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/tazrigo-5pcs-white-dental-resin-brush-pens-dental-shaping-silicone-tooth-tool.html |AND| __SHOPPING__/stylus-pens-for-touch-screens-2-pcs-universal-stylus-2-in-1-2022-updated-touch-screen-pens-for-all-touch-screens-cell-phones-tablets-laptops-with-6-replacement-tips-4-discstips-2-fiber-tips.html",
+    "geolocation": null,
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_customer_cart_items('emma.lopez@gmail.com', 'Password.123')",
+          "required_contents": {
+            "must_include": [
+              "Tazrigo 5pcs White Dental Resin Brush Pens Dental Shaping Silicone Tooth Tool"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 145,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 434,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/3-pairs-ruffle-socks-lace-ankle-socks-for-girls-frilly-socks-women-decorative.html |AND| __SHOPPING__/viviki-women-glitter-socks-ultrathin-transparent-tulle-lace-socks-no-show-ankle-crew-socks-3-pack.html",
+    "geolocation": null,
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_customer_cart_items('emma.lopez@gmail.com', 'Password.123')",
+          "required_contents": {
+            "must_include": [
+              "VIVIKI Women Glitter Socks Ultrathin Transparent Tulle Lace Socks - No Show Ankle Crew Socks 3 Pack"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 145,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 435,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/35-ft-hdmi-cable-gearit-pro-series-hdmi-cable-35-feet-high-speed-ethernet-4k-resolution-3d-video-and-arc-audio-return-channel-hdmi-cable-white.html |AND| __SHOPPING__/dp-to-hdmi-cable-6ft-2-pack-fosmon-gold-plated-displayport-to-hdmi-cable-1080p-full-hd-for-pcs-to-hdtv-monitor-projector-with-hdmi-port.html",
+    "geolocation": null,
+    "intent_template": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "instantiation_dict": {},
+    "intent": "Add the product with the lowest per unit price from my open tabs to the shopping cart",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_customer_cart_items('emma.lopez@gmail.com', 'Password.123')",
+          "required_contents": {
+            "must_include": [
+              "DP to HDMI Cable 6FT (2 Pack), Fosmon Gold Plated Displayport to HDMI Cable 1080p Full HD for PCs to HDTV, Monitor, Projector with HDMI Port"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 145,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 436,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I previously ordered {{product}} {{time}} and later cancelled. Can you reorder it for me?",
+    "instantiation_dict": {
+      "product": "a mattress foundation",
+      "time": "around Feb or March 2023"
+    },
+    "intent": "I previously ordered a mattress foundation around Feb or March 2023 and later cancelled. Can you reorder it for me?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B07DFJ5XKH"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 156,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 437,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I previously ordered {{product}} {{time}} and later cancelled. Can you reorder it for me?",
+    "instantiation_dict": {
+      "product": "a table lamp",
+      "time": "in May 2023"
+    },
+    "intent": "I previously ordered a table lamp in May 2023 and later cancelled. Can you reorder it for me?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B072XS3F6W"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 156,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 438,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I previously ordered {{product}} {{time}} and later cancelled. Can you reorder it for me?",
+    "instantiation_dict": {
+      "product": "a TV stand",
+      "time": "sometime around sep 2022"
+    },
+    "intent": "I previously ordered a TV stand sometime around sep 2022 and later cancelled. Can you reorder it for me?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B08PVHRRB7"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 156,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 439,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I previously ordered {{product}} {{time}} and later cancelled. Can you reorder it for me?",
+    "instantiation_dict": {
+      "product": "a cat t-shirt",
+      "time": "during 2022"
+    },
+    "intent": "I previously ordered a cat t-shirt during 2022 and later cancelled. Can you reorder it for me?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B0844BWS76"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 156,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 440,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I previously ordered {{product}} {{time}} and later cancelled. Can you reorder it for me?",
+    "instantiation_dict": {
+      "product": "a make up removal kit",
+      "time": "during summer 2022"
+    },
+    "intent": "I previously ordered a make up removal kit during summer 2022 and later cancelled. Can you reorder it for me?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B0738JQG6Q"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 156,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 465,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add {{product}} to my wish list",
+    "instantiation_dict": {
+      "product": "Tide PODS Spring Meadow Scent HE Turbo Laundry Detergent Pacs, 81 Count"
+    },
+    "intent": "Add Tide PODS Spring Meadow Scent HE Turbo Laundry Detergent Pacs, 81 Count to my wish list",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Tide PODS Spring Meadow Scent HE Turbo Laundry Detergent Pacs, 81 Count"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 186,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 466,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add {{product}} to my wish list",
+    "instantiation_dict": {
+      "product": "2 Hawaiian Bamboo Orchid Roots #zc50 - by Discount Hawaiian Gifts"
+    },
+    "intent": "Add 2 Hawaiian Bamboo Orchid Roots #zc50 - by Discount Hawaiian Gifts to my wish list",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "2 Hawaiian Bamboo Orchid Roots #zc50 - by Discount Hawaiian Gifts"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 186,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 467,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add {{product}} to my wish list",
+    "instantiation_dict": {
+      "product": "HONGJ Hawaiian Beach Outfits Set for Mens, Summer Tropical Tree Printed Relaxed-fit Hawaii Shirts Shorts 2 Piece Suits"
+    },
+    "intent": "Add HONGJ Hawaiian Beach Outfits Set for Mens, Summer Tropical Tree Printed Relaxed-fit Hawaii Shirts Shorts 2 Piece Suits to my wish list",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "HONGJ Hawaiian Beach Outfits Set for Mens, Summer Tropical Tree Printed Relaxed-fit Hawaii Shirts Shorts 2 Piece Suits"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 186,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 468,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add {{product}} to my wish list",
+    "instantiation_dict": {
+      "product": "DkRgVNY Lace Spcling Lingerie Womens Sexy Hollow Out Underwear Bodysuit One Piece Snap Crotch Clubwear Teddy Bodysuit"
+    },
+    "intent": "Add DkRgVNY Lace Spcling Lingerie Womens Sexy Hollow Out Underwear Bodysuit One Piece Snap Crotch Clubwear Teddy Bodysuit to my wish list",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "DkRgVNY Lace Spcling Lingerie Womens Sexy Hollow Out Underwear Bodysuit One Piece Snap Crotch Clubwear Teddy Bodysuit"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 186,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 469,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add {{product}} to my wish list",
+    "instantiation_dict": {
+      "product": "Light Blue Simple Summer New Low Heels Slippers for Women Fashion Chunky Heels Pointed Toe Wine Glasses Sandals Comfortable Walking Shoes Ladies All-Match Sexy Party Shoes"
+    },
+    "intent": "Add Light Blue Simple Summer New Low Heels Slippers for Women Fashion Chunky Heels Pointed Toe Wine Glasses Sandals Comfortable Walking Shoes Ladies All-Match Sexy Party Shoes to my wish list",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Light Blue Simple Summer New Low Heels Slippers for Women Fashion Chunky Heels Pointed Toe Wine Glasses Sandals Comfortable Walking Shoes Ladies All-Match Sexy Party Shoes"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 186,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 506,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Buy the highest rated product from the {{product_category}} category within a budget {{dollar_value}}. Discard any items in your cart if it is not empty.",
+    "instantiation_dict": {
+      "product_category": "meat substitute",
+      "dollar_value": "between 100 and 200"
+    },
+    "intent": "Buy the highest rated product from the meat substitute category within a budget between 100 and 200. Discard any items in your cart if it is not empty.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B01CTR3DLE"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 172,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 507,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Buy the highest rated product from the {{product_category}} category within a budget {{dollar_value}}. Discard any items in your cart if it is not empty.",
+    "instantiation_dict": {
+      "product_category": "Ceiling light",
+      "dollar_value": "above 1000"
+    },
+    "intent": "Buy the highest rated product from the Ceiling light category within a budget above 1000. Discard any items in your cart if it is not empty.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B07BVL3P1V"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 172,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 508,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Buy the highest rated product from the {{product_category}} category within a budget {{dollar_value}}. Discard any items in your cart if it is not empty.",
+    "instantiation_dict": {
+      "product_category": "NS switch pouch",
+      "dollar_value": "under 60"
+    },
+    "intent": "Buy the highest rated product from the NS switch category within a budget under 60. Discard any items in your cart if it is not empty.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B07116LGP6"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 172,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 509,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Buy the best rating product from \"{{category}}\" category with at least 5 reviews and the product is least expensive. Choose any available variant.",
+    "instantiation_dict": {
+      "category": "Men's shoe"
+    },
+    "intent": "Buy the best rating product from \"Men\"s shoe\" category with at least 5 reviews and the product is least expensive. Choose any available variant.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B01J4MM3KO"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 216,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 510,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Buy the best rating product from \"{{category}}\" category with at least 5 reviews and the product is least expensive. Choose any available variant.",
+    "instantiation_dict": {
+      "category": "Home Audio Speaker"
+    },
+    "intent": "Buy the best rating product from \"Home Audio Speaker\" category with at least 5 reviews and the product is least expensive. Choose any available variant.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "func:shopping_get_latest_order_url()",
+          "locator": "document.querySelector(\".order-details-items.ordered\").outerText",
+          "required_contents": {
+            "must_include": [
+              "B002R5ABIW"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 216,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 511,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add a {{product}} to my wish list.",
+    "instantiation_dict": {
+      "product": "laundry detergent"
+    },
+    "intent": "Add a laundry detergent to my wish list.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "laundry",
+              "detergent"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 189,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 512,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add a {{product}} to my wish list.",
+    "instantiation_dict": {
+      "product": "toothpaste"
+    },
+    "intent": "Add a toothpaste to my wish list.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "toothpaste"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 189,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 513,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add a {{product}} to my wish list.",
+    "instantiation_dict": {
+      "product": "chair"
+    },
+    "intent": "Add a chair to my wish list.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "chair"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 189,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 514,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add a {{product}} to my wish list.",
+    "instantiation_dict": {
+      "product": "white desk"
+    },
+    "intent": "Add a white desk to my wish list.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "white",
+              "desk"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 189,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 515,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Add a {{product}} to my wish list.",
+    "instantiation_dict": {
+      "product": "white computer desk"
+    },
+    "intent": "Add a white computer desk to my wish list.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "white",
+              "computer",
+              "desk"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 189,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 516,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/elmwood-inn-fine-teas-orange-vanilla-caffeine-free-fruit-infusion-16-ounce-pouch.html",
+    "geolocation": null,
+    "intent_template": "Add the product on the current page to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add the product on the current page to my wishlist",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Elmwood Inn Fine Teas, Orange Vanilla Caffeine-free Fruit Infusion, 16-Ounce Pouch"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 196,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 517,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/skinit-decal-gaming-skin-compatible-with-xbox-one-s-console-and-controller-bundle-officially-licensed-nfl-baltimore-ravens-design.html",
+    "geolocation": null,
+    "intent_template": "Add the product on the current page to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add the product on the current page to my wishlist",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Skinit Decal Gaming Skin Compatible with Xbox One S Console and Controller Bundle - Officially Licensed NFL Baltimore Ravens Design"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 196,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 518,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/sceptre-e195bd-srr-19-inch-720p-led-tv-true-black-2017.html",
+    "geolocation": null,
+    "intent_template": "Add the product on the current page to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add the product on the current page to my wishlist",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Sceptre E195BD-SRR 19-Inch 720P LED TV, True Black (2017)"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 196,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 519,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/iphone-13-pro-max-case-neon-turtle-iphone-13-pro-max-cases-tempered-glass-back-soft-silicone-tpu-shock-protective-case-for-apple-iphone-13-pro-max.html",
+    "geolocation": null,
+    "intent_template": "Add the product on the current page to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add the product on the current page to my wishlist",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "iPhone 13 Pro Max Case, Neon Turtle iPhone 13 Pro Max Cases, Tempered Glass Back+Soft Silicone TPU Shock Protective Case for Apple iPhone 13 Pro Max"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 196,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 520,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__/magnetic-metal-stainless-steel-d-pads-kits-directional-pad-replacement-parts-for-xbox-one-elite-controller-elite-series-2-xbox-one-xbox-one-s-x-controller.html",
+    "geolocation": null,
+    "intent_template": "Add the product on the current page to my wishlist",
+    "instantiation_dict": {},
+    "intent": "Add the product on the current page to my wishlist",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/wishlist/",
+          "locator": "document.querySelector('.products-grid.wishlist').outerText",
+          "required_contents": {
+            "must_include": [
+              "Magnetic Metal Stainless Steel D-pads Kits Directional Pad Replacement Parts for Xbox One Elite Controller, Elite Series 2, Xbox One, Xbox One S/X Controller"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 196,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 521,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Subscribe to the newsletter of OneStopMarket",
+    "instantiation_dict": {},
+    "intent": "Subscribe to the newsletter of OneStopMarket",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/newsletter/manage/",
+          "locator": "document.querySelector('[title=\"General Subscription\"').checked.toString()",
+          "required_contents": {
+            "exact_match": "true"
+          }
+        }
+      ]
+    },
+    "intent_template_id": 199,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 571,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "231 Willow Way, Suite 100, Chicago, IL, 60601"
+    },
+    "intent": "I recently moved, my address is 231 Willow Way, Suite 100, Chicago, IL, 60601, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "231 Willow Way",
+              "Suite 100",
+              "Chicago, Illinois, 60601"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "231 Willow Way",
+              "Suite 100",
+              "Chicago, Illinois, 60601"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 572,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "654 Aspen Road, House #3, Boston, MA, 02110"
+    },
+    "intent": "I recently moved, my address is 654 Aspen Road, House #3, Boston, MA, 02110, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "654 Aspen Road",
+              "House #3",
+              "Boston, Massachusetts, 02110"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "654 Aspen Road",
+              "House #3",
+              "Boston, Massachusetts, 02110"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 573,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "987 Sycamore Circle, Philadelphia, PA, 19102"
+    },
+    "intent": "I recently moved, my address is 987 Sycamore Circle, Philadelphia, PA, 19102, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "987 Sycamore Circle",
+              "Philadelphia, Pennsylvania, 19102"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "987 Sycamore Circle",
+              "Philadelphia, Pennsylvania, 19102"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 574,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "111 Magnolia Path, Atlanta, GA, 30303"
+    },
+    "intent": "I recently moved, my address is 111 Magnolia Path, Atlanta, GA, 30303, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "111 Magnolia Path",
+              "Atlanta, Georgia, 30303"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "111 Magnolia Path",
+              "Atlanta, Georgia, 30303"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 575,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "I recently moved, my address is {{address}}, update my information on OneStopShopping accordingly",
+    "instantiation_dict": {
+      "address": "222 Redwood Rise, Suite 300, Seattle, WA, 98101"
+    },
+    "intent": "I recently moved, my address is 222 Redwood Rise, Suite 300, Seattle, WA, 98101, update my information on OneStopShopping accordingly",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-shipping > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "222 Redwood Rise",
+              "Suite 300",
+              "Seattle, Washington, 98101"
+            ]
+          }
+        },
+        {
+          "url": "__SHOPPING__/customer/address",
+          "locator": "document.querySelector(\".box.box-address-billing > .box-content\").outerText",
+          "required_contents": {
+            "must_include": [
+              "222 Redwood Rise",
+              "Suite 300",
+              "Seattle, Washington, 98101"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 165,
+    "read_only": false
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 585,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Rate my recently purchased {{product}} with {{num_star}} stars using my nickname {{nickname}}, with the summary \"{{summary}}\" and review \"{{review}}\"",
+    "instantiation_dict": {
+      "product": "floor lamp",
+      "num_star": 5,
+      "nickname": "Emma Lopez"
+    },
+    "intent": "Rate my recently purchased floor lamp with 5 stars using my nickname Emma Lopez, with the summary \"Good purchase\" and review \"I like it\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_rating('B00J8RZL7I')",
+          "required_contents": {
+            "exact_match": "100"
+          }
+        },
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_author('B00J8RZL7I')",
+          "required_contents": {
+            "must_include": [
+              "Emma Lopez"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 194
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 586,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Rate my recently purchased {{product}} with {{num_star}} stars using my nickname {{nickname}}, with the summary \"{{summary}}\" and review \"{{review}}\"",
+    "instantiation_dict": {
+      "product": "Jiffy Corn Muffin Cornbread Mix",
+      "num_star": 4,
+      "nickname": "ShoppingEmma"
+    },
+    "intent": "Rate my recently purchased Jiffy Mix with 4 stars using my nickname ShoppingEmma, with the summary \"Good purchase\" and review \"I like it\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_rating('B07HZB38XH')",
+          "required_contents": {
+            "exact_match": "80"
+          }
+        },
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_author('B07HZB38XH')",
+          "required_contents": {
+            "must_include": [
+              "ShoppingEmma"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 194
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 587,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Rate my recently purchased {{product}} with {{num_star}} stars using my nickname {{nickname}}, with the summary \"{{summary}}\" and review \"{{review}}\"",
+    "instantiation_dict": {
+      "product": "PS3 Remote Controllers",
+      "num_star": 3,
+      "nickname": "GamingEmma"
+    },
+    "intent": "Rate my recently purchased PS3 accessory with 3 stars using my nickname GamingEmma, with the summary \"Ok I guess\" and review \"Does the job\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_rating('B0041MSF2S')",
+          "required_contents": {
+            "exact_match": "60"
+          }
+        },
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_author('B0041MSF2S')",
+          "required_contents": {
+            "must_include": [
+              "GamingEmma"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 194
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 588,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Rate my recently purchased {{product}} with {{num_star}} stars using my nickname {{nickname}}, with the summary \"{{summary}}\" and review \"{{review}}\"",
+    "instantiation_dict": {
+      "product": "Foundation For Mattress With Frame Set",
+      "num_star": 1,
+      "nickname": "ShoppingEmma"
+    },
+    "intent": "Rate my recently purchased Foundation For Mattress With Frame Set with 1 stars using my nickname ShoppingEmma, with the summary \"Very bad\" and review \"I hated it\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_rating('B07DFJ5XKH')",
+          "required_contents": {
+            "exact_match": "20"
+          }
+        },
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_author('B07DFJ5XKH')",
+          "required_contents": {
+            "must_include": [
+              "ShoppingEmma"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 194
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 589,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "__SHOPPING__",
+    "geolocation": null,
+    "intent_template": "Rate my recently purchased {{product}} with {{num_star}} stars using my nickname {{nickname}}, with the summary \"{{summary}}\" and review \"{{review}}\"",
+    "instantiation_dict": {
+      "product": "Mini Wireless Bluetooth Speaker",
+      "num_star": 2,
+      "nickname": "SimpleEmma"
+    },
+    "intent": "Rate my recently purchased Mini Wireless Bluetooth Speaker with 2 stars using my nickname SimpleEmma, with the summary \"Very bad\" and review \"I hated it\"",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_rating('B09P7BFL4H')",
+          "required_contents": {
+            "exact_match": "40"
+          }
+        },
+        {
+          "url": "__SHOPPING__",
+          "locator": "func:shopping_get_sku_latest_review_author('B09P7BFL4H')",
+          "required_contents": {
+            "must_include": [
+              "SimpleEmma"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 194
+  }
+]

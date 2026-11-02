@@ -1,0 +1,388 @@
+[
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 27,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "In the {{forum}} forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "forum": "Showerthoughts"
+    },
+    "intent": "In the personal finances forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. Return a list of objects with keys \"username\", \"post_title\", and \"count\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Hammer94",
+          "56 year old mom has no retirement. Where do I even start on her behalf?",
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 33
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 28,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "In the {{forum}} forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "forum": "Worcester"
+    },
+    "intent": "In the Worcester forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. Return a list of objects with keys \"username\", \"post_title\", and \"count\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "mineinhusdson",
+          "Best place for a foot rub?",
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 33
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 29,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "In the {{forum}} forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "forum": "DIY"
+    },
+    "intent": "In the DIY forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. Return a list of objects with keys \"username\", \"post_title\", and \"count\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "ziostraccette",
+          "How can I bring an HDMI cable from my pc downstairs to my TV upstairs?",
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 33
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 30,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "In the {{forum}} forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "forum": "space"
+    },
+    "intent": "In the space forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. Return a list of objects with keys \"username\", \"post_title\", and \"count\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Dhghomon",
+          "Scientists erupt at NASA gutting funding for crucial Venus mission",
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 33
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 31,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "In the {{forum}} forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. {{retrieved_data_format_spec}}.",
+    "instantiation_dict": {
+      "forum": "photoshopbattles"
+    },
+    "intent": "In the photoshopbattles forum, get the username and post title of the most recent post, and count the number of comments on that post that are not from the author and have more downvotes than upvotes. Return a list of objects with keys \"username\", \"post_title\", and \"count\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Proud_Idiot",
+          "UK Prime Minister Rishi Sunak looking at a pothole",
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 33
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 66,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Among the top {{number}} hottest posts in the \"{{forum}}\" forum, get {{description}} from those that {{filter_criterion}}.{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "number": 10,
+      "subreddit": "books",
+      "description": "show me the post URLs that recommand a single book"
+    },
+    "intent": "Among the top 10 hottest posts in the \"Books\" forum, get the post titles from those that recommend exactly one book.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "I just finished reading The Hobbit to my 6 year old daughter, and she loved it!",
+          "Apple Books has a free audiobook of A Christmas Carol narrated by LeVar Burton!"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "http://localhost:9999/f/books/59396/apple-books-has-a-free-audiobook-of-a-christmas-carol, http://localhost:9999/f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter"
+    },
+    "intent_template_id": 17
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 67,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Among the top {{number}} hottest posts in the \"{{forum}}\" forum, get {{description}} from those that {{filter_criterion}}.{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "number": 10,
+      "subreddit": "books",
+      "description": "show me the book names from posts that recommand a single book"
+    },
+    "intent": "Among the top 10 hottest posts in the \"Books\" forum, get the book titles, exactly as they appear in the post description, from those that recommend exactly one book.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "A Christmas Carol",
+          "The Hobbit"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "A Christmas Carol, The Hobbit"
+    },
+    "intent_template_id": 17
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 68,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Among the top {{number}} hottest posts in the \"{{forum}}\" forum, get {{description}} from those that {{filter_criterion}}.{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "number": 10,
+      "subreddit": "books",
+      "description": "show me the author name and the book name from posts that recommand a single book"
+    },
+    "intent": "Among the top 10 hottest posts in the \"Books\" forum, get the author names and book titles, exactly as they appear in the post description, from those that recommend exactly one book. Return a list of objects with keys \"book\" and \"author\".",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "The Hobbit",
+          "Tolkien",
+          "A Christmas Carol"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "A Christmas Carol by LeVar Burton, The Hobbit by J. R. R. Tolkien"
+    },
+    "intent_template_id": 17
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 69,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Among the top {{number}} hottest posts in the \"{{forum}}\" forum, get {{description}} from those that {{filter_criterion}}.{{retrieved_data_format_spec}}",
+    "instantiation_dict": {
+      "number": 10,
+      "subreddit": "books",
+      "description": "is there any post talks about supporting local book stores? If so, tell me the organizations involved"
+    },
+    "intent": "Among the top 10 hottest posts in the \"Books\" forum, get the URLs of any organizations involved, exactly as they appear in the post description, from those that talk about supporting local book stores.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "bookshop.org"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "bookshop.org"
+    },
+    "intent_template_id": 17
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 723,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "Like all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "user": "FTorrez81",
+      "subreddit": "iphone13"
+    },
+    "intent": "Like all submissions created by FTorrez81 in forum iphone13",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          [
+            "null",
+            "N/A",
+            "not found",
+            "no submissions",
+            "does not exist",
+            "cannot find",
+            "unable to find",
+            "no posts were found",
+            "no posts found"
+          ]
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "reference_answer_raw_annotation": "N/A",
+      "string_note": "FTorrez81 does not have any submissions in iphone13"
+    },
+    "intent_template_id": 25,
+    "string_note": "FTorrez81 has no submissions in subreddit iphone13"
+  },
+  {
+    "sites": [
+      "reddit"
+    ],
+    "task_id": 726,
+    "require_login": true,
+    "storage_state": "./.auth/reddit_state.json",
+    "start_url": "__REDDIT__",
+    "geolocation": null,
+    "intent_template": "DisLike all submissions created by {{user}} in forum {{forum}}",
+    "instantiation_dict": {
+      "subreddit": "earthporn",
+      "user": "jacyanthis"
+    },
+    "intent": "DisLike all submissions created by jacyanthis in forum earthporn",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          [
+            "null",
+            "N/A",
+            "not found",
+            "no submissions",
+            "does not exist",
+            "cannot find",
+            "unable to find",
+            "no posts were found",
+            "no posts found"
+          ]
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "jacyanthis does not have any submissions in earthporn",
+      "reference_answer_raw_annotation": "N/A"
+    },
+    "intent_template_id": 1510
+  }
+]

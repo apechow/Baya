@@ -1,0 +1,148 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Shopping Extra API",
+        "description": "Custom endpoints for the WebArena Shopping website.",
+        "version": "1.0.0"
+    },
+    "host": "127.0.0.1:7790",
+    "basePath": "/",
+    "schemes": ["http"],
+    "paths": {
+        "/fuzzy_search": {
+            "get": {
+                "summary": "Fuzzy search for products",
+                "description": "Search the shopping website and return an ordered list of products with rank, name, URL, and SKU, sorted by relevance. This endpoint lives on the Shopping Extra API server, NOT on the storefront — resolve its host from $SHOPPING_EXTRA_DOMAIN, falling back to config.servers SERVER_URLS['shopping_extra']. Requesting $SHOPPING_DOMAIN/fuzzy_search hits Magento and returns a 404 HTML page. ALWAYS send base_url set to $SHOPPING_DOMAIN — this server is shared across eval workers and otherwise searches its own default storefront, not the one the task is graded on.",
+                "operationId": "fuzzy_search",
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": true,
+                        "type": "string",
+                        "description": "The search query string (e.g. 'amazon echo dot')"
+                    },
+                    {
+                        "name": "base_url",
+                        "in": "query",
+                        "required": false,
+                        "type": "string",
+                        "description": "Storefront to search. Pass the value of the SHOPPING_DOMAIN environment variable. Defaults to this server's own storefront, which is the WRONG instance whenever the task runs against a per-task Magento container. Example: 'http://localhost:7770'"
+                    }
+                ],
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "Ordered list of products matching the query",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": ["rank", "name", "url"],
+                                "properties": {
+                                    "rank": {
+                                        "type": "integer",
+                                        "description": "1-based position in the search results"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "description": "Product display name"
+                                    },
+                                    "url": {
+                                        "type": "string",
+                                        "description": "Product URL slug without leading slash or .html extension"
+                                    },
+                                    "sku": {
+                                        "type": "string",
+                                        "description": "Product SKU, if available"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add_to_wishlist": {
+            "post": {
+                "summary": "Add product to wishlist",
+                "description": "Log in with default storefront credentials from environment and add a product page item to wishlist. Requires product_url (absolute URL or URL slug). ALWAYS send base_url set to $SHOPPING_DOMAIN — this server is shared across eval workers and otherwise writes to its own default storefront, not the one the task is graded on.",
+                "operationId": "add_to_wishlist",
+                "consumes": ["application/json"],
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "required": ["product_url"],
+                            "properties": {
+                                "product_url": {
+                                    "type": "string",
+                                    "description": "Product page URL or URL slug"
+                                },
+                                "quantity": {
+                                    "type": "integer",
+                                    "minimum": 1,
+                                    "default": 1,
+                                    "description": "Desired quantity to set before adding"
+                                },
+                                "options": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "string"
+                                    },
+                                    "description": "REQUIRED whenever the target product has any option with `is_require=true`. Omitting it returns success=false with error 'Missing required product options'."
+                                },
+                                "base_url": {
+                                    "type": "string",
+                                    "description": "Storefront to log into and add the item on. Pass the value of the SHOPPING_DOMAIN environment variable. Defaults to this server's own storefront, which is the WRONG instance whenever the task runs against a per-task Magento container."
+                                }
+                            },
+                            "description": "JSON request body for adding to wishlist.",
+                            "example": {
+                                "product_url": "iphone-13-pro-max-case-neon-turtle.html",
+                                "quantity": 1,
+                                "base_url": "http://localhost:7770",
+                                "options": {
+                                    "62548": "385287",
+                                    "62547": "385284",
+                                    "62549": "385292"
+                                }
+                            }
+                        },
+                        "description": "Required JSON body. Use product_url and optional quantity."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Wishlist add result",
+                        "schema": {
+                            "type": "object",
+                            "required": ["success", "product_url", "requested_quantity"],
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "product_url": {
+                                    "type": "string"
+                                },
+                                "requested_quantity": {
+                                    "type": "integer"
+                                },
+                                "wishlist_count_after": {
+                                    "type": "integer"
+                                },
+                                "error_message": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
